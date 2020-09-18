@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - CookPlace
+  - timer
+  - orderTable
+  - Wall
+  - Inventory
+  - Spawn
+  - Broom
+  - Enemy
+  - Item
+  - Pistol
+  - Coffee
+  - Choco
+  - Candy
+  - Customer
+  - SWAT
+  - Bullet
+  - Event
+  - Vigor
+  - Dialogue
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Wall
+  - Player
+  - Enemy
+  - Item
+  - SemiWall
+  - MiniGame
+  - SWAT
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 785283527
+    locked: 0
