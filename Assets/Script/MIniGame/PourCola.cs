@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class PourCola : MonoBehaviour
 {
     float CurColaTime;
-    float ColaMinTime;
-    float ColaOverTime;
+    float ColaMinTime = 3f;
+    float ColaOverTime = 5f;
     Animator anim;
     bool CountDone;
     bool ColaControl;
@@ -18,19 +18,26 @@ public class PourCola : MonoBehaviour
     public GameObject EnterBtn;
     public SpriteRenderer EnterB;
     float Btime = 0f;
+    SpriteRenderer spr;
+    Cook ck;
 
     void Awake()
     {
-        ColaMinTime = 3f;
-        ColaOverTime = 5f;
+        ck = GameObject.FindWithTag("CookPlace").GetComponent<Cook>();
         anim = GetComponent<Animator>();
+        spr = GetComponent<SpriteRenderer>();
     }
 
-    void Start()
+    void OnEnable()
     {
         CountDone = true;
         ColaControl = false;
         WaitTime = 1f;
+        EnterBtn.SetActive(true);
+        anim.SetBool("ColaOver", false);
+        anim.SetBool("ColaStart", false);
+        CurColaTime = 0f;
+        spr.color = new Color(1, 1, 1, 0);
     }
 
     void Update()
@@ -48,6 +55,7 @@ public class PourCola : MonoBehaviour
         }
         if (ColaControl == true && Input.GetKey(KeyCode.Return))//엔터 눌러서 시작
         {
+            spr.color = new Color(1, 1, 1, 1);
             ColaText.text = null;
             CurColaTime += Time.deltaTime;//시간재기 시작
             anim.SetBool("ColaStart", true);
@@ -76,7 +84,7 @@ public class PourCola : MonoBehaviour
                 EnterBtn.SetActive(false);
                 ColaControl = false;
                 ColaText.text = "성공!";
-                StatVar.instance.ColaSuc = true;
+                ck.resultFood = 3;
                 //성공 후에 메인화면으로 돌아감
                 Invoke("DelScene", 1f);
             }
@@ -106,8 +114,7 @@ public class PourCola : MonoBehaviour
     }
     void DelScene()
     {
-        StatVar.instance.time1 = 1f;
         StatVar.instance.Movable = true;
-        SceneManager.UnloadSceneAsync("ColaGame");
+        transform.parent.gameObject.SetActive(false);
     }
 }

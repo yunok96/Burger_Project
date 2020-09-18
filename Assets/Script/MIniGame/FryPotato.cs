@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class FryPotato : MonoBehaviour
 {
-    public float FryPower;
+    float FryPower;
     Animator anim;
-    public bool FryControl;
+    bool FryControl;
     float WaitTime;
     public Text FryText;
     bool CountDone;
@@ -16,19 +16,22 @@ public class FryPotato : MonoBehaviour
     public SpriteRenderer EnterB;
     float Btime;
     bool Textoff;
+    Cook ck;
 
     void Awake()
     {
+        ck = GameObject.FindWithTag("CookPlace").GetComponent<Cook>();
         anim = GetComponent<Animator>();
     }
 
-    void Start()
+    void OnEnable()
     {
         CountDone = true;
         FryControl = false;
         WaitTime = 1f;
         FryPower = 5f;
         Textoff = false;
+        EnterBtn.SetActive(true);
     }
 
     void Update()
@@ -95,7 +98,7 @@ public class FryPotato : MonoBehaviour
             Textoff = false;
             FryText.text = "성공!";
             EnterBtn.SetActive(false);
-            StatVar.instance.FrySuc = true;
+            ck.resultFood = 1;
             FryPower = 15f;
             Invoke("DelScene", 1f);
         }
@@ -103,8 +106,7 @@ public class FryPotato : MonoBehaviour
 
     void DelScene()
     {
-        StatVar.instance.time1 = 1f;
         StatVar.instance.Movable = true;
-        SceneManager.UnloadSceneAsync("FryGame");
+        transform.gameObject.SetActive(false);
     }
 }

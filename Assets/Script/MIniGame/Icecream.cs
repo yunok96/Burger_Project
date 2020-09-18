@@ -1,10 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Net.Http.Headers;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Icecream : MonoBehaviour
@@ -23,14 +20,15 @@ public class Icecream : MonoBehaviour
     int WhichBtn;
     int Progress;
     float HurryUp;
-
+    Cook ck;
 
     void Awake()
     {
+        ck = GameObject.FindWithTag("CookPlace").GetComponent<Cook>();
         sr = GetComponent<SpriteRenderer>();
     }
 
-    void Start()
+    void OnEnable()
     {
         CountDone = true;
         IceControl = false;
@@ -38,6 +36,9 @@ public class Icecream : MonoBehaviour
         HurryUp = 0f;
         WhichBtn = Random.Range(0, 2);
         Progress = 0;
+        sr.sprite = Cream[10];
+        RightBtn.SetActive(true);
+        LeftBtn.SetActive(true);
     }
 
     void Update()
@@ -222,7 +223,7 @@ public class Icecream : MonoBehaviour
                                 Invoke("DelScene", 1f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
-                                StatVar.instance.IceSuc = true;
+                                ck.resultFood = 2;
                             }
                             else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
@@ -365,7 +366,7 @@ public class Icecream : MonoBehaviour
                                 sr.sprite = Cream[9];
                                 IceControl = false;
                                 IceText.text = "성공!";
-                                StatVar.instance.IceSuc = true;
+                                ck.resultFood = 2;
                                 Invoke("DelScene", 1f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
@@ -387,8 +388,7 @@ public class Icecream : MonoBehaviour
     }
     void DelScene()
     {
-        StatVar.instance.time1 = 1f;
         StatVar.instance.Movable = true;
-        SceneManager.UnloadSceneAsync("IceGame");
+        transform.parent.gameObject.SetActive(false);
     }
 }

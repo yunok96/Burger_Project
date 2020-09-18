@@ -8,7 +8,8 @@ public class FailBurger : MonoBehaviour
 {
     public Transform Cont;
     PlateMove pm;
-    public GameObject AD;
+    public GameObject A;
+    public GameObject D;
 
     void Awake()
     {
@@ -20,7 +21,8 @@ public class FailBurger : MonoBehaviour
         {
             pm.Textoff = false;
             pm.BurControl = false;
-            AD.SetActive(false);
+            A.SetActive(false);
+            D.SetActive(false);
             pm.BurText.text = "바닥에 떨어졌어...";
             Destroy(collision.gameObject);
             Invoke("DelScene", 1f);
@@ -28,8 +30,7 @@ public class FailBurger : MonoBehaviour
     }
     void DelScene()
     {
-        StatVar.instance.time1 = 1f;
         StatVar.instance.Movable = true;
-        SceneManager.UnloadSceneAsync("BurgerGame");
+        transform.parent.gameObject.SetActive(false);
     }
 }

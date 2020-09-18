@@ -25,14 +25,16 @@ public class PlateMove : MonoBehaviour
     public GameObject ABtn;
     public GameObject DBtn;
     public bool Textoff;
+    Cook ck;
 
     void Awake()
     {
+        ck = GameObject.FindWithTag("CookPlace").GetComponent<Cook>();
         sr = GetComponent<SpriteRenderer>();
         Col = GetComponent<BoxCollider2D>();
     }
 
-    void Start()
+    void OnEnable()
     {
         CountDone = true;
         isRight = false;
@@ -41,6 +43,11 @@ public class PlateMove : MonoBehaviour
         WaitTime = 2f;
         IngStart = false;
         Textoff = false;
+        ABtn.SetActive(true);
+        DBtn.SetActive(true);
+        sr.sprite = BurSpr[0];
+        Col.offset = new Vector2(0, -4);
+        transform.position = new Vector3(20, -1.2f, 0);
     }
 
     void Update()
@@ -174,7 +181,7 @@ public class PlateMove : MonoBehaviour
                     DBtn.SetActive(false);
                     sr.sprite = BurSpr[7];
                     BurText.text = "성공!";
-                    StatVar.instance.BurSuc = true;
+                    ck.resultFood = 4;
                     Invoke("DelScene", 1f);
                 }
                 break;
@@ -198,8 +205,7 @@ public class PlateMove : MonoBehaviour
 
     void DelScene()
     {
-        StatVar.instance.time1 = 1f;
         StatVar.instance.Movable = true;
-        SceneManager.UnloadSceneAsync("BurgerGame");
+        transform.parent.gameObject.SetActive(false);
     }
 }

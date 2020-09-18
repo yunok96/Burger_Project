@@ -143,7 +143,6 @@ public class OrderTable : MonoBehaviour
         if (other.CompareTag("orderTable"))
         {
             isOnDeliveryTile = true;
-            Debug.Log("닿음");
         }
     }
 
@@ -152,7 +151,6 @@ public class OrderTable : MonoBehaviour
         if (other.CompareTag("orderTable"))
         {
             isOnDeliveryTile = false;
-            Debug.Log("나감");
         }
     }
 
