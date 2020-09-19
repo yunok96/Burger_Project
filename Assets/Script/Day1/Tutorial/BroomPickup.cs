@@ -14,6 +14,7 @@ public class BroomPickup : MonoBehaviour
     public GameObject itemButton;//추가할 아이템 UI
     public GameObject block;
     int dialnum = 0;
+    public GameManager gm;
 
     void Start()
     {
@@ -37,7 +38,7 @@ public class BroomPickup : MonoBehaviour
                 dm.Action();
             }
         }
-        if (playerisOn && Input.GetKeyDown(KeyCode.Return) && StatVar.instance.Movable)
+        if (playerisOn && Input.GetKeyDown(KeyCode.Return) && gm.plyrMovable)
         {
             dialnum++;
             switch (dialnum) {

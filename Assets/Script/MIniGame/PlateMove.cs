@@ -181,7 +181,6 @@ public class PlateMove : MonoBehaviour
                     DBtn.SetActive(false);
                     sr.sprite = BurSpr[7];
                     BurText.text = "성공!";
-                    ck.resultFood = 4;
                     Invoke("DelScene", 1f);
                 }
                 break;
@@ -205,7 +204,7 @@ public class PlateMove : MonoBehaviour
 
     void DelScene()
     {
-        StatVar.instance.Movable = true;
+        ck.resultFood = 4;
         transform.parent.gameObject.SetActive(false);
     }
 }

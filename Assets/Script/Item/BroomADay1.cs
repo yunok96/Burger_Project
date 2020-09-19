@@ -143,7 +143,7 @@ public class BroomADay1 : MonoBehaviour
         {
             bSlots[i].SetActive(true);
         }
-        StatVar.instance.Movable = true;
+        //StatVar.instance.Movable = true;
         if (sr.flipX == true)
             sr.flipX = false;
     }
@@ -155,7 +155,7 @@ public class BroomADay1 : MonoBehaviour
         }
         ad.clip = audioB[1];
         ad.Play();
-        StatVar.instance.Movable = false;
+        //StatVar.instance.Movable = false;
         Invoke("AttackDone", 0.3f);
     }
     public void SoundEff()

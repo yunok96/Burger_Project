@@ -21,12 +21,14 @@ public class TimeCount : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject winTheDay;
 
-    private HP hp;
+    HP hp;
 
     //일시정지 화면메뉴
     public GameObject[] pMenuOptions = new GameObject[3];
     public int pOptionsHighlight = 0;
-    private WaitForSeconds pauseCursorFadeIn = new WaitForSeconds(1.00f);//밝아지는 이펙트 지연시간
+    WaitForSeconds pauseCursorFadeIn = new WaitForSeconds(1.00f);//밝아지는 이펙트 지연시간
+
+    public GameManager gm;
 
     private void Start()
     {
@@ -42,7 +44,7 @@ public class TimeCount : MonoBehaviour
             Time.timeScale = 0;
             zaWarudo = true;
             pauseMenu.SetActive(true);
-            StatVar.instance.Movable = false;
+            gm.plyrMovable = false;
             Cursor2();
             // PmenuCursor();
             //answerSwitch();
@@ -53,7 +55,7 @@ public class TimeCount : MonoBehaviour
             Time.timeScale = 1;
             pauseMenu.SetActive(false);
             zaWarudo = false;
-            StatVar.instance.Movable = true;
+            gm.plyrMovable = true;
         }
     }
 
@@ -182,7 +184,7 @@ public class TimeCount : MonoBehaviour
             Time.timeScale = 1;
             pauseMenu.SetActive(false);
             zaWarudo = false;
-            StatVar.instance.Movable = true;
+            gm.plyrMovable = true;
         }
     }
 
@@ -200,7 +202,7 @@ public class TimeCount : MonoBehaviour
         {
             Time.timeScale = 0;
             isTheDayCleared = true;
-            StatVar.instance.Movable = false;
+            gm.plyrMovable = false;
             winTheDay.SetActive(true);
         }
     }
@@ -217,11 +219,11 @@ public class TimeCount : MonoBehaviour
     {
         if (StartTime == true)
         {
-            TimeC -= Time.deltaTime * StatVar.instance.time1;
+            TimeC -= Time.deltaTime * gm.worldTime;
             Timetxt.text = (int)TimeC + "초";
             if (TimeC <= 10)
             {
-                blinkT += Time.deltaTime * StatVar.instance.time1 * 10;
+                blinkT += Time.deltaTime * gm.worldTime * 10;
                 if (blinkT > TimeC)
                     blinkT = 0f;
                 if (TimeC < 2)

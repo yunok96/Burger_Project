@@ -20,6 +20,7 @@ public class CustomerSpawn : MonoBehaviour
     //손님아 움직여
     private Vector3 s1; //손님 이동목표: 테이블 앞; 주문생성시 입장
     private Vector3 s2; //손님 이동목표: 테이블 밖; 주문소멸시 퇴장
+    public GameManager gm;
 
     private void Spawn() //손님 소환 및 테이블 앞까지 걸어가기
     {
@@ -152,7 +153,7 @@ public class CustomerSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CurCustomerTime += Time.deltaTime * StatVar.instance.time1;
+        CurCustomerTime += Time.deltaTime * gm.worldTime;
         if (CurCustomerTime > 4.9f)
         {
             CurCustomerTime = 0f;

@@ -44,6 +44,7 @@ public class OrderTable : MonoBehaviour
 
     float CurNextOrderTime;
     public bool[] ActivedOrderList;
+    public GameManager gm;
 
     //타이머
     //오더 스타트랑 중간에 밀려들어오는 오더 시간 다르게 하려면 변수 선언 추가.
@@ -244,12 +245,12 @@ public class OrderTable : MonoBehaviour
         for(int i = 0; i < 6; i++)//최윤호. 주문 흘러가는 시간을 deltatime으로 바꾸려면 void update에 있어야되서 각 주문 번호에 bool값 설정함. 
         {
             if (ActivedOrderList[i])
-                foodStack.thirtySeconds[i] += Time.deltaTime * StatVar.instance.time1;
+                foodStack.thirtySeconds[i] += Time.deltaTime * gm.worldTime;
             else
                 foodStack.thirtySeconds[i] = 0f;
         }
 
-        CurNextOrderTime += Time.deltaTime * StatVar.instance.time1;
+        CurNextOrderTime += Time.deltaTime * gm.worldTime;
         if (CurNextOrderTime > 5f)
         {
             CurNextOrderTime = 0f;

@@ -31,7 +31,7 @@ public class IceTut : MonoBehaviour
 
     void Update()
     {
-        if (isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return) && StatVar.instance.Movable == true)//음식 미니게임
+        if (isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return))//음식 미니게임
             dc.id = 20;
     }
 }

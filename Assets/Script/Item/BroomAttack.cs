@@ -16,6 +16,7 @@ public class BroomAttack : MonoBehaviour
     SpriteRenderer sr;
     PlayerMovement pl;
     public GameObject[] bSlots = new GameObject[5];
+    public GameManager gm;
 
     void Awake()
     {
@@ -139,7 +140,7 @@ public class BroomAttack : MonoBehaviour
         {
             bSlots[i].SetActive(true);
         }
-        StatVar.instance.Movable = true;
+        gm.plyrMovable = true;
         if (sr.flipX == true)
             sr.flipX = false;
     }
@@ -151,7 +152,7 @@ public class BroomAttack : MonoBehaviour
         }
         ad.clip = audioB[1];
         ad.Play();
-        StatVar.instance.Movable = false;
+        gm.plyrMovable = false;
         Invoke("AttackDone", 0.3f);
     }
     public void SoundEff()

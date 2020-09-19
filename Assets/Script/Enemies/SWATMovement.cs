@@ -35,7 +35,7 @@ public class SWATMovement : MonoBehaviour
 
     void Update()
     {
-        curShotTime += Time.deltaTime * StatVar.instance.time1;
+        curShotTime += Time.deltaTime;//시간변수 곱해야됨
         RaycastHit2D raycast = Physics2D.Raycast(transform.position+new Vector3(-1,0,0), Vector2.left, 10, LayerMask.GetMask("SWAT"));
         if (raycast.collider!=null)
             curShotTime = 7f;
@@ -66,7 +66,7 @@ public class SWATMovement : MonoBehaviour
     }
     void MoveAgain()
     {
-        curTime += Time.deltaTime * StatVar.instance.time1;
+        curTime += Time.deltaTime;//시간변수 곱해야됨
     }
     void MoveLR()
     {

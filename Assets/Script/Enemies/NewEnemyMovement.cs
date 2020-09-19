@@ -12,6 +12,7 @@ public class NewEnemyMovement : MonoBehaviour
     float curTime;
     float maxTime;
     public Transform target;
+    public GameManager gm;
 
     void Awake()
     {
@@ -50,7 +51,7 @@ public class NewEnemyMovement : MonoBehaviour
     }
     void MoveAgain()
     {
-        curTime += Time.deltaTime * StatVar.instance.time1;
+        curTime += Time.deltaTime * gm.worldTime;
     }
     void MoveLR()
     {

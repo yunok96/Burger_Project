@@ -32,7 +32,7 @@ public class ColaTut : MonoBehaviour
 
     void Update()
     {
-        if (isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return) && StatVar.instance.Movable == true)
+        if (isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return))
         {
             DialCount++;
             if (DialCount > 7)

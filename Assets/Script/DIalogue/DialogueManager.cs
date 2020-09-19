@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     public int talkindex;
     public DControl ct;
     CameraShake Vib;
+    public GameManager gm;
 
     public GameObject ow;
     public GameObject movetut;
@@ -58,7 +59,7 @@ public class DialogueManager : MonoBehaviour
         if (talkData == null)
         {
             Invoke("DelayMove", 0.1f);//대화 끝나면 이동 가능
-            StatVar.instance.time1 = 1f;
+            gm.worldTime = 1f;
             talkPanel.SetBool("isShow", false);
             portL.color = new Color(1, 1, 1, 0);
             portLB.color = new Color(0, 0, 0, 0);
@@ -72,7 +73,7 @@ public class DialogueManager : MonoBehaviour
         {//이후 이벤트 종류
             if (talkData.Split(':')[1] == "0")
             {
-                StatVar.instance.Movable = true;
+                gm.plyrMovable = true;
             }
             if (talkData.Split(':')[1] == "1")
                 ow.GetComponent<Owner>().start = true;
@@ -189,12 +190,12 @@ public class DialogueManager : MonoBehaviour
             }
         }
         talkPanel.SetBool("isShow", true);
-        StatVar.instance.Movable = false;
+        gm.plyrMovable = false;
         talkindex++;
     }
 
     void DelayMove()
     {
-        StatVar.instance.Movable = true;
+        gm.plyrMovable = true;
     }
 }

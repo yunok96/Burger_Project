@@ -26,6 +26,7 @@ public class HP : MonoBehaviour
     private TimeCount timeCount;
     private Cook cook;
     private PlayerMovement playerMovement;
+    public GameManager gm;
     
     float BlinTime;//체력 떨어질때 깜빡임 효과
     float Btime;
@@ -147,7 +148,7 @@ public class HP : MonoBehaviour
             ContinueCursor();
 
             //이동불능, 조작불능. 이거 추가했다-윤호
-            StatVar.instance.Movable = false;
+            gm.plyrMovable = false;
 
             //유아이 개입
             //playTheDayAgain()

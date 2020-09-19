@@ -23,7 +23,7 @@ public class GameManagerDay1 : MonoBehaviour
         ba = GameObject.FindWithTag("Player").GetComponent<BroomAttack>();
         ba.FirstBlood = true;
         once = true;
-        StatVar.instance.time1 = 0f;
+        //StatVar.instance.time1 = 0f;
         rdtime = 1.5f;
     }
     void Update()
@@ -36,8 +36,8 @@ public class GameManagerDay1 : MonoBehaviour
             if (once)
             {
                 once = false;
-                StatVar.instance.Movable = true;
-                StatVar.instance.time1 = 1f;
+                //StatVar.instance.Movable = true;
+                //StatVar.instance.time1 = 1f;
             }
             if (rdtime < 0f)
             {

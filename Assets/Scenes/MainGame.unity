@@ -209,7 +209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43484564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.166, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 838330898}
@@ -1349,12 +1349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0616afbb0190b3849a7bb1b5ebafc649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColaSuc: 0
-  FrySuc: 0
-  BurSuc: 0
-  IceSuc: 0
-  Movable: 0
-  time1: 0
   soundplay: 0
   TutCookSuccess: 0
   TutCookFail: 0
@@ -1416,6 +1410,7 @@ MonoBehaviour:
   - {fileID: 69082569}
   - {fileID: 98776027}
   pOptionsHighlight: 0
+  gm: {fileID: 0}
 --- !u!4 &187661334
 Transform:
   m_ObjectHideFlags: 0
@@ -2692,6 +2687,7 @@ MonoBehaviour:
   - {fileID: 1176945213}
   - {fileID: 519325858}
   pOptionsHighlight: 0
+  gm: {fileID: 1008042520}
 --- !u!1 &357477109
 GameObject:
   m_ObjectHideFlags: 0
@@ -7255,6 +7251,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
+  gm: {fileID: 1008042520}
 --- !u!114 &838330901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7283,6 +7280,7 @@ MonoBehaviour:
   - {fileID: 1509297627}
   - {fileID: 1313743485}
   - {fileID: 1873753489}
+  gm: {fileID: 1008042520}
 --- !u!114 &838330902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7307,6 +7305,7 @@ MonoBehaviour:
   - {fileID: 1509297627}
   - {fileID: 1313743485}
   - {fileID: 1873753489}
+  gm: {fileID: 1008042520}
 --- !u!114 &838330903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7334,6 +7333,7 @@ MonoBehaviour:
   - {fileID: 1852199912}
   - {fileID: 421420690}
   selectedGameOverOption: 0
+  gm: {fileID: 1008042520}
   isBlin: 0
 --- !u!114 &838330904
 MonoBehaviour:
@@ -7389,6 +7389,7 @@ MonoBehaviour:
   - {fileID: 1390352533}
   isOnDeliveryTile: 0
   ActivedOrderList: 000000000000
+  gm: {fileID: 1008042520}
   orderTimeSlots:
   - {fileID: 1534933545}
   - {fileID: 260231611}
@@ -7800,11 +7801,13 @@ MonoBehaviour:
   - {fileID: 1313743485}
   - {fileID: 1873753489}
   whichFood: 0
+  resultFood: 0
   minigame:
   - {fileID: 1720771239}
   - {fileID: 124185632}
   - {fileID: 223329132}
   - {fileID: 437808350}
+  gm: {fileID: 1008042520}
 --- !u!1 &916910189
 GameObject:
   m_ObjectHideFlags: 0
@@ -10551,6 +10554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rd: {fileID: 178886534}
   rdtime: 0
+  plyrMovable: 0
+  worldTime: 0
   broom: {fileID: 2405459639148971924, guid: 9f68e296c5e256544922c87310c46bc3, type: 3}
 --- !u!1 &1016375437
 GameObject:
@@ -10796,6 +10801,7 @@ MonoBehaviour:
   isAction: 0
   talkindex: 0
   ct: {fileID: 1067179434}
+  gm: {fileID: 0}
   ow: {fileID: 0}
   movetut: {fileID: 0}
   BurgerNav: {fileID: 0}
@@ -10898,6 +10904,7 @@ MonoBehaviour:
   - {fileID: 685307591}
   Inv: {fileID: 1091248284}
   VisRan: {fileID: 43484564}
+  gm: {fileID: 1008042520}
 --- !u!114 &1091248287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11983,6 +11990,7 @@ MonoBehaviour:
   - {fileID: 2930199296378765826, guid: 66d2c06b38fc00d45a295b132ab9c525, type: 3}
   - {fileID: 5053215461959602392, guid: b9cc86eec013f5940aa1b22738bb12a6, type: 3}
   - {fileID: 6308102434853041046, guid: 8efc237e1e8bbbb408038994096cc7d3, type: 3}
+  gm: {fileID: 1008042520}
 --- !u!1 &1207303301
 GameObject:
   m_ObjectHideFlags: 0
@@ -17350,6 +17358,7 @@ MonoBehaviour:
   - {fileID: 1717890640}
   - {fileID: 1300817479}
   ItemExist: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  gm: {fileID: 1008042520}
 --- !u!4 &2129662183
 Transform:
   m_ObjectHideFlags: 0

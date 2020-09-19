@@ -18,6 +18,7 @@ public class Spawner : MonoBehaviour
     public bool[] ItemExist;
     float ItemMaxSpawnDelay;
     float ItemCurSpawnDelay;
+    public GameManager gm;
 
     //public GameObject BroomPup;
     //public Transform BSpawnPoint;
@@ -41,14 +42,14 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         if (enemyObj[0])
-            curSpawnDelay += Time.deltaTime * StatVar.instance.time1;
+            curSpawnDelay += Time.deltaTime * gm.worldTime;
         if (curSpawnDelay > maxSpawnDelay)
         {
             SpawnEnemy();
             curSpawnDelay = 0;//주정뱅이 죽이는거 구현하고 나서 0으로 만드는시점 조절해야됨. 지금은 중복소환 시에도 0됨.
         }
 
-        ItemCurSpawnDelay += Time.deltaTime * StatVar.instance.time1;//아이템 소환
+        ItemCurSpawnDelay += Time.deltaTime * gm.worldTime;//아이템 소환
         if (ItemCurSpawnDelay > ItemMaxSpawnDelay)
         {
             SpawnItem();

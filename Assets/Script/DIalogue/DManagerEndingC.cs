@@ -45,7 +45,7 @@ public class DManagerEndingC : MonoBehaviour
         if (talkData == null)
         {
             Invoke("DelayMove", 0.1f);//대화 끝나면 이동 가능
-            StatVar.instance.time1 = 1f;
+            //StatVar.instance.time1 = 1f;
             talkPanel.SetBool("isShow", false);
             portL.color = new Color(1, 1, 1, 0);
             portLB.color = new Color(0, 0, 0, 0);
@@ -128,12 +128,12 @@ public class DManagerEndingC : MonoBehaviour
             }
         }
         talkPanel.SetBool("isShow", true);
-        StatVar.instance.Movable = false;
+        //StatVar.instance.Movable = false;
         talkindex++;
     }
 
     void DelayMove()
     {
-        StatVar.instance.Movable = true;
+        //StatVar.instance.Movable = true;
     }
 }

@@ -7,6 +7,5 @@ public class GameManagerSWAT : MonoBehaviour
 {
     void Start()
     {
-        StatVar.instance.Movable = true;
     }
 }

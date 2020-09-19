@@ -21,7 +21,7 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
         ba.FirstBlood = true;
-        StatVar.instance.time1 = 0f;
+        //StatVar.instance.time1 = 0f;
         dc.id = 100;
         dm.Action();
     }
@@ -30,7 +30,7 @@ public class TutorialManager : MonoBehaviour
         if (cd)
         {
             dontmove += Time.deltaTime;
-            StatVar.instance.Movable = false;
+            //StatVar.instance.Movable = false;
             if (dontmove > 0.5f)
             {
                 cd = false;

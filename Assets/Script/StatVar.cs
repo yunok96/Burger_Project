@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 public class StatVar : MonoBehaviour
 {
     public static StatVar instance;//static 변수.
-    public bool Movable;
-    public float time1;
     public bool soundplay;
     public bool TutCookSuccess;
     public bool TutCookFail;
@@ -16,6 +14,5 @@ public class StatVar : MonoBehaviour
     void Awake()
     {
         instance = this;
-        time1 = 1f;
     }
 }

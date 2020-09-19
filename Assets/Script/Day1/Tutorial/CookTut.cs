@@ -73,13 +73,13 @@ public class CookTut : MonoBehaviour
 
     private void GenerateFood() //음식 만들기. int 1 감튀, 2 아이스, 3 음료, 4 햄버거
     {
-        if (isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return) && StatVar.instance.Movable == true)//음식 미니게임
+        if (isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return)/* && StatVar.instance.Movable == true*/)//음식 미니게임
         {
             for (int i = 0; i < maxFood; i++)//손에 비어있는 자리가 있나 확인
             {
                 if (foodStack.dishes[i] == 0)//비어있다면
                 {
-                    StatVar.instance.Movable = false;
+                    //StatVar.instance.Movable = false;
                     switch (whichFood)
                     {
                         case 1:

@@ -13,6 +13,7 @@ public class PistolAttack : MonoBehaviour
     SpriteRenderer sr;
     PlayerMovement pl;
     public GameObject[] pSlots = new GameObject[5];
+    public GameManager gm;
 
     void Awake()
     {
@@ -78,7 +79,7 @@ public class PistolAttack : MonoBehaviour
         {
             pSlots[i].SetActive(true);
         }
-        StatVar.instance.Movable = true;
+        gm.plyrMovable = true;
         if (sr.flipX == true)
             sr.flipX = false;
     }
@@ -91,7 +92,7 @@ public class PistolAttack : MonoBehaviour
         }
         ShotSound.clip = ad[0];
         ShotSound.Play();
-        StatVar.instance.Movable = false;
+        gm.plyrMovable = false;
         Invoke("AttackDone", 0.3f);
     }
 }

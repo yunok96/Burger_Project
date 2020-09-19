@@ -65,7 +65,7 @@ public class TutInventory : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && StatVar.instance.Movable == true)//커서 이동
+        if (Input.GetKeyDown(KeyCode.E))//커서 이동
         {
             if (selectedItem < slots.Length - 1)
                 selectedItem++;
@@ -82,7 +82,7 @@ public class TutInventory : MonoBehaviour
                 VisRan.SetActive(false);
             }   
         }
-        if (Input.GetKeyDown(KeyCode.Q) && StatVar.instance.Movable == true)
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             if (selectedItem > 0)
                 selectedItem--;
@@ -124,7 +124,7 @@ public class TutInventory : MonoBehaviour
                     txt.text = "먹으면 너무 달콤해서 시간이 빨리 지나간다";
                     break;
             }
-            if (Input.GetKeyDown(KeyCode.Space) && StatVar.instance.Movable == true)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (isFull[selectedItem] != false)
                 {

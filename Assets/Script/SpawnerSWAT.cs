@@ -34,14 +34,14 @@ public class SpawnerSWAT : MonoBehaviour
     void Update()
     {
         if (enemyObj[0])
-            curSpawnDelay += Time.deltaTime * StatVar.instance.time1;
+            //curSpawnDelay += Time.deltaTime * StatVar.instance.time1;
         if (curSpawnDelay > maxSpawnDelay)
         {
             SpawnEnemy();
             curSpawnDelay = 0;
         }
 
-        ItemCurSpawnDelay += Time.deltaTime * StatVar.instance.time1;//아이템 소환
+        //ItemCurSpawnDelay += Time.deltaTime * StatVar.instance.time1;//아이템 소환
         if (ItemCurSpawnDelay > ItemMaxSpawnDelay)
         {
             SpawnItem();

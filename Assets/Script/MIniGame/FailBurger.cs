@@ -10,9 +10,11 @@ public class FailBurger : MonoBehaviour
     PlateMove pm;
     public GameObject A;
     public GameObject D;
+    Cook ck;
 
     void Awake()
     {
+        ck = GameObject.FindWithTag("CookPlace").GetComponent<Cook>();
         pm = Cont.GetComponent<PlateMove>();
     }
     void OnTriggerEnter2D(Collider2D collision)
@@ -30,7 +32,7 @@ public class FailBurger : MonoBehaviour
     }
     void DelScene()
     {
-        StatVar.instance.Movable = true;
         transform.parent.gameObject.SetActive(false);
+        ck.resultFood = 5;
     }
 }

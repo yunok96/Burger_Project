@@ -17,6 +17,7 @@ public class FryPotato : MonoBehaviour
     float Btime;
     bool Textoff;
     Cook ck;
+    bool suc;
 
     void Awake()
     {
@@ -98,7 +99,7 @@ public class FryPotato : MonoBehaviour
             Textoff = false;
             FryText.text = "성공!";
             EnterBtn.SetActive(false);
-            ck.resultFood = 1;
+            suc = true;
             FryPower = 15f;
             Invoke("DelScene", 1f);
         }
@@ -106,7 +107,7 @@ public class FryPotato : MonoBehaviour
 
     void DelScene()
     {
-        StatVar.instance.Movable = true;
         transform.gameObject.SetActive(false);
+        ck.resultFood = (suc) ? 1 : 5;
     }
 }

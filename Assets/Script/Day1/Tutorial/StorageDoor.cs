@@ -26,7 +26,7 @@ public class StorageDoor : MonoBehaviour
     }
     void Update()
     {
-        if(isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return) && StatVar.instance.Movable == true)
+        if(isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return) /*&& StatVar.instance.Movable == true*/)
         {
             DialCount++;
             if (DialCount > 1)

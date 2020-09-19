@@ -1,6 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     float hwalgiminustime;
     GameObject vigor;
     Animator anim;
+    public GameManager gm;
 
     void Awake()
     {
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.Lerp(transform.position, movePoint.position, movespeed * Time.deltaTime);
-        if (Vector3.Distance(transform.position, movePoint.position) <= 0.03f && StatVar.instance.Movable == true)
+        if (Vector3.Distance(transform.position, movePoint.position) <= 0.03f && gm.plyrMovable)
         {
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
@@ -115,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
                 isBoost = false;
             }
         }
-        hwalgiminustime += Time.deltaTime * StatVar.instance.time1;
+        hwalgiminustime += Time.deltaTime * gm.worldTime;
         if (hwalgiminustime > 1f)
         {
             hwalgiminustime = 0f;

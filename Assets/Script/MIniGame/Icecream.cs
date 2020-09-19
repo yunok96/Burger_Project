@@ -21,6 +21,7 @@ public class Icecream : MonoBehaviour
     int Progress;
     float HurryUp;
     Cook ck;
+    bool suc = false;
 
     void Awake()
     {
@@ -223,7 +224,6 @@ public class Icecream : MonoBehaviour
                                 Invoke("DelScene", 1f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
-                                ck.resultFood = 2;
                             }
                             else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
@@ -366,7 +366,6 @@ public class Icecream : MonoBehaviour
                                 sr.sprite = Cream[9];
                                 IceControl = false;
                                 IceText.text = "성공!";
-                                ck.resultFood = 2;
                                 Invoke("DelScene", 1f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
@@ -388,7 +387,7 @@ public class Icecream : MonoBehaviour
     }
     void DelScene()
     {
-        StatVar.instance.Movable = true;
         transform.parent.gameObject.SetActive(false);
+        ck.resultFood = (suc) ? 2 : 5;
     }
 }

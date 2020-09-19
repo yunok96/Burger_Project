@@ -20,6 +20,7 @@ public class PourCola : MonoBehaviour
     float Btime = 0f;
     SpriteRenderer spr;
     Cook ck;
+    bool suc = false;
 
     void Awake()
     {
@@ -77,15 +78,12 @@ public class PourCola : MonoBehaviour
                 ColaControl = false;
                 ColaText.text = "콜라가 너무 적다...";
                 Invoke("DelScene", 1f);
-                //실패 후에 메인화면으로 돌아감
             }
             else if (ColaMinTime < CurColaTime && CurColaTime < ColaOverTime)
             {
                 EnterBtn.SetActive(false);
                 ColaControl = false;
                 ColaText.text = "성공!";
-                ck.resultFood = 3;
-                //성공 후에 메인화면으로 돌아감
                 Invoke("DelScene", 1f);
             }
             CurColaTime = 0f;
@@ -114,7 +112,7 @@ public class PourCola : MonoBehaviour
     }
     void DelScene()
     {
-        StatVar.instance.Movable = true;
         transform.parent.gameObject.SetActive(false);
+        ck.resultFood = (suc) ? 3 : 5;
     }
 }

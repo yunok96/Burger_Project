@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour
 {
     public GameObject rd;
     public float rdtime;
-    bool once;
+    bool once = true;//여기까지 게임 스타트
 
+    public bool plyrMovable = false;
+    public float worldTime;
     public GameObject broom;
     Inventory inv;
     BroomAttack ba;
@@ -21,9 +23,8 @@ public class GameManager : MonoBehaviour
         Instantiate(broom, inv.slots[0].transform, false);
         inv.VisibleRange();
         ba = GameObject.FindWithTag("Player").GetComponent<BroomAttack>();
+        worldTime = 0f;
         ba.FirstBlood = false;
-        once = true;
-        StatVar.instance.time1 = 0f;
         rdtime = 1.5f;
     }
     void Update()
@@ -36,8 +37,8 @@ public class GameManager : MonoBehaviour
             if (once)
             {
                 once = false;
-                StatVar.instance.Movable = true;
-                StatVar.instance.time1 = 1f;
+                plyrMovable = true;
+                worldTime = 1f;
             }
             if (rdtime < 0f)
             {

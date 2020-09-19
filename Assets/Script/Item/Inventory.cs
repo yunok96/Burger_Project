@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f);//밝아지는 이펙트 지연시간
 
     public GameObject VisRan;
-
+    public GameManager gm;
     GameObject pl;
     TimeCount tc;
     Text txt;
@@ -65,7 +65,7 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && StatVar.instance.Movable == true)//커서 이동
+        if (Input.GetKeyDown(KeyCode.E) && gm.plyrMovable)//커서 이동
         {
             if (selectedItem < slots.Length - 1)
                 selectedItem++;
@@ -82,7 +82,7 @@ public class Inventory : MonoBehaviour
                 VisRan.SetActive(false);
             }   
         }
-        if (Input.GetKeyDown(KeyCode.Q) && StatVar.instance.Movable == true)
+        if (Input.GetKeyDown(KeyCode.Q) && gm.plyrMovable)
         {
             if (selectedItem > 0)
                 selectedItem--;
@@ -124,7 +124,7 @@ public class Inventory : MonoBehaviour
                     txt.text = "먹으면 너무 달콤해서 시간이 빨리 지나간다";
                     break;
             }
-            if (Input.GetKeyDown(KeyCode.Space) && StatVar.instance.Movable == true)
+            if (Input.GetKeyDown(KeyCode.Space) && gm.plyrMovable)
             {
                 if (isFull[selectedItem] != false)
                 {
