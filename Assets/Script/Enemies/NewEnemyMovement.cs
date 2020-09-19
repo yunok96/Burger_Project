@@ -12,12 +12,12 @@ public class NewEnemyMovement : MonoBehaviour
     float curTime;
     float maxTime;
     public Transform target;
-    public GameManager gm;
+    GameManager gm;
 
     void Awake()
     {
+        gm = GameObject.FindWithTag("GM").GetComponent<GameManager>();
         anim = GetComponent<Animator>();
-        curTime = 0f;
         maxTime = 3f;
         movespeed = 3f;
     }
@@ -26,6 +26,10 @@ public class NewEnemyMovement : MonoBehaviour
     {
         target.parent = null;
         movePoint.parent = null;//종속관계 해제
+    }
+    void OnEnable()
+    {
+        curTime = 0f;
     }
 
     void Update()

@@ -191,6 +191,7 @@ public class DialogueManager : MonoBehaviour
         }
         talkPanel.SetBool("isShow", true);
         gm.plyrMovable = false;
+        gm.worldTime = 0f;
         talkindex++;
     }
 

@@ -48,89 +48,32 @@ public class Cook : MonoBehaviour
                 if (foodStack.dishes[i] == 0)//비어있다면
                 {
                     gm.plyrMovable = false;
-                    switch (whichFood)
-                    {
-                        case 1:
-                            minigame[0].SetActive(true);
-                            break;
-                        case 2:
-                            minigame[1].SetActive(true);
-                            break;
-                        case 3:
-                            minigame[2].SetActive(true);
-                            break;
-                        case 4:
-                            minigame[3].SetActive(true);
-                            break;
-                    }
+                    minigame[whichFood - 1].SetActive(true);
                     break;
                 }
             }
         }
-        switch (resultFood)
+        if (resultFood != 0)
         {
-            case 1:
+            if (resultFood == 5)
+            {
+                gm.plyrMovable = true;
+                resultFood = 0;
+            }
+            else
+            {
+                for (int i = 0; i < maxFood; i++)//음식 어디에 들지 결정
                 {
-                    for (int i = 0; i < maxFood; i++)//음식 어디에 들지 결정
+                    if (foodStack.dishes[i] == 0)
                     {
-                        if (foodStack.dishes[i] == 0)
-                        {
-                            resultFood = 0;
-                            foodStack.dishes[i] = 1;//요리 번호. 손에 들고있는 것의 실질적인 종류
-                            Instantiate(foodButton2[0], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
-                            break;
-                        }
+                        gm.plyrMovable = true;
+                        foodStack.dishes[i] = resultFood;//요리 번호. 손에 들고있는 것의 실질적인 종류
+                        Instantiate(foodButton2[resultFood - 1], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
+                        resultFood = 0;
+                        break;
                     }
                 }
-                break;
-            case 2:
-                {
-                    for (int i = 0; i < maxFood; i++)//음식 어디에 들지 결정
-                    {
-                        if (foodStack.dishes[i] == 0)
-                        {
-                            resultFood = 0;
-                            foodStack.dishes[i] = 2;//요리 번호. 손에 들고있는 것의 실질적인 종류
-                            Instantiate(foodButton2[1], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
-                            break;
-                        }
-                    }
-                }
-                break;
-            case 3:
-                {
-                    for (int i = 0; i < maxFood; i++)//음식 어디에 들지 결정
-                    {
-                        if (foodStack.dishes[i] == 0)
-                        {
-                            resultFood = 0;
-                            foodStack.dishes[i] = 3;//요리 번호. 손에 들고있는 것의 실질적인 종류
-                            Instantiate(foodButton2[2], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
-                            break;
-                        }
-                    }
-                }
-                break;
-            case 4:
-                {
-                    for (int i = 0; i < maxFood; i++)//음식 어디에 들지 결정
-                    {
-                        if (foodStack.dishes[i] == 0)
-                        {
-                            resultFood = 0;
-                            foodStack.dishes[i] = 4;//요리 번호. 손에 들고있는 것의 실질적인 종류
-                            Instantiate(foodButton2[3], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
-                            break;
-                        }
-                    }
-                }
-                break;
-            case 5://실패했을때의 요리 반환 정수값
-                {
-
-                    resultFood = 0;
-                }
-                break;
+            }
         }
     }
 

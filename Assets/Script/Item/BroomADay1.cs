@@ -31,12 +31,6 @@ public class BroomADay1 : MonoBehaviour
     }
     void Update()
     {
-        if (StatVar.instance.soundplay)
-        {
-            StatVar.instance.soundplay = false;
-            ad.clip = audioB[0];
-            ad.Play();
-        }
     }
 
     public void Melee()

@@ -21,7 +21,7 @@ public class Icecream : MonoBehaviour
     int Progress;
     float HurryUp;
     Cook ck;
-    bool suc = false;
+    bool suc;
 
     void Awake()
     {
@@ -40,6 +40,8 @@ public class Icecream : MonoBehaviour
         sr.sprite = Cream[10];
         RightBtn.SetActive(true);
         LeftBtn.SetActive(true);
+        suc = false;
+        Btime = 0f;
     }
 
     void Update()
@@ -221,6 +223,7 @@ public class Icecream : MonoBehaviour
                                 sr.sprite = Cream[4];
                                 IceText.text = "성공!";
                                 IceControl = false;
+                                suc = true;
                                 Invoke("DelScene", 1f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
@@ -366,6 +369,7 @@ public class Icecream : MonoBehaviour
                                 sr.sprite = Cream[9];
                                 IceControl = false;
                                 IceText.text = "성공!";
+                                suc = true;
                                 Invoke("DelScene", 1f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);

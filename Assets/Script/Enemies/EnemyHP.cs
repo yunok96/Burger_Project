@@ -11,7 +11,8 @@ public class EnemyHP : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
-    void Start()
+
+    void OnEnable()
     {
         EneHP = 1;
     }
@@ -26,6 +27,7 @@ public class EnemyHP : MonoBehaviour
     }
     void JujungDie()
     {
+        Destroy(this);
         Destroy(this.gameObject);
     }
 }

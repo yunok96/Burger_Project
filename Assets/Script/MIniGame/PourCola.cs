@@ -20,7 +20,7 @@ public class PourCola : MonoBehaviour
     float Btime = 0f;
     SpriteRenderer spr;
     Cook ck;
-    bool suc = false;
+    bool suc;
 
     void Awake()
     {
@@ -39,6 +39,9 @@ public class PourCola : MonoBehaviour
         anim.SetBool("ColaStart", false);
         CurColaTime = 0f;
         spr.color = new Color(1, 1, 1, 0);
+        suc = false;
+        EnterB.color = new Color(0, 0, 0, 0);
+        Btime = 0f;
     }
 
     void Update()
@@ -54,11 +57,11 @@ public class PourCola : MonoBehaviour
                 CountDone = false;
             }
         }
-        if (ColaControl == true && Input.GetKey(KeyCode.Return))//엔터 눌러서 시작
+        if (ColaControl == true && Input.GetKey(KeyCode.Return))
         {
             spr.color = new Color(1, 1, 1, 1);
             ColaText.text = null;
-            CurColaTime += Time.deltaTime;//시간재기 시작
+            CurColaTime += Time.deltaTime;
             anim.SetBool("ColaStart", true);
             if(CurColaTime > ColaOverTime)
             {
@@ -67,7 +70,6 @@ public class PourCola : MonoBehaviour
                 ColaText.text = "콜라가 넘쳤다...";
                 ColaControl = false;
                 Invoke("DelScene", 1f);
-                //실패 후에 메인화면으로 돌아감
             }
         }
         if (ColaControl == true && Input.GetKeyUp(KeyCode.Return))
@@ -83,6 +85,7 @@ public class PourCola : MonoBehaviour
             {
                 EnterBtn.SetActive(false);
                 ColaControl = false;
+                suc = true;
                 ColaText.text = "성공!";
                 Invoke("DelScene", 1f);
             }

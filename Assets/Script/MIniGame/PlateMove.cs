@@ -4,7 +4,7 @@ using UnityEditor.Experimental.AssetImporters;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.XR.WSA;
 
 public class PlateMove : MonoBehaviour
 {

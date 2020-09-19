@@ -33,6 +33,8 @@ public class FryPotato : MonoBehaviour
         FryPower = 5f;
         Textoff = false;
         EnterBtn.SetActive(true);
+        suc = false;
+        Btime = 0f;
     }
 
     void Update()

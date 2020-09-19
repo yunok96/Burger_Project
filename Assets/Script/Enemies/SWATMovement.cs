@@ -16,9 +16,11 @@ public class SWATMovement : MonoBehaviour
     public float curShotTime;
     float maxShotTime;
     public Transform target;
+    GameManager gm;
 
     void Awake()
     {
+        gm = GameObject.FindWithTag("GM").GetComponent<GameManager>();
         ads = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         curTime = 0f;
@@ -35,7 +37,7 @@ public class SWATMovement : MonoBehaviour
 
     void Update()
     {
-        curShotTime += Time.deltaTime;//시간변수 곱해야됨
+        curShotTime += Time.deltaTime * gm.worldTime;
         RaycastHit2D raycast = Physics2D.Raycast(transform.position+new Vector3(-1,0,0), Vector2.left, 10, LayerMask.GetMask("SWAT"));
         if (raycast.collider!=null)
             curShotTime = 7f;
@@ -66,7 +68,7 @@ public class SWATMovement : MonoBehaviour
     }
     void MoveAgain()
     {
-        curTime += Time.deltaTime;//시간변수 곱해야됨
+        curTime += Time.deltaTime * gm.worldTime;
     }
     void MoveLR()
     {

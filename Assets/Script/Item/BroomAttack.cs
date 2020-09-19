@@ -17,6 +17,7 @@ public class BroomAttack : MonoBehaviour
     PlayerMovement pl;
     public GameObject[] bSlots = new GameObject[5];
     public GameManager gm;
+    public bool soundplay = false;
 
     void Awake()
     {
@@ -28,9 +29,9 @@ public class BroomAttack : MonoBehaviour
 
     void Update()
     {
-        if (StatVar.instance.soundplay)
+        if (soundplay)
         {
-            StatVar.instance.soundplay = false;
+            soundplay = false;
             ad.clip = audioB[0];
             ad.Play();
         }

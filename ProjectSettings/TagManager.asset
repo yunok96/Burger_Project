@@ -23,6 +23,8 @@ TagManager:
   - Event
   - Vigor
   - Dialogue
+  - BurIng
+  - GM
   layers:
   - Default
   - TransparentFX

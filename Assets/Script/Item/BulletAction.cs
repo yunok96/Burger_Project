@@ -4,33 +4,38 @@ using UnityEngine;
 
 public class BulletAction : MonoBehaviour
 {
+    BroomAttack ba;
+    void Awake()
+    {
+        ba = GameObject.FindWithTag("Player").GetComponent<BroomAttack>();
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.tag)
         {
             case "Wall":
-                    Destroy(gameObject);
+                    Destroy(this.gameObject);
                 break;
             case "Enemy":
                 {
-                    StatVar.instance.soundplay = true;
+                    ba.soundplay = true;
                     collision.gameObject.GetComponent<EnemyHP>().EneHP--;
-                    Destroy(gameObject);
+                    Destroy(this.gameObject);
                 }
                 break;
             case "SWAT":
                 {
-                    StatVar.instance.soundplay = true;
+                    ba.soundplay = true;
                     collision.gameObject.GetComponent<SWATHP>().SWHP--;
-                    Destroy(gameObject);
+                    Destroy(this.gameObject);
                 }
                 break;
             case "Player":
                 {
-                    StatVar.instance.soundplay = true;
+                    ba.soundplay = true;
                     collision.gameObject.GetComponent<HP>().isBlin = true;
                     collision.gameObject.GetComponent<HP>().health--;
-                    Destroy(gameObject);
+                    Destroy(this.gameObject);
                 }
                 break;
         }
