@@ -16,10 +16,7 @@ public class OrderTableTut : MonoBehaviour
     public GameObject orderUIFood;
     public GameObject orderTableSorted;
     public int deliveryCount = 0;
-
-    public Transform AllDM;
-    DControl dc;
-    DialogueManager dm;
+    public DMTut dm;
 
     //전달완료 후 유아이 제거
     private GameObject[] objectToDestroy;
@@ -106,8 +103,6 @@ public class OrderTableTut : MonoBehaviour
 
     void Start()
     {
-        dc = AllDM.GetComponent<DControl>();
-        dm = AllDM.GetComponent<DialogueManager>();
         foodStack = GameObject.FindGameObjectWithTag("Player").GetComponent<FoodStack>();
         onhand = GameObject.FindGameObjectWithTag("CookPlace").GetComponent<BurgerTut>();
         objectToDestroy = onhand.foodInHerHand;
@@ -118,7 +113,7 @@ public class OrderTableTut : MonoBehaviour
         if (deliveryCount == 1)
         {
             deliveryCount = 0;
-            dc.id = 600;
+            dm.id = 600;
             dm.Action();
         }
         sortTheStackAgain(); //손에든 음식 순서 정리

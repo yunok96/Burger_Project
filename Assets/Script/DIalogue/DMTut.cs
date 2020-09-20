@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
+public class DMTut : MonoBehaviour
 {
     public DialogueMaker dialogueMaker;
     public TypeEffect Talk;

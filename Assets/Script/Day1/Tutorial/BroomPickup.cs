@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class BroomPickup : MonoBehaviour
 {
-    public Transform AllDM;
-    DControl dc;
-    DialogueManager dm;
+    public DMTut dm;
     TutInventory inventory;//플레이어의 인벤토리 스크립트 불러옴
     public bool kikiKanri = false;
     int doIt = 0;
@@ -18,8 +16,6 @@ public class BroomPickup : MonoBehaviour
 
     void Start()
     {
-        dc = AllDM.GetComponent<DControl>();
-        dm = AllDM.GetComponent<DialogueManager>();
         inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<TutInventory>();
     }
     
@@ -34,7 +30,7 @@ public class BroomPickup : MonoBehaviour
             if (doIt == 1)
             {
                 Destroy(block);
-                dc.id = 800;
+                dm.id = 800;
                 dm.Action();
             }
         }
@@ -43,28 +39,28 @@ public class BroomPickup : MonoBehaviour
             dialnum++;
             switch (dialnum) {
                 case 1:
-                    dc.id = 4;
+                    dm.id = 4;
                     break;
                 case 2:
-                    dc.id = 5;
+                    dm.id = 5;
                     break;
                 case 3:
-                    dc.id = 6;
+                    dm.id = 6;
                     break;
                 case 4:
-                    dc.id = 7;
+                    dm.id = 7;
                     break;
                 case 5:
-                    dc.id = 8;
+                    dm.id = 8;
                     break;
             }
             if (dialnum > 5)
-                dc.id = 9;
+                dm.id = 9;
         }
     }
     void OnDestroy()
     {
-        dc.id = 900;
+        dm.id = 900;
         dm.Action();
     }
 

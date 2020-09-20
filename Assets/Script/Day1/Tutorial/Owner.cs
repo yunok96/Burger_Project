@@ -5,24 +5,16 @@ using UnityEngine;
 
 public class Owner : MonoBehaviour
 {
-    public Transform AllDM;
-    DControl dc;
-    DialogueManager dm;
-    public Transform p1;
-    public Transform p2;
+    public DMTut dm;
     public bool start;
     bool next;
-    void Awake()
-    {
-        dc = AllDM.GetComponent<DControl>();
-        dm = AllDM.GetComponent<DialogueManager>();
-    }
+
     void Update()
     {
         if (start)
         {
-            transform.position = Vector3.MoveTowards(transform.position, p1.position, 4f * Time.deltaTime);
-            if (transform.position==p1.position)
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(-3,-1,0), 4f * Time.deltaTime);
+            if (transform.position==new Vector3(-3,-1,0))
             {
                 start = false;
                 next = true;
@@ -30,10 +22,11 @@ public class Owner : MonoBehaviour
         }
         if (next)
         {
-            transform.position = Vector3.MoveTowards(transform.position, p2.position, 4f * Time.deltaTime);
-            if (transform.position == p2.position)
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(2,-1,0), 4f * Time.deltaTime);
+            if (transform.position == new Vector3(-2,-1,0))
             {
-                dc.id = 200;
+                Debug.Log("다음");
+                dm.id = 200;
                 dm.Action();
                 Destroy(this.gameObject);
             }

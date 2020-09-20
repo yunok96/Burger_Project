@@ -6,9 +6,7 @@ using UnityEngine.UI;
 
 public class MoveTutor : MonoBehaviour
 {
-    public Transform AllDM;
-    DControl dc;
-    DialogueManager dm;
+    public DMTut dm;
     public GameObject MoveTutPlayer;
     public GameObject black;
     public OrderTableTut ord;
@@ -18,8 +16,6 @@ public class MoveTutor : MonoBehaviour
 
     void Awake()
     {
-        dc = AllDM.GetComponent<DControl>();
-        dm = AllDM.GetComponent<DialogueManager>();
         bImg = black.GetComponent<Image>();
     }
 
@@ -40,7 +36,7 @@ public class MoveTutor : MonoBehaviour
         {
             cusp.Spawn();
             ord.orderCreate();
-            dc.id = 300;
+            dm.id = 300;
             dm.Action();
             Destroy(this.gameObject);
         }

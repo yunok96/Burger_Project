@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.WSA.Input;
 
-public class TutorialManager : MonoBehaviour
+public class TutGM : MonoBehaviour
 {
     public Transform AllDM;
     DControl dc;
     DialogueManager dm;
+
     BroomAttack ba;
     public bool jujungDown = false;
     bool cd;
     public float dontmove = 0f;//제발 움직이지마
+    public bool plyrMovable = false;
+    public float worldTime;
+
     void Awake()
     {
         dc = AllDM.GetComponent<DControl>();
@@ -21,10 +25,10 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
         ba.FirstBlood = true;
-        //StatVar.instance.time1 = 0f;
-        dc.id = 100;
+        dm.id = 100;
         dm.Action();
     }
+
     void Update()
     {
         if (cd)

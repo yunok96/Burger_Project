@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class BanJackBanJack : MonoBehaviour
 {
-    public Transform AllDM;
-    DControl dc;
-    DialogueManager dm;
+    public DMTut dm;
     SpriteRenderer[] spr=new SpriteRenderer[3];
 
     public bool IsBurgerNavBlink = false;
-
     float blinkTime;
-    void Awake()
-    {
-        dc = AllDM.GetComponent<DControl>();
-        dm = AllDM.GetComponent<DialogueManager>();
-    }
+
     void Start()
     {
         spr = transform.GetComponentsInChildren<SpriteRenderer>();
@@ -59,7 +52,7 @@ public class BanJackBanJack : MonoBehaviour
                 {
                     spr[i].color = new Color(1, 1, 1, 0);
                 }
-                dc.id = 400;
+                dm.id = 400;
                 dm.Action();
             }
         }
