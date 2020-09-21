@@ -5,7 +5,7 @@ using UnityEngine;
 public class BroomPickup : MonoBehaviour
 {
     public DMTut dm;
-    TutInventory inventory;//플레이어의 인벤토리 스크립트 불러옴
+    Inventory inventory;//플레이어의 인벤토리 스크립트 불러옴
     public bool kikiKanri = false;
     int doIt = 0;
     bool playerisOn = false;
@@ -16,7 +16,7 @@ public class BroomPickup : MonoBehaviour
 
     void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<TutInventory>();
+        inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
     }
     
     void Update()

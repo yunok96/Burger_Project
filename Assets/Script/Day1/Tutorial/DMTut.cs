@@ -29,7 +29,7 @@ public class DMTut : MonoBehaviour
     public GameObject InvisibleBlock;
     public GameObject CounterNav;
     public GameObject csp;
-    //SpawnerTut spaw;
+    SpawnerTut spaw;
     BanJackBanJack3 ban3;
     BanJackBanJack4 ban4;
     void Awake()
@@ -37,7 +37,7 @@ public class DMTut : MonoBehaviour
         ban4 = GameObject.Find("ISpawn (25)").GetComponent<BanJackBanJack4>();
         ban3 = GameObject.Find("ISpawn (30)").GetComponent<BanJackBanJack3>();
         Vib = GameObject.FindWithTag("MainCamera").GetComponent<CameraShake>();
-        //spaw = GameObject.FindWithTag("Spawn").GetComponent<SpawnerTut>();
+        spaw = GameObject.FindWithTag("Spawn").GetComponent<SpawnerTut>();
     }
 
     void Update()
@@ -125,12 +125,7 @@ public class DMTut : MonoBehaviour
             }
             else if (talkData.Split(':')[1] == "7")
             {
-                //spaw.SpawnEnemy();
-            }
-            else if (talkData.Split(':')[1] == "8")
-            {
-                Invoke("DelayMove", 0.1f);
-                ban3.IsNavBlink = true;
+                spaw.SpawnEnemy();
             }
             else if (talkData.Split(':')[1] == "8")
             {

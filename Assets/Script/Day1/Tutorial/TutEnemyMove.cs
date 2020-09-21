@@ -11,11 +11,11 @@ public class TutEnemyMove : MonoBehaviour
     bool isNext;
     bool imdone;
     BroomPickup bp;
-    TutGM gm;
+    TutStageControl TSC;
 
     void Awake()
     {
-        gm = GameObject.Find("GM").GetComponent<TutGM>();
+        TSC = GameObject.FindWithTag("GM").GetComponent<TutStageControl>();
         bp = GameObject.FindWithTag("Item").GetComponent<BroomPickup>();
         anim = GetComponent<Animator>();
     }
@@ -47,6 +47,6 @@ public class TutEnemyMove : MonoBehaviour
     }
     void OnDestroy()
     {
-        gm.jujungDown = true;
+        TSC.jujungDown = true;
     }
 }

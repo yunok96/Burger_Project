@@ -4,7 +4,7 @@ using UnityEditor.Experimental.AssetImporters;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.XR.WSA;
 
 public class PlateMoveTut : MonoBehaviour
 {
@@ -25,14 +25,16 @@ public class PlateMoveTut : MonoBehaviour
     public GameObject ABtn;
     public GameObject DBtn;
     public bool Textoff;
+    CookTut ck;
 
     void Awake()
     {
+        ck = GameObject.FindWithTag("CookPlace").GetComponent<CookTut>();
         sr = GetComponent<SpriteRenderer>();
         Col = GetComponent<BoxCollider2D>();
     }
 
-    void Start()
+    void OnEnable()
     {
         CountDone = true;
         isRight = false;
@@ -41,6 +43,11 @@ public class PlateMoveTut : MonoBehaviour
         WaitTime = 2f;
         IngStart = false;
         Textoff = false;
+        ABtn.SetActive(true);
+        DBtn.SetActive(true);
+        sr.sprite = BurSpr[0];
+        Col.offset = new Vector2(0, -4);
+        transform.position = new Vector3(20, -1.2f, 0);
     }
 
     void Update()
@@ -197,7 +204,7 @@ public class PlateMoveTut : MonoBehaviour
 
     void DelScene()
     {
-        StatVar.instance.TutCookSuccess = true;
-        SceneManager.UnloadSceneAsync("TutBurgerGame");
+        ck.resultFood = 4;
+        transform.parent.gameObject.SetActive(false);
     }
 }

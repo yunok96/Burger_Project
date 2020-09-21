@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class BanJackBanJack4 : MonoBehaviour
 {
-    public Transform AllDM;
-    DControl dc;
-    DialogueManager dm;
+    public DMTut dm;
     SpriteRenderer spr;
     public bool IsNavBlink2 = false;
     float blinkTime;
@@ -14,8 +12,6 @@ public class BanJackBanJack4 : MonoBehaviour
     void Awake()
     {
         memo = transform.GetChild(0).gameObject;
-        dc = AllDM.GetComponent<DControl>();
-        dm = AllDM.GetComponent<DialogueManager>();
         spr = GetComponent<SpriteRenderer>();
     }
 
@@ -45,7 +41,7 @@ public class BanJackBanJack4 : MonoBehaviour
                 IsNavBlink2 = false;
                 spr.color = new Color(1, 1, 1, 0);
                 Destroy(memo);
-                dc.id = 1100;
+                dm.id = 1100;
                 dm.Action();
             }
         }

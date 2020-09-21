@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class StorageDoor : MonoBehaviour
 {
-    public Transform AllDM;
-    public int DialCount = 0;
-    DControl dc;
+    public DMTut dm;
+    public GameManager gm;
+    int DialCount = 0;
     bool isTheCharacterOn = false;
 
-    void Awake()
-    {
-        dc = AllDM.GetComponent<DControl>();
-    }
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -26,18 +22,18 @@ public class StorageDoor : MonoBehaviour
     }
     void Update()
     {
-        if(isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return) /*&& StatVar.instance.Movable == true*/)
+        if(isTheCharacterOn == true && Input.GetKeyDown(KeyCode.Return) && gm.plyrMovable)
         {
             DialCount++;
             if (DialCount > 1)
             {
                 if (DialCount == 8)
-                    dc.id = 3;
+                    dm.id = 3;
                 else
-                    dc.id = 2;
+                    dm.id = 2;
             }
             else
-                dc.id = 1;
+                dm.id = 1;
         }
     }
 }

@@ -9,7 +9,6 @@ public class StageController : MonoBehaviour
     public GameObject rd;
     public float rdtime;
     bool once = true;//여기까지 게임 스타트
-    public DialogueManager dm;
     public GameObject broom;
     Inventory inv;
     BroomAttack ba;
@@ -31,10 +30,6 @@ public class StageController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            dm.id = 462;
-        }
         rdtime -= Time.deltaTime;
         if (rdtime < 0.5f)
         {

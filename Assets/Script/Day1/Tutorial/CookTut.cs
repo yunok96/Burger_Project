@@ -22,6 +22,7 @@ public class CookTut : MonoBehaviour
     public int resultFood;
     
     public GameManager gm;
+    int DialCount = 0;
 
     void Start()
     {
@@ -43,7 +44,20 @@ public class CookTut : MonoBehaviour
                     dm.id = 20;
                     break;
                 case 3:
-                    dm.id = 30;
+                    {
+                        DialCount++;
+                        if (DialCount > 7)
+                        {
+                            if (DialCount == 8)
+                                dm.id = 31;
+                            else if (DialCount == 9)
+                                dm.id = 32;
+                            else
+                                dm.id = 33;
+                        }
+                        else
+                            dm.id = 30;
+                    }
                     break;
                 case 4:
                     {
@@ -72,6 +86,4 @@ public class CookTut : MonoBehaviour
             dm.Action();
         }
     }
-    //여기에 ontrigger2D 넣고 자식 오브젝트가 플레이어와 충돌하면 WhichiFood 값 변경하게 바꿈
-    //각각 하면 귀찮으니까
 }

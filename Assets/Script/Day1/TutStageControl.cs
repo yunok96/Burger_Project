@@ -1,29 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.WSA.Input;
 
-public class TutGM : MonoBehaviour
+public class TutStageControl : MonoBehaviour
 {
-    public Transform AllDM;
-    DControl dc;
-    DialogueManager dm;
-
+    GameManager gm;
     BroomAttack ba;
+    public DMTut dm;
+
     public bool jujungDown = false;
     bool cd;
     public float dontmove = 0f;//제발 움직이지마
-    public bool plyrMovable = false;
-    public float worldTime;
 
     void Awake()
     {
-        dc = AllDM.GetComponent<DControl>();
-        dm = AllDM.GetComponent<DialogueManager>();
-        ba = GameObject.FindWithTag("Player").GetComponent<BroomAttack>();
+        gm = GetComponent<GameManager>();
     }
+
     void Start()
     {
+        ba = GameObject.FindWithTag("Player").GetComponent<BroomAttack>();
         ba.FirstBlood = true;
         dm.id = 100;
         dm.Action();
@@ -40,11 +36,11 @@ public class TutGM : MonoBehaviour
                 cd = false;
             }
         }
-        if (jujungDown) 
+        if (jujungDown)
         {
             cd = true;
             jujungDown = false;
-            dc.id = 1000;
+            dm.id = 1000;
             dm.Action();
         }
     }
