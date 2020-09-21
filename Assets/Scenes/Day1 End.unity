@@ -150,13 +150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0616afbb0190b3849a7bb1b5ebafc649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColaSuc: 0
-  FrySuc: 0
-  BurSuc: 0
-  IceSuc: 0
-  Movable: 0
-  time1: 0
-  soundplay: 0
   TutCookSuccess: 0
   TutCookFail: 0
 --- !u!4 &183131303
@@ -4694,7 +4687,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067179431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48ee0fa74a4cfa04d817ed811e389df8, type: 3}
   m_Name: 
@@ -4736,8 +4729,8 @@ MonoBehaviour:
   portRB: {fileID: 1387479827}
   isAction: 0
   talkindex: 0
-  ct: {fileID: 1067179432}
   D1E: {fileID: 1008042520}
+  id: 0
 --- !u!1 &1191683339
 GameObject:
   m_ObjectHideFlags: 0

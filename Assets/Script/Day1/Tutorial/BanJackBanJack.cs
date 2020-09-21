@@ -28,7 +28,6 @@ public class BanJackBanJack : MonoBehaviour
                     {
                         spr[i].color = new Color(1, 1, 1, 1f);
                     }
-                    
                     blinkTime = 0f;
                 }
                 else

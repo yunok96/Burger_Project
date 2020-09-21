@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Day1_End : MonoBehaviour
 {
     DM_Day1End dm;
-    DControl_D1E dc;
     public GameObject DTB;
     Image dtb;
     float fade;
@@ -19,7 +18,6 @@ public class Day1_End : MonoBehaviour
         fade = 1f;
         dtb = DTB.GetComponent<Image>();
         dm = GameObject.FindWithTag("Dialogue").GetComponent<DM_Day1End>();
-        dc = GameObject.FindWithTag("Dialogue").GetComponent<DControl_D1E>();
     }
     void Update()
     {
@@ -46,7 +44,7 @@ public class Day1_End : MonoBehaviour
     }
     void dialStart()
     {
-        dc.id = 1150;
+        dm.id = 1150;
         dm.Action();
     }
     void nextScene()

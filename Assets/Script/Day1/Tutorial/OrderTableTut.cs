@@ -105,7 +105,7 @@ public class OrderTableTut : MonoBehaviour
     {
         foodStack = GameObject.FindGameObjectWithTag("Player").GetComponent<FoodStack>();
         onhand = GameObject.FindGameObjectWithTag("CookPlace").GetComponent<BurgerTut>();
-        objectToDestroy = onhand.foodInHerHand;
+        //objectToDestroy = onhand.foodInHerHand;
     }
 
     void Update()

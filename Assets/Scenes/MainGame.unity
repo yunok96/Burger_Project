@@ -10524,6 +10524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rd: {fileID: 178886534}
   rdtime: 0
+  dm: {fileID: 1067179432}
   broom: {fileID: 2405459639148971924, guid: 9f68e296c5e256544922c87310c46bc3, type: 3}
 --- !u!1 &1016375437
 GameObject:
@@ -10768,7 +10769,7 @@ MonoBehaviour:
   portRB: {fileID: 1387479827}
   isAction: 0
   talkindex: 0
-  ct: {fileID: 1067179434}
+  id: 0
   gm: {fileID: 0}
   ow: {fileID: 0}
   movetut: {fileID: 0}

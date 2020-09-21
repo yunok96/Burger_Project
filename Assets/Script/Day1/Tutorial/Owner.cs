@@ -23,9 +23,8 @@ public class Owner : MonoBehaviour
         if (next)
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(2,-1,0), 4f * Time.deltaTime);
-            if (transform.position == new Vector3(-2,-1,0))
+            if (transform.position == new Vector3(2,-1,0))
             {
-                Debug.Log("다음");
                 dm.id = 200;
                 dm.Action();
                 Destroy(this.gameObject);

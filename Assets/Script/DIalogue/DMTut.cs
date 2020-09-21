@@ -59,11 +59,11 @@ public class DMTut : MonoBehaviour
 
     public void Action()
     {
-        talk(id);
+        talk();
     }
-    void talk(int n)
+    void talk()
     {
-        if (n == 0)
+        if (id == 0)
             return;
         string talkData = "";
         if (Talk.isAnim)
@@ -73,7 +73,7 @@ public class DMTut : MonoBehaviour
         }
         else
         {
-            talkData = dialogueMaker.GetTalk(n, talkindex);
+            talkData = dialogueMaker.GetTalk(id, talkindex);
         }
         if (talkData == null)
         {
@@ -85,7 +85,7 @@ public class DMTut : MonoBehaviour
             portR.color = new Color(1, 1, 1, 0);
             portRB.color = new Color(0, 0, 0, 0);
             talkindex = 0;
-            n = 0;
+            id = 0;
             return;
         }
         else if (talkData.Split(':')[0] == "Event")//이벤트 보여줄때 대화창 일시적으로 숨기기, 움직임은 x
@@ -94,7 +94,7 @@ public class DMTut : MonoBehaviour
             {
                 gm.plyrMovable = true;
             }
-            if (talkData.Split(':')[1] == "1")
+            else if (talkData.Split(':')[1] == "1")
                 ow.GetComponent<Owner>().start = true;
             else if (talkData.Split(':')[1] == "2")
             {
@@ -152,10 +152,9 @@ public class DMTut : MonoBehaviour
             portR.color = new Color(1, 1, 1, 0);
             portRB.color = new Color(0, 0, 0, 0);
             talkindex = 0;
-            n = 0;
+            id = 0;
             return;
         }
-
         else
         {
             Talk.SetMsg(talkData.Split(':')[0]);

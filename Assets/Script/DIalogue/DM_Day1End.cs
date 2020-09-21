@@ -17,20 +17,38 @@ public class DM_Day1End : MonoBehaviour
     public Image portRB;
     public bool isAction;
     public int talkindex;
-    public DControl_D1E ct;
     CameraShake Vib;
     public Day1_End D1E;
+
+    public int id;
     void Awake()
     {
         Vib = GameObject.FindWithTag("MainCamera").GetComponent<CameraShake>();
     }
     public void Action()
     {
-        talk(ct.id);
+        talk();
     }
-    void talk(int id)
+    void Update()
     {
-        if (ct.id == 0)
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+        {
+            Invoke("DelayAction", 0.01f);
+        }
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            Action();
+        }
+    }
+
+    void DelayAction()
+    {
+        Action();
+    }
+
+    void talk()
+    {
+        if (id == 0)
             return;
         string talkData = "";
         if (Talk.isAnim)
@@ -52,7 +70,7 @@ public class DM_Day1End : MonoBehaviour
             portR.color = new Color(1, 1, 1, 0);
             portRB.color = new Color(0, 0, 0, 0);
             talkindex = 0;
-            ct.id = 0;
+            id = 0;
             return;
         }
         else if (talkData.Split(':')[0] == "Event")//이벤트 보여줄때 대화창 일시적으로 숨기기, 움직임은 x
@@ -67,7 +85,7 @@ public class DM_Day1End : MonoBehaviour
             portR.color = new Color(1, 1, 1, 0);
             portRB.color = new Color(0, 0, 0, 0);
             talkindex = 0;
-            ct.id = 0;
+            id = 0;
             return;
         }
 
