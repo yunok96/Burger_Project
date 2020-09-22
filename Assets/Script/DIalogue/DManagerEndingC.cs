@@ -17,20 +17,39 @@ public class DManagerEndingC : MonoBehaviour
     public Image portRB;
     public bool isAction;
     public int talkindex;
-    public DControl_C ct;
     CameraShake Vib;
     public Ending_C ec;
+
+    public int id;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+        {
+            Invoke("DelayAction", 0.01f);
+        }
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            Action();
+        }
+    }
+
+    void DelayAction()
+    {
+        Action();
+    }
+
     void Awake()
     {
         Vib = GameObject.FindWithTag("MainCamera").GetComponent<CameraShake>();
     }
     public void Action()
     {
-        talk(ct.id);
+        talk();
     }
-    void talk(int id)
+    void talk()
     {
-        if (ct.id == 0)
+        if (id == 0)
             return;
         string talkData = "";
         if (Talk.isAnim)
@@ -52,7 +71,7 @@ public class DManagerEndingC : MonoBehaviour
             portR.color = new Color(1, 1, 1, 0);
             portRB.color = new Color(0, 0, 0, 0);
             talkindex = 0;
-            ct.id = 0;
+            id = 0;
             return;
         }
         else if (talkData.Split(':')[0] == "Event")//이벤트 보여줄때 대화창 일시적으로 숨기기, 움직임은 x
@@ -63,6 +82,7 @@ public class DManagerEndingC : MonoBehaviour
             }
             else if (talkData.Split(':')[1] == "1")
             {
+                Debug.Log("게임 종료");
                 SceneManager.LoadScene("StartMenu");
             }
             talkPanel.SetBool("isShow", false);
@@ -71,7 +91,7 @@ public class DManagerEndingC : MonoBehaviour
             portR.color = new Color(1, 1, 1, 0);
             portRB.color = new Color(0, 0, 0, 0);
             talkindex = 0;
-            ct.id = 0;
+            id = 0;
             return;
         }
 
@@ -132,8 +152,4 @@ public class DManagerEndingC : MonoBehaviour
         talkindex++;
     }
 
-    void DelayMove()
-    {
-        //StatVar.instance.Movable = true;
-    }
 }

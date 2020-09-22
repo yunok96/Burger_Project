@@ -28,7 +28,8 @@ public class Day1_End : MonoBehaviour
             if (fade < 0f)
             {
                 isFadeIn = false;
-                Invoke("dialStart", 1f);
+                dm.id = 1150;
+                dm.Action();
             }
         }
         if (isFadeOut)
@@ -41,11 +42,6 @@ public class Day1_End : MonoBehaviour
                 Invoke("nextScene", 1f);
             }
         }
-    }
-    void dialStart()
-    {
-        dm.id = 1150;
-        dm.Action();
     }
     void nextScene()
     {

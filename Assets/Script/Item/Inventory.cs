@@ -71,34 +71,17 @@ public class Inventory : MonoBehaviour
                 selectedItem++;
             else
                 selectedItem = 0;
-            ItemCursor();
-
-            if (slots[selectedItem].transform.Find("BroomUI(Clone)") || slots[selectedItem].transform.Find("PistolUI(Clone)"))
-            {
-                VisibleRange();
-            }
-            else
-            {
-                VisRan.SetActive(false);
-            }   
+            ItemCursor();  
         }
-        if (Input.GetKeyDown(KeyCode.Q) && gm.plyrMovable)
+        else if (Input.GetKeyDown(KeyCode.Q) && gm.plyrMovable)
         {
             if (selectedItem > 0)
                 selectedItem--;
             else
                 selectedItem = slots.Length - 1;
             ItemCursor();
-
-            if (slots[selectedItem].transform.Find("BroomUI(Clone)") || slots[selectedItem].transform.Find("PistolUI(Clone)"))
-            {
-                VisibleRange();
-            }
-            else
-            {
-                VisRan.SetActive(false);
-            }
         }
+        VisRan.SetActive(slots[selectedItem].transform.Find("BroomUI(Clone)") || slots[selectedItem].transform.Find("PistolUI(Clone)"));
 
         if (!isFull[selectedItem])
         {

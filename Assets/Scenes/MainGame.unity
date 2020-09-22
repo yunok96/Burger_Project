@@ -2626,7 +2626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a478629e56373a4fadcaad351c5ebdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeC: 90
+  TimeC: 180
   Timetxt: {fileID: 919059231}
   StartTime: 0
   zaWarudo: 0
@@ -10524,7 +10524,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rd: {fileID: 178886534}
   rdtime: 0
-  dm: {fileID: 1067179432}
   broom: {fileID: 2405459639148971924, guid: 9f68e296c5e256544922c87310c46bc3, type: 3}
 --- !u!1 &1016375437
 GameObject:
@@ -10740,7 +10739,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1067179433}
   - component: {fileID: 1067179432}
-  - component: {fileID: 1067179434}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -10770,14 +10768,7 @@ MonoBehaviour:
   isAction: 0
   talkindex: 0
   id: 0
-  gm: {fileID: 0}
-  ow: {fileID: 0}
-  movetut: {fileID: 0}
-  BurgerNav: {fileID: 0}
-  cooktut: {fileID: 0}
-  InvisibleBlock: {fileID: 0}
-  CounterNav: {fileID: 0}
-  csp: {fileID: 0}
+  gm: {fileID: 1008042520}
 --- !u!4 &1067179433
 Transform:
   m_ObjectHideFlags: 0
@@ -10792,20 +10783,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1067179434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067179431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c04825e6f499b45a20864cd7c501ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  manager: {fileID: 1067179432}
 --- !u!1 &1091248284
 GameObject:
   m_ObjectHideFlags: 0

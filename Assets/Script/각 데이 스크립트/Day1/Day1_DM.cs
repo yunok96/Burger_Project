@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class DM_Day1End : MonoBehaviour
+public class Day1_DM : MonoBehaviour
 {
     public DialogueMaker dialogueMaker;
     public TypeEffect Talk;
@@ -17,19 +17,16 @@ public class DM_Day1End : MonoBehaviour
     public Image portRB;
     public bool isAction;
     public int talkindex;
-    CameraShake Vib;
-    public Day1_End D1E;
-
     public int id;
+
+    CameraShake Vib;
+    public GameManager gm;
 
     void Awake()
     {
         Vib = GameObject.FindWithTag("MainCamera").GetComponent<CameraShake>();
     }
-    public void Action()
-    {
-        talk();
-    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
@@ -47,6 +44,10 @@ public class DM_Day1End : MonoBehaviour
         Action();
     }
 
+    public void Action()
+    {
+        talk();
+    }
     void talk()
     {
         if (id == 0)
@@ -64,7 +65,7 @@ public class DM_Day1End : MonoBehaviour
         if (talkData == null)
         {
             Invoke("DelayMove", 0.1f);//대화 끝나면 이동 가능
-            //StatVar.instance.time1 = 1f;
+            gm.worldTime = 1f;
             talkPanel.SetBool("isShow", false);
             portL.color = new Color(1, 1, 1, 0);
             portLB.color = new Color(0, 0, 0, 0);
@@ -78,7 +79,7 @@ public class DM_Day1End : MonoBehaviour
         {//이후 이벤트 종류
             if (talkData.Split(':')[1] == "0")
             {
-                D1E.isFadeOut = true;
+                gm.plyrMovable = true;
             }
             talkPanel.SetBool("isShow", false);
             portL.color = new Color(1, 1, 1, 0);
@@ -119,14 +120,14 @@ public class DM_Day1End : MonoBehaviour
                     break;
                 case 1:
                     {
-                        portLB.color = new Color(0, 0, 0, 0);
-                        portRB.color = new Color(0, 0, 0, 0.92f);
+                        portLB.color = new Color(0, 0, 0, 0.5f);
+                        portRB.color = new Color(0, 0, 0, 0);
                     }
                     break;
                 case 2:
                     {
                         portLB.color = new Color(0, 0, 0, 0);
-                        portRB.color = new Color(0, 0, 0, 0.92f);
+                        portRB.color = new Color(0, 0, 0, 0.5f);
                     }
                     break;
                 case 3:
@@ -143,12 +144,13 @@ public class DM_Day1End : MonoBehaviour
             }
         }
         talkPanel.SetBool("isShow", true);
-        //StatVar.instance.Movable = false;
+        gm.plyrMovable = false;
+        gm.worldTime = 0f;
         talkindex++;
     }
 
     void DelayMove()
     {
-        //StatVar.instance.Movable = true;
+        gm.plyrMovable = true;
     }
 }

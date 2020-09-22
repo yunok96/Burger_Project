@@ -5,24 +5,33 @@ using UnityEngine.UI;
 
 public class Ending_C : MonoBehaviour
 {
-    DManagerEndingC dm;
-    DControl_C dc;
+    public DManagerEndingC dm;
     public GameObject DTB;
     Image dtb;
-    float fade;
+    float fade = 1f;
     public bool isfade;
-    bool dont;
+    bool firstfade;
 
     void Start()
     {
         dtb = DTB.GetComponent<Image>();
-        dm = GameObject.FindWithTag("Dialogue").GetComponent<DManagerEndingC>();
-        dc = GameObject.FindWithTag("Dialogue").GetComponent<DControl_C>();
-        dc.id = 1200;
-        dm.Action();
+        firstfade = true;
     }
     void Update()
     {
+        if (firstfade)
+        {
+            fade -= Time.deltaTime * 0.5f;
+            dtb.color = new Color(0, 0, 0, fade);
+            if (fade < 0)
+            {
+                firstfade = false;
+                fade = 0f;
+                dm.id = 1200;
+                dm.Action();
+            }
+        }
+
         if (isfade)
         {
             fade += Time.deltaTime * 0.5f;
@@ -33,12 +42,10 @@ public class Ending_C : MonoBehaviour
                 Invoke("Endc", 1f);
             }
         }
-
-
     }
     void Endc()
     {
-        dc.id = 1201;
+        dm.id = 1201;
         dm.Action();
     }
 }
