@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 public class Day2_StageControl : MonoBehaviour
 {
     GameManager gm;
+    public DM_Day2_Game dm;
     
     public GameObject rd;
     public float rdtime;
@@ -12,6 +14,8 @@ public class Day2_StageControl : MonoBehaviour
     public GameObject broom;
     Inventory inv;
     BroomAttack ba;
+    public int jujeongKilled = 0;
+    bool routeB = false;
 
     void Awake()
     {
@@ -46,6 +50,11 @@ public class Day2_StageControl : MonoBehaviour
                 rd.SetActive(false);
                 rdtime = 0f;
             }
+        }
+        if (jujeongKilled > 0)
+        {
+            routeB = true;
+            //다이얼매니저 주정뱅이 살해로 돌리고 실행.
         }
     }
 }

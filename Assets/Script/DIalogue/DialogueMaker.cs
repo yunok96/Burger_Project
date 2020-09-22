@@ -286,7 +286,7 @@ public class DialogueMaker : MonoBehaviour
             "Event:1"
         });
 
-        talkData.Add(462, new string[] {
+        talkData.Add(2000, new string[] {
             "...:0:25:0:0",
             "오늘도 즐거웠어, 자기?:0:25:0:0",
             "그래.:0:25:0:0",

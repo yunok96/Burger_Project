@@ -7251,7 +7251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleAtk: {fileID: 43484564}
-  BulletPre: {fileID: 597294940436897116, guid: da6a5921d271eb74497d80e269bae511,
+  BulletPre: {fileID: 597294940436897116, guid: c032bc9025febf840a375c4147a47655,
     type: 3}
   ad:
   - {fileID: 8300000, guid: 65201ddabb4144f6a8fb9480120b7656, type: 3}
@@ -10524,9 +10524,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad427406788f3484d8b66d34113a08c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dm: {fileID: 1067179432}
   rd: {fileID: 178886534}
   rdtime: 0
   broom: {fileID: 2405459639148971924, guid: 9f68e296c5e256544922c87310c46bc3, type: 3}
+  jujeongKilled: 0
 --- !u!1 &1016375437
 GameObject:
   m_ObjectHideFlags: 0
@@ -10757,7 +10759,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1067179431}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7cbd9a27912174bb57a1f2220c8121, type: 3}
+  m_Script: {fileID: 11500000, guid: 6aa3f6ac7601cd8409adaa35b8220607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueMaker: {fileID: 942307699}
