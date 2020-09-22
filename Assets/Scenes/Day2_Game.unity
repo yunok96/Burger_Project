@@ -3642,6 +3642,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3657,6 +3658,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8291d03643837ab4d9a91633f717ee3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShakeAmount: 0.1
+  canvas: {fileID: 247539505}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -7225,7 +7240,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   FirstBlood: 0
-  PistolPup: {fileID: 5699298574899612895, guid: 46b7d60c1e7b0a349b02fc4d56c819f4,
+  PistolPup: {fileID: 5699298574899612895, guid: ee349da77115f864d9e09344b4992414,
     type: 3}
   audioB:
   - {fileID: 8300000, guid: a37f44cbf8c2a7443a3c361efa2f233a, type: 3}
@@ -10528,6 +10543,7 @@ MonoBehaviour:
   rd: {fileID: 178886534}
   rdtime: 0
   broom: {fileID: 2405459639148971924, guid: 9f68e296c5e256544922c87310c46bc3, type: 3}
+  iGotAGun: 0
   jujeongKilled: 0
 --- !u!1 &1016375437
 GameObject:

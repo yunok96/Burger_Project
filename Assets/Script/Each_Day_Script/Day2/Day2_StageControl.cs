@@ -14,8 +14,11 @@ public class Day2_StageControl : MonoBehaviour
     public GameObject broom;
     Inventory inv;
     BroomAttack ba;
+    public int iGotAGun = 0;
     public int jujeongKilled = 0;
     bool routeB = false;
+    bool dont = false;
+    float dontmove = 0f;//얼음땡
 
     void Awake()
     {
@@ -34,6 +37,7 @@ public class Day2_StageControl : MonoBehaviour
     }
     void Update()
     {
+        //routeB true인 상태로 데이 끝나면 씬 다른걸 불러오게 해야됨
         rdtime -= Time.deltaTime;
         if (rdtime < 0.5f)
         {
@@ -51,10 +55,30 @@ public class Day2_StageControl : MonoBehaviour
                 rdtime = 0f;
             }
         }
-        if (jujeongKilled > 0)
+        if (iGotAGun == 1)
         {
+            dont = true;
+            iGotAGun = 2;
+            dm.id = 2100;
+            dm.Action();
+        }
+        if (jujeongKilled == 1)
+        {
+            dont = true;
+            jujeongKilled = 2;
             routeB = true;
-            //다이얼매니저 주정뱅이 살해로 돌리고 실행.
+            dm.id = 2200;
+            dm.Action();
+        }
+        if (dont)
+        {
+            dontmove += Time.deltaTime;
+            gm.plyrMovable = false;
+            if (dontmove > 1f)
+            {
+                dont = false;
+                dontmove = 0f;
+            }
         }
     }
 }
