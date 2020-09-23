@@ -1,28 +1,73 @@
 fileFormatVersion: 2
-guid: 875890da1ee614841ac80a7e071e8563
+guid: 58c692efd169fab4aa6e4cada3804425
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3491032007491970178
-    second: "DAY\uC2DC\uC791_DAY1ff_0"
+      213: 3495064122906097147
+    second: "DAY\uC2DC\uC791_\uBAA8\uC74C_0"
   - first:
-      213: 8030477353277896603
-    second: "DAY\uC2DC\uC791_DAY1ff_1"
+      213: 3999150153446176287
+    second: "DAY\uC2DC\uC791_\uBAA8\uC74C_1"
   - first:
-      213: 1575443231120857904
-    second: "DAY\uC2DC\uC791_DAY1ff_2"
+      213: 8612853037761531134
+    second: "DAY\uC2DC\uC791_\uBAA8\uC74C_2"
   - first:
-      213: 9052253682893322274
-    second: "DAY\uC2DC\uC791_DAY1ff_3"
+      213: 5563848821583534004
+    second: "DAY\uC2DC\uC791_\uBAA8\uC74C_3"
   - first:
-      213: -1848262949775916769
-    second: "DAY\uC2DC\uC791_DAY1ff_4"
+      213: -8704739023878671190
+    second: "DAY\uC2DC\uC791_\uBAA8\uC74C_4"
   - first:
-      213: 486133072672458325
-    second: "DAY\uC2DC\uC791_DAY1ff_5"
+      213: 4594532688086928954
+    second: "DAY\uC2DC\uC791_\uBAA8\uC74C_5"
   - first:
-      213: -7830627363047147769
-    second: "DAY\uC2DC\uC791_DAY1ff_6"
+      213: 2682996162723267601
+    second: "DAY\uC2DC\uC791_\uBAA8\uC74C_6"
+  - first:
+      213: -7363188788139858471
+    second: "DAY\uC2DC\uC791_\uBAA8\uC74C_7"
+  - first:
+      213: 6526502288993259756
+    second: Day_Intro_UI_0
+  - first:
+      213: 7567315287494486139
+    second: Day_Intro_UI_1
+  - first:
+      213: 1959452806600632139
+    second: Day_Intro_UI_2
+  - first:
+      213: 3640250601296520469
+    second: Day_Intro_UI_3
+  - first:
+      213: -2286175204923221660
+    second: Day_Intro_UI_4
+  - first:
+      213: 3778929988572896326
+    second: Day_Intro_UI_5
+  - first:
+      213: 298375561128016157
+    second: Day_Intro_UI_6
+  - first:
+      213: -170551973211185110
+    second: Day_Intro_UI_0
+  - first:
+      213: 2714929081765698605
+    second: Day_Intro_UI_1
+  - first:
+      213: 986005126539623701
+    second: Day_Intro_UI_2
+  - first:
+      213: -5950687292365675583
+    second: Day_Intro_UI_3
+  - first:
+      213: 9101126630608364883
+    second: Day_Intro_UI_4
+  - first:
+      213: -958822175746109351
+    second: Day_Intro_UI_5
+  - first:
+      213: -8455255827617437845
+    second: Day_Intro_UI_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -108,12 +153,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "DAY\uC2DC\uC791_DAY1ff_0"
+      name: Day_Intro_UI_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1200
-        width: 910
+        y: 1481
+        width: 1000
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -122,19 +167,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7b1ceda2ec5d8fc0800000000000000
-      internalID: -3491032007491970178
+      spriteID: a20610d42e312adf0800000000000000
+      internalID: -170551973211185110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "DAY\uC2DC\uC791_DAY1ff_1"
+      name: Day_Intro_UI_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 1000
-        width: 910
+        y: 1262
+        width: 1000
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,19 +188,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b97b2f20b9cf17f60800000000000000
-      internalID: 8030477353277896603
+      spriteID: d2c95059d9d5da520800000000000000
+      internalID: 2714929081765698605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "DAY\uC2DC\uC791_DAY1ff_2"
+      name: Day_Intro_UI_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 800
-        width: 910
+        y: 1043
+        width: 1000
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,19 +209,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03b90ca85491dd510800000000000000
-      internalID: 1575443231120857904
+      spriteID: 51dbb12407efead00800000000000000
+      internalID: 986005126539623701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "DAY\uC2DC\uC791_DAY1ff_3"
+      name: Day_Intro_UI_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
-        width: 910
+        y: 824
+        width: 1000
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -185,19 +230,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 228f39183c010ad70800000000000000
-      internalID: 9052253682893322274
+      spriteID: 1c3ec198f69ea6da0800000000000000
+      internalID: -5950687292365675583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "DAY\uC2DC\uC791_DAY1ff_4"
+      name: Day_Intro_UI_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 400
-        width: 910
+        y: 605
+        width: 1000
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -206,19 +251,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f114713c3a6a956e0800000000000000
-      internalID: -1848262949775916769
+      spriteID: 35562416372bd4e70800000000000000
+      internalID: 9101126630608364883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "DAY\uC2DC\uC791_DAY1ff_5"
+      name: Day_Intro_UI_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 200
-        width: 910
+        y: 386
+        width: 1000
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -227,19 +272,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 556063634771fb600800000000000000
-      internalID: 486133072672458325
+      spriteID: 950d2ebaf4491b2f0800000000000000
+      internalID: -958822175746109351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "DAY\uC2DC\uC791_DAY1ff_6"
+      name: Day_Intro_UI_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 910
+        y: 167
+        width: 1000
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -248,8 +293,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 707fe19d6e5045390800000000000000
-      internalID: -7830627363047147769
+      spriteID: b67afc56f95e8aa80800000000000000
+      internalID: -8455255827617437845
       vertices: []
       indices: 
       edges: []

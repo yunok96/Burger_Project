@@ -292,7 +292,7 @@ public class DialogueMaker : MonoBehaviour
             "...어디서 퀴퀴한 냄새가 나는데...?:0:6:0:0",
             "어제 주정뱅이들이 토하고 갔나? 그런 냄새는 아닌 것 같긴 한데...:0:6:0:0",
             "이따 알아보자! 일단 일부터!:0:5:0:0",
-            "Event:0"
+            "Event:1"
         });
 
         talkData.Add(2100, new string[] {//총줍
@@ -321,7 +321,6 @@ public class DialogueMaker : MonoBehaviour
             "오늘도 어제만큼 퍼펙트했어.:0:10:0:0",
             "그런데 왜 아직도 퀴퀴한 냄새가 나는 것 같지?:0:6:0:0",
             "어디서 나는지 알아봐야겠어.:0:6:0:0"
-            //이동 가능
         });
         talkData.Add(2301, new string[] {//피웅덩이 조사
             "이건...피인가?:0:4:0:0",
@@ -333,7 +332,7 @@ public class DialogueMaker : MonoBehaviour
             "...점장님은 왜 창고에 들어가지 말라 한 걸까...?:0:6:0:0",
             "...예전부터 생각했지만 모르겠어.:0:6:0:0",
             "빨리 청소하고 빨리 쉬자.:0:6:0:0",
-            "Event:0"//페이드 아웃과 BGM 정지.
+            "Event:1"//페이드 아웃과 BGM 정지.
         });
         talkData.Add(2302, new string[] {//페이드 아웃 이후
             "......:0:0:0:0",
@@ -341,7 +340,7 @@ public class DialogueMaker : MonoBehaviour
             "그러고 보니 나는...:0:0:0:0",
             "여기서 일한 지 얼마나 됐지...?:0:0:0:0",
             "......:0:0:0:0",
-            "Event:1"//A루트 데이3로
+            "Event:2"//A루트 데이3로
         });
 
         talkData.Add(2400, new string[] {//B루트
@@ -351,12 +350,12 @@ public class DialogueMaker : MonoBehaviour
             "일도 더 편하고 재밌었지.:0:10:0:0",
             "아무튼 내일도 오늘처럼 완벽하게!:0:10:0:0",
             "아자 아자!:0:9:0:0",
-            "Event:0"//페이드 아웃
+            "Event:1"//페이드 아웃
         });
         talkData.Add(2401, new string[] {//페이드 아웃 이후
             "......:0:0:0:0",
             "껍데기가 깨졌다.:0:0:0:0",
-            "Event:1"//B루트 데이3로
+            "Event:2"//B루트 데이3로
         });
 
 
