@@ -26,7 +26,6 @@ public class TimeCount : MonoBehaviour
     //일시정지 화면메뉴
     public GameObject[] pMenuOptions = new GameObject[3];
     public int pOptionsHighlight = 0;
-    WaitForSeconds pauseCursorFadeIn = new WaitForSeconds(1.00f);//밝아지는 이펙트 지연시간
 
     public GameManager gm;
 
@@ -46,9 +45,6 @@ public class TimeCount : MonoBehaviour
             pauseMenu.SetActive(true);
             gm.plyrMovable = false;
             Cursor2();
-            // PmenuCursor();
-            //answerSwitch();
-            //GameResume();
         }
         else if (zaWarudo == true && Input.GetKeyDown(KeyCode.Escape))
         {
@@ -59,30 +55,6 @@ public class TimeCount : MonoBehaviour
         }
     }
 
-    private void Cursor1()
-    {
-        Color color1 = pMenuOptions[0].GetComponent<Renderer>().material.color;
-        Color color2 = pMenuOptions[1].GetComponent<Renderer>().material.color;
-        Color color3 = pMenuOptions[2].GetComponent<Renderer>().material.color;
-        Color color = pMenuOptions[pOptionsHighlight].GetComponent<Renderer>().material.color;
-        switch(pOptionsHighlight){
-            case 1:
-                color = Color.black;
-                color2 = Color.black;
-                color3 = Color.black;
-                break;
-            case 2:
-                color = Color.black;
-                color1 = Color.black;
-                color3 = Color.black;
-                break;
-            case 3:
-                color = Color.black;
-                color2 = Color.black;
-                color1 = Color.black;
-                break;
-        }
-    }
 
     private void Cursor2(){
         //Instantiate(postpost, post1.transform, false);
@@ -102,37 +74,6 @@ public class TimeCount : MonoBehaviour
                 break;
         }
     }
-
-
-    // private void PmenuCursor()//선택 효과
-    // {
-    //     StopAllCoroutines();
-        
-        // Color color = pMenuOptions[pOptionsHighlight].GetComponent<Renderer>().material.color;
-        // color = Color.red;
-        // pMenuOptions[pOptionsHighlight].GetComponent<Renderer>().material.color = color;
-        // for (int i = 0; i < pMenuOptions.Length; i++)
-        // {
-        //     pMenuOptions[i].GetComponent<Renderer>().material.color = color;
-        // }
-        // StartCoroutine(CursorHighlight());
-    // }
-
-    // IEnumerator CursorHighlight()//선택칸 밝게
-    // {
-        // Color color1 = pMenuOptions[0].GetComponent<Renderer>().material.color;
-        // Color color2 = pMenuOptions[1].GetComponent<Renderer>().material.color;
-        // Color color3 = pMenuOptions[2].GetComponent<Renderer>().material.color;
-
-        // Color color = pMenuOptions[pOptionsHighlight].GetComponent<Renderer>().material.color;
-
-        // while (color == Color.red)
-        // {
-        //     color = Color.black;
-        //     pMenuOptions[pOptionsHighlight].GetComponent<Renderer>().material.color = color;
-        //     yield return pauseCursorFadeIn;
-        // }
-    // }
 
     private void answerSwitch()
     {

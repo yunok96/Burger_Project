@@ -36,7 +36,11 @@ public class PlayerHP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isBlin)//총알 피격시 깜빡이는 효과-최윤호
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            HPSet();
+        }
+        if (isBlin)//총알 피격시 깜빡이는 효과
         {
             BlinTime += Time.deltaTime;
             Btime += Time.deltaTime;

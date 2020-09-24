@@ -14,6 +14,8 @@ public class StageController : MonoBehaviour
     Inventory inv;
     BroomAttack ba;
     public PlayerHP PlyHP;
+    public GameObject retry;
+    public GameObject cntinu;
 
     public bool end = false;
 
@@ -36,32 +38,34 @@ public class StageController : MonoBehaviour
     {
         if (PlyHP.curHP == 0)
         {
+            curUI.transform.parent.gameObject.SetActive(true);
+            curUI.sprite = announceUI[3];
+            retry.SetActive(true);
             PlyHP.curHP = -1;
             gm.plyrMovable = false;
             gm.worldTime = 0f;
         }
-        if (end)
+        if (retry.activeSelf)
         {
-            end = false;
-            gm.plyrMovable = false;
-            gm.worldTime = 0f;
-            curUI.transform.parent.gameObject.SetActive(true);
-        }
-
-        rdtime -= Time.deltaTime;
-        if (rdtime < 0.5f)
-        {
-            curUI.sprite = announceUI[1];
-            if (once)
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                once = false;
+                Debug.Log("재시작");
+            }
+        }
+        if (once)
+        {
+            rdtime -= Time.deltaTime;
+            if (rdtime < 0.5f)
+            {
+                curUI.sprite = announceUI[1];
                 gm.plyrMovable = true;
                 gm.worldTime = 1f;
-            }
-            if (rdtime < 0f)
-            {
-                curUI.transform.parent.gameObject.SetActive(false);
-                rdtime = 0f;
+                if (rdtime < 0f && once)
+                {
+                    once = false;
+                    curUI.transform.parent.gameObject.SetActive(false);
+                    rdtime = 0f;
+                }
             }
         }
     }

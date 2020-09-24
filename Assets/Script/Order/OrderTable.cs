@@ -19,7 +19,6 @@ public class OrderTable : MonoBehaviour
 
     //전달 스코어 0으로 시작. 최저값/최대값 없음.
     public int deliveryCount = 0;
-    public Text deliveryText;
 
     //유니티에서 테이블 숫자만큼 설정해주고 테이블 겜오브젝트 집어넣기
     //public Animator animator;
