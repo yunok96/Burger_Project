@@ -39,8 +39,7 @@ public class OrderTable : MonoBehaviour
     //다른 스크립트 불러오기
     private FoodStack foodStack;
     private Cook cook;
-    private HP hp;
-    private CustomerSpawn customerSpawn;
+    PlayerHP plyHP;
 
     float CurNextOrderTime;
     public bool[] ActivedOrderList;
@@ -81,35 +80,11 @@ public class OrderTable : MonoBehaviour
                     Destroy(orderTimeSlots[y].transform.GetChild(0).gameObject, 0.1f);
                     Destroy(orderTimeSlots[y].transform.GetChild(1).gameObject, 0.1f);
                     //Destroy(foodStack.dishStacks[i].transform.GetChild(0).gameObject, 0.1f);
-
-                    //손님 손에 음식 들려주기
-
-                    
-
                     break;
                 }
             }
         }
     }
-    //주문이 다르면 체력을 깎으시오 - 기획상 들어가있지는 않지만 후에 생길 수도 있어서 남겨둠
-    /*private void orderDifferent()
-    {
-        for (int i = 0; i < foodStack.dishes.Length; i++)
-        {
-            for (int y = 0; y < orderRequested.Length; y++)
-            {
-                if (foodStack.dishes[i] == orderRequested[y] && orderRequested[y] != 0)
-                {
-                    break;
-                }
-                else
-                {
-                    hp.health -= 1;
-                    break;
-                }
-            }
-        }
-    }*/
 
     private void sortTheStackAgain()//푸드 스택: 빠른 순번 스택이 비었을때 늦은 순번 스택을 가져옴
     {
@@ -126,15 +101,6 @@ public class OrderTable : MonoBehaviour
                 //전달 엔터가 여러번 눌려서 오류 일어나는듯
                 Instantiate(objectToDestroy[y].transform.GetChild(0).gameObject, objectToDestroy[y - 1].transform);
                 Destroy(objectToDestroy[y].transform.GetChild(0).gameObject);
-
-                //작동하는 코드. 위의 코드가 불량일때 부활
-                //objectToDestroy[y].transform.GetChild(0).SetParent(objectToDestroy[y - 1].transform);
-
-                //푸드스택 UI의 순서 변경
-                /*
-                Instantiate(foodStack.dishStacks[y].transform.GetChild(0).gameObject, foodStack.dishStacks[y - 1].transform);
-                Destroy(foodStack.dishStacks[y].transform.GetChild(0).gameObject);
-                */
             }
         }
     }
@@ -175,7 +141,6 @@ public class OrderTable : MonoBehaviour
                 {
                     case 1:
                         Instantiate(orderUIFood[0], orderTableSorted[i].transform, false);
-                        //instantiate(orderRequested[i]UI, orderTableSlots[i], null)
                         break;
                     case 2:
                         Instantiate(orderUIFood[1], orderTableSorted[i].transform, false);
@@ -184,11 +149,6 @@ public class OrderTable : MonoBehaviour
                         Instantiate(orderUIFood[2], orderTableSorted[i].transform, false);
                         break;
                     case 4:
-                        /* 원래코드. 케이스 안 공통함수는 스위치 밖으로 뺐는데 문제생기면 아래의 함수식으로 회귀
-                        Instantiate(orderUIBackground, orderTableSorted[i].transform, false);
-                        여기에 넣어 음식 스프라이트
-                        Instantiate(orderTimeSlotUIBackground, orderTimeSlots[i].transform, false);
-                        Instantiate(orderTimeSlotTextMesh, orderTimeSlots[i].transform, false);*/
                         Instantiate(orderUIFood[3], orderTableSorted[i].transform, false);
                         break;
                 }
@@ -208,8 +168,6 @@ public class OrderTable : MonoBehaviour
             }
         }
     }
-
-
     //주문이 들어왔음에도 시간 내에 해결을 하지 못한 경우
     private void timeOver()
     {
@@ -225,7 +183,7 @@ public class OrderTable : MonoBehaviour
                 Destroy(orderTableSorted[i].transform.GetChild(1).gameObject, 0.1f);
                 Destroy(orderTimeSlots[i].transform.GetChild(0).gameObject, 0.1f);
                 Destroy(orderTimeSlots[i].transform.GetChild(1).gameObject, 0.1f);
-                hp.health -= 1;
+                plyHP.HPSet();
                 break;
             }
         }
@@ -233,10 +191,9 @@ public class OrderTable : MonoBehaviour
 
     void Start()
     {
+        plyHP = GetComponent<PlayerHP>();
         foodStack = GameObject.FindGameObjectWithTag("Player").GetComponent<FoodStack>();
         cook = GameObject.FindGameObjectWithTag("CookPlace").GetComponent<Cook>();
-        hp = GameObject.FindGameObjectWithTag("Player").GetComponent<HP>();
-        customerSpawn = GameObject.FindGameObjectWithTag("Respawn").GetComponent<CustomerSpawn>();
         objectToDestroy = cook.foodInHerHand;
     }
 

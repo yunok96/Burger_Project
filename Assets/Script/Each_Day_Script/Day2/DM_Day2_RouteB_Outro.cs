@@ -88,7 +88,7 @@ public class DM_Day2_RouteB_Outro : MonoBehaviour
             }
             else if (talkData.Split(':')[1] == "2")
             {
-                Debug.Log("루트 B 데이3로");
+                //Debug.Log("루트 B 데이3로");
             }
             talkPanel.SetBool("isShow", false);
             portL.color = new Color(1, 1, 1, 0);
