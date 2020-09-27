@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: c56e595c60c3e6047ac9a5bb768a2b28
+guid: 2d52152e8b2292640a1fadd923cb5e92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6111130862253605299
-    second: Pause_Text_UI_0
+      213: -4648314273411266420
+    second: Exorcist_sprite_0
   - first:
-      213: -1512965969232123648
-    second: Pause_Text_UI_1
+      213: 1893418683002330510
+    second: Exorcist_sprite_1
   - first:
-      213: 4144503692344492426
-    second: Pause_Text_UI_2
+      213: 5881504694366648325
+    second: Exorcist_sprite_2
   - first:
-      213: -6847359744053691884
-    second: Pause_Text_UI_0
+      213: 6292746542786278391
+    second: Exorcist_sprite_3
   - first:
-      213: 5555233634851575605
-    second: Pause_Text_UI_1
+      213: -1020638145691524128
+    second: Exorcist_sprite_4
   - first:
-      213: 2751080474444992953
-    second: Pause_Text_UI_2
+      213: 5124464535252248663
+    second: Exorcist_sprite_5
+  - first:
+      213: 4287991945988818571
+    second: Exorcist_sprite_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -63,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -79,7 +82,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -91,7 +94,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -105,55 +108,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pause_Text_UI_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 334
-        width: 910
-        height: 166
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41abe56779a49f0a0800000000000000
-      internalID: -6847359744053691884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pause_Text_UI_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 167
-        width: 910
-        height: 166
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53751a9de87281d40800000000000000
-      internalID: 5555233634851575605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pause_Text_UI_2
+      name: Exorcist_sprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 910
-        height: 166
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +122,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b19ecb9d1dcd2620800000000000000
-      internalID: 2751080474444992953
+      spriteID: c8881f0dbcedd7fb0800000000000000
+      internalID: -4648314273411266420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exorcist_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d117ba246c64a10800000000000000
+      internalID: 1893418683002330510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exorcist_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5083484ab5d4f9150800000000000000
+      internalID: 5881504694366648325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exorcist_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3f758e3a3545750800000000000000
+      internalID: 6292746542786278391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exorcist_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3e7d99307f5d1f0800000000000000
+      internalID: -1020638145691524128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exorcist_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7582ccf1851cd1740800000000000000
+      internalID: 5124464535252248663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exorcist_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b864664c4f1028b30800000000000000
+      internalID: 4287991945988818571
       vertices: []
       indices: 
       edges: []

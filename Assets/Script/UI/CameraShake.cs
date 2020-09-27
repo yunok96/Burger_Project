@@ -15,7 +15,7 @@ public class CameraShake : MonoBehaviour
     }
     void Start()
     {
-        initialPosition = new Vector3(-4.5f, 0f, -10f);
+        initialPosition = new Vector3(-5.5f, 0f, -10f);
     }
 
     void Update()

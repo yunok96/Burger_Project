@@ -33,8 +33,8 @@ public class BulletAction : MonoBehaviour
             case "Player":
                 {
                     ba.soundplay = true;
-                    collision.gameObject.GetComponent<HP>().isBlin = true;
-                    collision.gameObject.GetComponent<HP>().health--;
+                    collision.gameObject.GetComponent<PlayerHP>().isBlin = true;
+                    collision.gameObject.GetComponent<PlayerHP>().HPSet();
                     Destroy(this.gameObject);
                 }
                 break;

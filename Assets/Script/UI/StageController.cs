@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StageController : MonoBehaviour
@@ -14,10 +15,12 @@ public class StageController : MonoBehaviour
     Inventory inv;
     BroomAttack ba;
     public PlayerHP PlyHP;
-    public GameObject retry;
-    public GameObject cntinu;
-
+    public Text announce;
     public bool end = false;
+    public Timer timer;
+    bool pressEnter = false;
+    float nextDayFade = 0f;
+    public Image DTB;
 
     void Awake()
     {
@@ -39,17 +42,34 @@ public class StageController : MonoBehaviour
         if (PlyHP.curHP == 0)
         {
             curUI.transform.parent.gameObject.SetActive(true);
-            curUI.sprite = announceUI[3];
-            retry.SetActive(true);
-            PlyHP.curHP = -1;
+            curUI.sprite = announceUI[2];
+            announce.gameObject.SetActive(true);
+            announce.text = "Press [Enter] To Retry";
             gm.plyrMovable = false;
             gm.worldTime = 0f;
-        }
-        if (retry.activeSelf)
-        {
             if (Input.GetKeyDown(KeyCode.Return))
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        if (timer.stageClear)
+        {
+            curUI.transform.parent.gameObject.SetActive(true);
+            curUI.sprite = announceUI[3];
+            announce.gameObject.SetActive(true);
+            announce.text = "Press [Enter] To Continue";
+            gm.worldTime = 0f;
+            gm.plyrMovable = false;
+            if (Input.GetKeyDown(KeyCode.Return))
+                pressEnter = true;
+            if (pressEnter)
             {
-                Debug.Log("재시작");
+                nextDayFade += Time.deltaTime;
+                DTB.gameObject.SetActive(true);
+                DTB.color = new Color(0, 0, 0, nextDayFade);
+                if (nextDayFade > 1f)
+                {
+                    nextDayFade = 1f;
+                    Debug.Log("다음 데이로 진행");
+                }
             }
         }
         if (once)

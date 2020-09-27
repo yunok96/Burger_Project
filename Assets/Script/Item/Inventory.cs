@@ -11,20 +11,13 @@ public class Inventory : MonoBehaviour
 
     public GameObject Inv;//자기자신. GetChild로 슬롯들 불러오는 용도
 
-    private WaitForSeconds waitTime = new WaitForSeconds(0.01f);//밝아지는 이펙트 지연시간
+    WaitForSeconds waitTime = new WaitForSeconds(0.01f);//밝아지는 이펙트 지연시간
 
     public GameObject VisRan;
     public GameManager gm;
-    GameObject pl;
-    TimeCount tc;
-    Text txt;
-
-    void Awake()
-    {
-        pl = GameObject.FindWithTag("Player");
-        tc = GameObject.FindWithTag("timer").GetComponent<TimeCount>();
-        txt = transform.GetChild(6).GetComponent<Text>();
-    }
+    public GameObject pl;
+    public Timer tc;
+    public Text txt;
 
     public void ItemCursor()//선택 효과
     {

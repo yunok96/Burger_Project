@@ -27,16 +27,14 @@ public class PlayerHP : MonoBehaviour
         Heart[curHP].SetActive(false);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         curHP = 3;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (Input.GetKeyDown(KeyCode.Y))//디버그 커맨드
         {
             HPSet();
         }
