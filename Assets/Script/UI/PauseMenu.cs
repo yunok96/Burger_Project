@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameManager gm;
     Animator anim;
-    bool pauseOn = false;
+    public bool pauseOn = false;
     public int whereCursor;
     
     void Awake()
@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && gm.plyrMovable)
+        if (Input.GetKeyDown(KeyCode.Escape) && gm.plyrMovable && !pauseOn)
         {
             Invoke("wait", 0.1f);
             anim.SetBool("PauseOn", true);
@@ -78,7 +78,7 @@ public class PauseMenu : MonoBehaviour
 
     void wait()//지연 호출 용도. 지연없으면 버튼 누르자마자 true false 동시에 처리되서 호출이 안됨.
     {
-        pauseOn = (pauseOn == false) ? pauseOn = true : pauseOn = false;
+        pauseOn = (pauseOn == false) ? true : false;
     }
     void resume()
     {
