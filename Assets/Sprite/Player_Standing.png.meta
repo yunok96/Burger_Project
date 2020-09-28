@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: dd5088a6f25585444b94124454447379
+guid: 9a00bb7d49818a840bc5fa53c6bfbea0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3026637010055476449
-    second: SWAT_sprite_0
+      213: -6456087389767536869
+    second: Player_Standing_0
   - first:
-      213: 8863852598567551522
-    second: SWAT_sprite_1
+      213: -4084614041807064729
+    second: Player_Standing_1
   - first:
-      213: -7471025859995213507
-    second: SWAT_sprite_2
+      213: -5061600695620709129
+    second: Player_Standing_2
   - first:
-      213: -5718093886387122001
-    second: SWAT_sprite_3
+      213: -4062874263302806052
+    second: Player_Standing_3
   - first:
-      213: -6076186715120812201
-    second: SWAT_sprite_4
+      213: -875389537383043471
+    second: Player_Standing_4
   - first:
-      213: -6254086208948478585
-    second: SWAT_sprite_5
+      213: -6146660980062207712
+    second: Player_Standing_5
   - first:
-      213: -7788937704779809977
-    second: SWAT_sprite_6
+      213: -7447183405767820640
+    second: Player_Standing_6
   - first:
-      213: -3100733848244722799
-    second: SWAT_sprite_7
+      213: 4821505874322892094
+    second: Player_Standing_7
   - first:
-      213: -6869245136349340736
-    second: SWAT_sprite_8
+      213: 709618983701732083
+    second: Player_Standing_8
   - first:
-      213: 1853353803060960989
-    second: SWAT_sprite_9
+      213: 5255656229323098048
+    second: Player_Standing_9
   - first:
-      213: 6141557937434772806
-    second: SWAT_sprite_10
+      213: 5356618145719672660
+    second: Player_Standing_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,7 +94,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -106,7 +106,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -120,7 +120,175 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SWAT_sprite_0
+      name: Player_Standing_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1fe60e89be5766a0800000000000000
+      internalID: -6456087389767536869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Standing_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76174819b298057c0800000000000000
+      internalID: -4084614041807064729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Standing_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f458ae1cf491c9b0800000000000000
+      internalID: -5061600695620709129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Standing_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd562c03265cd97c0800000000000000
+      internalID: -4062874263302806052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Standing_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ea0309addf9d3f0800000000000000
+      internalID: -875389537383043471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Standing_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02143a0b76ca2baa0800000000000000
+      internalID: -6146660980062207712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Standing_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa760a362a46a890800000000000000
+      internalID: -7447183405767820640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Standing_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 50
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35a9791c0e69e240800000000000000
+      internalID: 4821505874322892094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Standing_8
       rect:
         serializedVersion: 2
         x: 0
@@ -128,20 +296,20 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e438682356c00a20800000000000000
-      internalID: 3026637010055476449
+      spriteID: 3fa5a69b4b219d900800000000000000
+      internalID: 709618983701732083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SWAT_sprite_1
+      name: Player_Standing_9
       rect:
         serializedVersion: 2
         x: 50
@@ -149,20 +317,20 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222ca07c9fab20b70800000000000000
-      internalID: 8863852598567551522
+      spriteID: 0c74f52be77dfe840800000000000000
+      internalID: 5255656229323098048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SWAT_sprite_2
+      name: Player_Standing_10
       rect:
         serializedVersion: 2
         x: 100
@@ -170,182 +338,14 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d316a334095915890800000000000000
-      internalID: -7471025859995213507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SWAT_sprite_3
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa01095f7ef35a0b0800000000000000
-      internalID: -5718093886387122001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SWAT_sprite_4
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75fb648206c0daba0800000000000000
-      internalID: -6076186715120812201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SWAT_sprite_5
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78dd4f08ab50539a0800000000000000
-      internalID: -6254086208948478585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SWAT_sprite_6
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74bf3f0dc6228e390800000000000000
-      internalID: -7788937704779809977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SWAT_sprite_7
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 193e7505efaf7f4d0800000000000000
-      internalID: -3100733848244722799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SWAT_sprite_8
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cb51dc71f98ba0a0800000000000000
-      internalID: -6869245136349340736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SWAT_sprite_9
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dde5192e67f68b910800000000000000
-      internalID: 1853353803060960989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SWAT_sprite_10
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 645c74c97623b3550800000000000000
-      internalID: 6141557937434772806
+      spriteID: 45f580da2d7865a40800000000000000
+      internalID: 5356618145719672660
       vertices: []
       indices: 
       edges: []

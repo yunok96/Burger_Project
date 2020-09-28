@@ -10,7 +10,7 @@ public class StageController : MonoBehaviour
     public Image curUI;
     public Sprite[] announceUI = new Sprite[4];
     public float rdtime;
-    bool once = true;//여기까지 게임 스타트
+    public bool once = true;//여기까지 게임 스타트
     public GameObject broom;
     Inventory inv;
     BroomAttack ba;

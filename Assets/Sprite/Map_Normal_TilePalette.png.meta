@@ -1,0 +1,1520 @@
+fileFormatVersion: 2
+guid: a243db6f253ad754b850ca32be748aab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5523405991090811899
+    second: Map_Normal_TilePalette_0
+  - first:
+      213: -8874582191108298152
+    second: Map_Normal_TilePalette_1
+  - first:
+      213: -5671693268770602693
+    second: Map_Normal_TilePalette_2
+  - first:
+      213: -6700689241487190097
+    second: Map_Normal_TilePalette_3
+  - first:
+      213: 8141706310620757303
+    second: Map_Normal_TilePalette_4
+  - first:
+      213: 2377529522704479995
+    second: Map_Normal_TilePalette_5
+  - first:
+      213: -7441842208300042773
+    second: Map_Normal_TilePalette_6
+  - first:
+      213: 1205239132762840011
+    second: Map_Normal_TilePalette_7
+  - first:
+      213: -2787969747728053326
+    second: Map_Normal_TilePalette_8
+  - first:
+      213: -4302192757779493252
+    second: Map_Normal_TilePalette_9
+  - first:
+      213: 9217135702479129794
+    second: Map_Normal_TilePalette_10
+  - first:
+      213: -4635015173212624384
+    second: Map_Normal_TilePalette_11
+  - first:
+      213: -150301387892442697
+    second: Map_Normal_TilePalette_12
+  - first:
+      213: -4906127720066966390
+    second: Map_Normal_TilePalette_13
+  - first:
+      213: 2909071868986500590
+    second: Map_Normal_TilePalette_14
+  - first:
+      213: 806394477762358821
+    second: Map_Normal_TilePalette_15
+  - first:
+      213: 880963360579912292
+    second: Map_Normal_TilePalette_16
+  - first:
+      213: 3186392573389807594
+    second: Map_Normal_TilePalette_17
+  - first:
+      213: -180472865527461612
+    second: Map_Normal_TilePalette_18
+  - first:
+      213: -7467504724910996296
+    second: Map_Normal_TilePalette_19
+  - first:
+      213: -2327203127609508333
+    second: Map_Normal_TilePalette_20
+  - first:
+      213: 8784940522180886114
+    second: Map_Normal_TilePalette_21
+  - first:
+      213: 8725046718992816845
+    second: Map_Normal_TilePalette_22
+  - first:
+      213: -8517920076776617692
+    second: Map_Normal_TilePalette_23
+  - first:
+      213: 7317888904478824851
+    second: Map_Normal_TilePalette_24
+  - first:
+      213: 3578017096385754302
+    second: Map_Normal_TilePalette_25
+  - first:
+      213: -8524716394591448029
+    second: Map_Normal_TilePalette_26
+  - first:
+      213: -3900082706129577846
+    second: Map_Normal_TilePalette_27
+  - first:
+      213: -9028807511657655235
+    second: Map_Normal_TilePalette_28
+  - first:
+      213: 1680121416951469905
+    second: Map_Normal_TilePalette_29
+  - first:
+      213: -5559520395657116159
+    second: Map_Normal_TilePalette_30
+  - first:
+      213: -1093039453981357077
+    second: Map_Normal_TilePalette_31
+  - first:
+      213: 4164832552456592815
+    second: Map_Normal_TilePalette_32
+  - first:
+      213: 7705185563842371165
+    second: Map_Normal_TilePalette_33
+  - first:
+      213: 5070731148395460129
+    second: Map_Normal_TilePalette_34
+  - first:
+      213: -1843873579798633594
+    second: Map_Normal_TilePalette_35
+  - first:
+      213: -6643870682949833541
+    second: Map_Normal_TilePalette_36
+  - first:
+      213: -2817548866470132095
+    second: Map_Normal_TilePalette_37
+  - first:
+      213: 3155718994473599833
+    second: Map_Normal_TilePalette_38
+  - first:
+      213: -1938695584843095594
+    second: Map_Normal_TilePalette_39
+  - first:
+      213: 721348289839513056
+    second: Map_Normal_TilePalette_40
+  - first:
+      213: 1730808608453573730
+    second: Map_Normal_TilePalette_41
+  - first:
+      213: -1026301661175587734
+    second: Map_Normal_TilePalette_42
+  - first:
+      213: 6316049145155461710
+    second: Map_Normal_TilePalette_43
+  - first:
+      213: -1596993125180806223
+    second: Map_Normal_TilePalette_44
+  - first:
+      213: -2553896943859377025
+    second: Map_Normal_TilePalette_45
+  - first:
+      213: 7164677953313196827
+    second: Map_Normal_TilePalette_46
+  - first:
+      213: 6562840187076095562
+    second: Map_Normal_TilePalette_47
+  - first:
+      213: 4703979282423402116
+    second: Map_Normal_TilePalette_48
+  - first:
+      213: -7539492449913657262
+    second: Map_Normal_TilePalette_49
+  - first:
+      213: -7622058105921929832
+    second: Map_Normal_TilePalette_50
+  - first:
+      213: 5190554603951023717
+    second: Map_Normal_TilePalette_51
+  - first:
+      213: 5171856406413004535
+    second: Map_Normal_TilePalette_52
+  - first:
+      213: -3337559084935919309
+    second: Map_Normal_TilePalette_53
+  - first:
+      213: 8960183612657440095
+    second: Map_Normal_TilePalette_54
+  - first:
+      213: 4530017960028530003
+    second: Map_Normal_TilePalette_55
+  - first:
+      213: -8844493751793959739
+    second: Map_Normal_TilePalette_56
+  - first:
+      213: 8696695230456687203
+    second: Map_Normal_TilePalette_57
+  - first:
+      213: -5597862494503726721
+    second: Map_Normal_TilePalette_58
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf37b311c7417ac40800000000000000
+      internalID: 5523405991090811899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a6bf8448627d480800000000000000
+      internalID: -8874582191108298152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3144ff95091a41b0800000000000000
+      internalID: -5671693268770602693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7dfdaf2ae5203a0800000000000000
+      internalID: -6700689241487190097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d3b1eb0c62df070800000000000000
+      internalID: 8141706310620757303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6fdc3118eaef020800000000000000
+      internalID: 2377529522704479995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be574cba0f349b890800000000000000
+      internalID: -7441842208300042773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_7
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb9ab90b9ed9b010800000000000000
+      internalID: 1205239132762840011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_8
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb422629442f49d0800000000000000
+      internalID: -2787969747728053326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_9
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e8b451b7a8b44c0800000000000000
+      internalID: -4302192757779493252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccc6d04618d9ef70800000000000000
+      internalID: 9217135702479129794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00aad10e14e1dafb0800000000000000
+      internalID: -4635015173212624384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_12
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b93c6d1fa50aedf0800000000000000
+      internalID: -150301387892442697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_13
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c16b615dee9ebb0800000000000000
+      internalID: -4906127720066966390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_14
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5a501b3791f5820800000000000000
+      internalID: 2909071868986500590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_15
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52eacdb4183e03b00800000000000000
+      internalID: 806394477762358821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_16
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4620087428fc93c00800000000000000
+      internalID: 880963360579912292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef97dbc927583c20800000000000000
+      internalID: 3186392573389807594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_18
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41983ae82e4de7df0800000000000000
+      internalID: -180472865527461612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_19
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4012964081e5890800000000000000
+      internalID: -7467504724910996296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e38a2e51d14bfd0800000000000000
+      internalID: -2327203127609508333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26eb68d3cd06ae970800000000000000
+      internalID: 8784940522180886114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_22
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca114e73c7951970800000000000000
+      internalID: 8725046718992816845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_23
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429cf8ee1d44ac980800000000000000
+      internalID: -8517920076776617692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_24
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3999b31df2d5e8560800000000000000
+      internalID: 7317888904478824851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_25
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4f85e879ba7a130800000000000000
+      internalID: 3578017096385754302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_26
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3249d61ea9f12b980800000000000000
+      internalID: -8524716394591448029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_27
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88908a317f10e9c0800000000000000
+      internalID: -3900082706129577846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_28
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d345442a76b33b280800000000000000
+      internalID: -9028807511657655235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_29
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1571bece68df05710800000000000000
+      internalID: 1680121416951469905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106815fd7ad98d2b0800000000000000
+      internalID: -5559520395657116159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_31
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb44f3686eb4d0f0800000000000000
+      internalID: -1093039453981357077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_32
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad9826e3257cc930800000000000000
+      internalID: 4164832552456592815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_33
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5eda4d42715eea60800000000000000
+      internalID: 7705185563842371165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_34
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126be931d1bde5640800000000000000
+      internalID: 5070731148395460129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_35
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683ef599fbe3966e0800000000000000
+      internalID: -1843873579798633594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_36
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbca42980da3cc3a0800000000000000
+      internalID: -6643870682949833541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_37
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1864eb4eb3e06e8d0800000000000000
+      internalID: -2817548866470132095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_38
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9534d8ca4bd5bcb20800000000000000
+      internalID: 3155718994473599833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_39
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d12fc123ae5815e0800000000000000
+      internalID: -1938695584843095594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed383f927eb20a00800000000000000
+      internalID: 721348289839513056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_41
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c30195241150810800000000000000
+      internalID: 1730808608453573730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_42
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c5c35a318d1c1f0800000000000000
+      internalID: -1026301661175587734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_43
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42a6e0db3d17a750800000000000000
+      internalID: 6316049145155461710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_44
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb6bd0c63756d9e0800000000000000
+      internalID: -1596993125180806223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_45
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c5e4cb24cbe8cd0800000000000000
+      internalID: -2553896943859377025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_46
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b4e4173ac0e6360800000000000000
+      internalID: 7164677953313196827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_47
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e2454f064e31b50800000000000000
+      internalID: 6562840187076095562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_48
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ec4af0c34e74140800000000000000
+      internalID: 4703979282423402116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_49
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258282010975e5790800000000000000
+      internalID: -7539492449913657262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_50
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89df22b3982093690800000000000000
+      internalID: -7622058105921929832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_51
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566e4cb59ed880840800000000000000
+      internalID: 5190554603951023717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_52
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe439dffff16c740800000000000000
+      internalID: 5171856406413004535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_53
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339448502bb9ea1d0800000000000000
+      internalID: -3337559084935919309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_54
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5519bac587f85c70800000000000000
+      internalID: 8960183612657440095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_55
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355e3a5655bddde30800000000000000
+      internalID: 4530017960028530003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_56
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccb82afacb024580800000000000000
+      internalID: -8844493751793959739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_57
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a643b2c3ed0b870800000000000000
+      internalID: 8696695230456687203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Normal_TilePalette_58
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f719f9158b56052b0800000000000000
+      internalID: -5597862494503726721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

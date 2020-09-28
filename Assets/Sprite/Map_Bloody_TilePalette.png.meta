@@ -1,0 +1,1376 @@
+fileFormatVersion: 2
+guid: e5099730ed6e4f14cb7d6bf902dab818
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8096324103873237366
+    second: Map_Bloody_TilePalette_0
+  - first:
+      213: -8750043815389210043
+    second: Map_Bloody_TilePalette_1
+  - first:
+      213: -4683806494972058297
+    second: Map_Bloody_TilePalette_2
+  - first:
+      213: 7028080297105314318
+    second: Map_Bloody_TilePalette_3
+  - first:
+      213: 7318016810575615016
+    second: Map_Bloody_TilePalette_4
+  - first:
+      213: 8942828132420957582
+    second: Map_Bloody_TilePalette_5
+  - first:
+      213: 7871021039216875932
+    second: Map_Bloody_TilePalette_6
+  - first:
+      213: -7382854172917444135
+    second: Map_Bloody_TilePalette_7
+  - first:
+      213: 2940154910136468353
+    second: Map_Bloody_TilePalette_8
+  - first:
+      213: 5304435947832954656
+    second: Map_Bloody_TilePalette_9
+  - first:
+      213: 7691635678944635852
+    second: Map_Bloody_TilePalette_10
+  - first:
+      213: 7434388040772637950
+    second: Map_Bloody_TilePalette_11
+  - first:
+      213: -6685724684034466600
+    second: Map_Bloody_TilePalette_12
+  - first:
+      213: 3229696266537782375
+    second: Map_Bloody_TilePalette_13
+  - first:
+      213: -1689718868061965242
+    second: Map_Bloody_TilePalette_14
+  - first:
+      213: 5589600440394736431
+    second: Map_Bloody_TilePalette_15
+  - first:
+      213: -5476066460991071380
+    second: Map_Bloody_TilePalette_16
+  - first:
+      213: 3327395701265708037
+    second: Map_Bloody_TilePalette_17
+  - first:
+      213: -6326985237828964059
+    second: Map_Bloody_TilePalette_18
+  - first:
+      213: 2460064438502547705
+    second: Map_Bloody_TilePalette_19
+  - first:
+      213: 2590827483230683599
+    second: Map_Bloody_TilePalette_20
+  - first:
+      213: 5629896630550061556
+    second: Map_Bloody_TilePalette_21
+  - first:
+      213: 6244106175251054922
+    second: Map_Bloody_TilePalette_22
+  - first:
+      213: -3573097289385158958
+    second: Map_Bloody_TilePalette_23
+  - first:
+      213: 1702404163234041597
+    second: Map_Bloody_TilePalette_24
+  - first:
+      213: -4632115302282822448
+    second: Map_Bloody_TilePalette_25
+  - first:
+      213: -824958257519867015
+    second: Map_Bloody_TilePalette_26
+  - first:
+      213: -208336488836731014
+    second: Map_Bloody_TilePalette_27
+  - first:
+      213: 4408266867030254733
+    second: Map_Bloody_TilePalette_28
+  - first:
+      213: 6693640724065363026
+    second: Map_Bloody_TilePalette_29
+  - first:
+      213: 8718697646230011607
+    second: Map_Bloody_TilePalette_30
+  - first:
+      213: -6815758800209486767
+    second: Map_Bloody_TilePalette_31
+  - first:
+      213: 5758257046744858631
+    second: Map_Bloody_TilePalette_32
+  - first:
+      213: 3183357178464672230
+    second: Map_Bloody_TilePalette_33
+  - first:
+      213: 2820756901379841769
+    second: Map_Bloody_TilePalette_34
+  - first:
+      213: 5528122744249110227
+    second: Map_Bloody_TilePalette_35
+  - first:
+      213: -6816483380989181624
+    second: Map_Bloody_TilePalette_36
+  - first:
+      213: -3159035414649469680
+    second: Map_Bloody_TilePalette_37
+  - first:
+      213: -4578778910190991744
+    second: Map_Bloody_TilePalette_38
+  - first:
+      213: 3302722412731606005
+    second: Map_Bloody_TilePalette_39
+  - first:
+      213: 1158822920450268308
+    second: Map_Bloody_TilePalette_40
+  - first:
+      213: -1720223203966304326
+    second: Map_Bloody_TilePalette_41
+  - first:
+      213: 2795981186223673383
+    second: Map_Bloody_TilePalette_42
+  - first:
+      213: -3945835329724982926
+    second: Map_Bloody_TilePalette_43
+  - first:
+      213: -3258949233779790193
+    second: Map_Bloody_TilePalette_44
+  - first:
+      213: 8855115583022531475
+    second: Map_Bloody_TilePalette_45
+  - first:
+      213: 1813453512241306284
+    second: Map_Bloody_TilePalette_46
+  - first:
+      213: 5043557935281803915
+    second: Map_Bloody_TilePalette_47
+  - first:
+      213: 3294324693716897898
+    second: Map_Bloody_TilePalette_48
+  - first:
+      213: 3835294812232379043
+    second: Map_Bloody_TilePalette_49
+  - first:
+      213: -4308608046519940272
+    second: Map_Bloody_TilePalette_50
+  - first:
+      213: 5705737810629051138
+    second: Map_Bloody_TilePalette_51
+  - first:
+      213: -6832063954562462483
+    second: Map_Bloody_TilePalette_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6711cc550ebeb5070800000000000000
+      internalID: 8096324103873237366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a5f967289919680800000000000000
+      internalID: -8750043815389210043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745e5860fc6cffeb0800000000000000
+      internalID: -4683806494972058297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0252e93bc1c88160800000000000000
+      internalID: 7028080297105314318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82452b64481de8560800000000000000
+      internalID: 7318016810575615016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8532582ece4b1c70800000000000000
+      internalID: 8942828132420957582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99d526ceeb7b3d60800000000000000
+      internalID: 7871021039216875932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_7
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1debaee35da8990800000000000000
+      internalID: -7382854172917444135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_8
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1830e4b20578dc820800000000000000
+      internalID: 2940154910136468353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_9
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 545
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f4564f3642d9940800000000000000
+      internalID: 5304435947832954656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb2731e5ed2eba60800000000000000
+      internalID: 7691635678944635852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef45aa4b8804c2760800000000000000
+      internalID: 7434388040772637950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_12
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc901682d88733a0800000000000000
+      internalID: -6685724684034466600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_13
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cc36b84af22dc20800000000000000
+      internalID: 3229696266537782375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_14
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64434ea54a9ec88e0800000000000000
+      internalID: -1689718868061965242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_15
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23681e4cff329d40800000000000000
+      internalID: 5589600440394736431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_16
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b5232319a1104b0800000000000000
+      internalID: -5476066460991071380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504ba11d2c84d2e20800000000000000
+      internalID: 3327395701265708037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_18
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5217010b2780238a0800000000000000
+      internalID: -6326985237828964059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_19
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 485
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0e385a297e32220800000000000000
+      internalID: 2460064438502547705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1c8448ed774f320800000000000000
+      internalID: 2590827483230683599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1ea123829612e40800000000000000
+      internalID: 5629896630550061556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_22
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 425
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4189a3db7587a650800000000000000
+      internalID: 6244106175251054922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_23
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 365
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6594642fec96ec0800000000000000
+      internalID: -3573097289385158958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe06b5119720a710800000000000000
+      internalID: 1702404163234041597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcf7c0bcab67bfb0800000000000000
+      internalID: -4632115302282822448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_26
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bc00ae5d82d84f0800000000000000
+      internalID: -824958257519867015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_27
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f62253117db1df0800000000000000
+      internalID: -208336488836731014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_28
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84667c0c5f4d2d30800000000000000
+      internalID: 4408266867030254733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_29
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254210c26c694ec50800000000000000
+      internalID: 6693640724065363026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_30
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7def29bc0590ff870800000000000000
+      internalID: 8718697646230011607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_31
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c55ce8b7f8961a0800000000000000
+      internalID: -6815758800209486767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_32
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7000e94864079ef40800000000000000
+      internalID: 5758257046744858631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_33
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 305
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e99397dc7e8d2c20800000000000000
+      internalID: 3183357178464672230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_34
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee1a70f477552720800000000000000
+      internalID: 2820756901379841769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_35
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dec9bdb856d7bc40800000000000000
+      internalID: 5528122744249110227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_36
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84149c2fa7cf661a0800000000000000
+      internalID: -6816483380989181624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_37
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01580f4170ad824d0800000000000000
+      internalID: -3159035414649469680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_38
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086040137d8e470c0800000000000000
+      internalID: -4578778910190991744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_39
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3a69a2980a5dd20800000000000000
+      internalID: 3302722412731606005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_40
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cd4037e47f41010800000000000000
+      internalID: 1158822920450268308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_41
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf34313c1a8028e0800000000000000
+      internalID: -1720223203966304326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_42
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720998b33125dc620800000000000000
+      internalID: 2795981186223673383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_43
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 245
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2795e8d6ca39d39c0800000000000000
+      internalID: -3945835329724982926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_44
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e268340f2e5c2d0800000000000000
+      internalID: -3258949233779790193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_45
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3938513d4b0b3ea70800000000000000
+      internalID: 8855115583022531475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_46
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caad3dd7c5eaa2910800000000000000
+      internalID: 1813453512241306284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_47
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82139068315ef540800000000000000
+      internalID: 5043557935281803915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_48
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a601bc7dadac7bd20800000000000000
+      internalID: 3294324693716897898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_49
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa620cbf44b93530800000000000000
+      internalID: 3835294812232379043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_50
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b0ac64fcfb434c0800000000000000
+      internalID: -4308608046519940272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_51
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2034f08fe4ade2f40800000000000000
+      internalID: 5705737810629051138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_Bloody_TilePalette_52
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 185
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deccd89f702af21a0800000000000000
+      internalID: -6832063954562462483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

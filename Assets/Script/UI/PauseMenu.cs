@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     public GameManager gm;
+    public StageController sc;
     Animator anim;
     public bool pauseOn = false;
     public int whereCursor;
@@ -18,7 +19,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && gm.plyrMovable && !pauseOn)
+        if (Input.GetKeyDown(KeyCode.Escape) && gm.plyrMovable && !pauseOn && !sc.once)
         {
             Invoke("wait", 0.1f);
             anim.SetBool("PauseOn", true);
@@ -47,23 +48,44 @@ public class PauseMenu : MonoBehaviour
                 {
                     case 0:
                         {
-                            //소리 추가
-                            //애니메이션 transform.GetChild(whereCursor).GetComponent<Animator>().SetTrigger("Push");
-                            resume();
+                            transform.GetChild(whereCursor).GetComponent<Animator>().SetTrigger("Resume");
                         }
                         break;
                     case 1:
                         {
-                            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                            transform.GetChild(whereCursor).GetComponent<Animator>().SetTrigger("Retry");
                         }
                         break;
                     case 2:
                         {
-                            SceneManager.LoadScene("StartMenu");
+                            transform.GetChild(whereCursor).GetComponent<Animator>().SetTrigger("Quit");
                         }
                         break;
                 }
+                Invoke("waitBeforeAnim", 0.1f);
             }
+        }
+    }
+
+    void waitBeforeAnim()
+    {
+        switch (whereCursor)
+        {
+            case 0:
+                {
+                    resume();
+                }
+                break;
+            case 1:
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+                break;
+            case 2:
+                {
+                    SceneManager.LoadScene("StartMenu");
+                }
+                break;
         }
     }
 
