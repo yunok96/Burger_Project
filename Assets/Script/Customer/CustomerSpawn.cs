@@ -49,22 +49,22 @@ public class CustomerSpawn : MonoBehaviour
                 switch (i)
                 {
                     case 0:
-                        s1 = new Vector3(-12.1f, 3.5f, 0.0f);
+                        s1 = new Vector3(-12.1f, 3.5f, 0.5f);
                         break;
                     case 1:
-                        s1 = new Vector3(-12.1f, 2.5f, 0.0f);
+                        s1 = new Vector3(-12.1f, 2.5f, 0.4f);
                         break;
                     case 2:
-                        s1 = new Vector3(-12.1f, 1.5f, 0.0f);
+                        s1 = new Vector3(-12.1f, 1.5f, 0.3f);
                         break;
                     case 3:
-                        s1 = new Vector3(-12.1f, -0.5f, 0.0f);
+                        s1 = new Vector3(-12.1f, -0.5f, 0.2f);
                         break;
                     case 4:
-                        s1 = new Vector3(-12.1f, -1.5f, 0.0f);
+                        s1 = new Vector3(-12.1f, -1.5f, 0.1f);
                         break;
                     case 5:
-                        s1 = new Vector3(-12.1f, -2.5f, 0.0f);
+                        s1 = new Vector3(-12.1f, -2.5f, 0f);
                         break;
                 }
                 spawnSlots[i].transform.GetChild(0).position = Vector3.Lerp(spawnSlots[i].transform.GetChild(0).position, s1, 0.1f);

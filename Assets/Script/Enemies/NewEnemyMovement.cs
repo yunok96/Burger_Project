@@ -36,7 +36,7 @@ public class NewEnemyMovement : MonoBehaviour
     {
         if (transform.position == target.position)
         {
-            anim.SetBool("GetPoint", true);
+            anim.SetTrigger("GetTarget");
         }
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, movespeed * Time.deltaTime);//본체가 무브포인터로 움직이는 속도
         if (Vector3.Distance(transform.position, movePoint.position) <= .05f)//무브포인터와 본체의 거리가 가까우면
