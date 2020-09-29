@@ -52,6 +52,7 @@ public class Cook : MonoBehaviour
                     break;
                 }
             }
+            playerMovement.vigorCookTime = 0;
         }
         if (resultFood != 0)
         {
@@ -74,6 +75,7 @@ public class Cook : MonoBehaviour
                     }
                 }
             }
+            playerMovement.vigorCookTime = 1;
         }
     }
 
@@ -81,9 +83,5 @@ public class Cook : MonoBehaviour
     {
         maxFoodCount();
         GenerateFood();
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            playerMovement.hwalgiCount += 10;
-        }
     }
 }

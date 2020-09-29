@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     GameObject vigor;
     Animator anim;
     public GameManager gm;
+    public int vigorCookTime = 1;
 
     void Awake()
     {
@@ -116,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
                 isBoost = false;
             }
         }
-        hwalgiminustime += Time.deltaTime * gm.worldTime;
+        hwalgiminustime += Time.deltaTime * vigorCookTime * gm.worldTime;
         if (hwalgiminustime > 1f)
         {
             hwalgiminustime = 0f;
