@@ -41,12 +41,12 @@ GameObject:
   - component: {fileID: 5638669234155814902}
   - component: {fileID: 4574098742222367124}
   - component: {fileID: 3507035038148861245}
-  - component: {fileID: 1498645739931511267}
   - component: {fileID: 6359472661325692703}
   - component: {fileID: -973705700644241121}
+  - component: {fileID: 2577715591474722721}
   m_Layer: 0
   m_Name: CustomC
-  m_TagString: Finish
+  m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,19 +138,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1498645739931511267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7901403502510892194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d511db30f6fc04a8df73c8c0b793b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWorking: 0
 --- !u!95 &6359472661325692703
 Animator:
   serializedVersion: 3
@@ -186,3 +173,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.1}
   m_Size: {x: 0.5, y: 0.5}
   m_Direction: 0
+--- !u!114 &2577715591474722721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7901403502510892194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8686bf348d14574b875a1c3def45280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGetFood: 0
+  targetTable: {x: 0, y: 0, z: 0}
+  whoIsMe: 0

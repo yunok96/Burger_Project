@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class Cook : MonoBehaviour
 {
+    public GameObject player;
     FoodStack foodStack;
     PlayerMovement playerMovement;
 
@@ -19,10 +20,10 @@ public class Cook : MonoBehaviour
     public GameObject[] minigame = new GameObject[4];
     public GameManager gm;
 
-    void Start()
+    void Awake()
     {
-        foodStack = GameObject.FindGameObjectWithTag("Player").GetComponent<FoodStack>();
-        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        foodStack = player.GetComponent<FoodStack>();
+        playerMovement = player.GetComponent<PlayerMovement>();
     }
 
     void maxFoodCount()

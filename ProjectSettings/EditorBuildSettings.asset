@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainGame.unity
     guid: 2a6ebf28d28f9e94a91ca0278fb44269
   - enabled: 1
-    path: "Assets/Scenes/\uC548\uC4F0\uB294 \uC52C\uB4E4/MainGameSWAT.unity"
+    path: Assets/Scenes/Unused Scenes/MainGameSWAT.unity
     guid: 1e5898caf03c6cb488c5db5f5774a040
   m_configObjects: {}

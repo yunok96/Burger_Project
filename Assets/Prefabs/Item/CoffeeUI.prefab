@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4130545978184095688}
   - component: {fileID: 4130545978184095689}
   m_Layer: 5
-  m_Name: ItemFlowerButton
+  m_Name: CoffeeUI
   m_TagString: Coffee
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
