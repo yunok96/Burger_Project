@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
@@ -13,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float boostTime;
     public int hwalgiCount;
     Text hwalgiValue;
-    GameObject VisibleAtk;
+    public GameObject VisibleAtk;
     SpriteRenderer visA;
     public int ShootWhere;
     public AudioClip[] adc;
@@ -27,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         anim = GetComponent<Animator>();
-        VisibleAtk = transform.GetChild(0).gameObject;
         visA = VisibleAtk.GetComponent<SpriteRenderer>();
         vigor = GameObject.FindWithTag("Vigor");
         hwalgiValue = vigor.transform.GetChild(5).GetComponent<Text>();

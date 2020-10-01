@@ -1,51 +1,47 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class NewEnemySpawner : MonoBehaviour
 {
     public GameObject enemy;
-    public GameObject[] enemySpec;
+    public GameObject[] enemySpec = new GameObject[4];
     public float curEnemySpawnTime;
-    public float maxEnemySpawnTime;
+    public float maxEnemySpawnTime = 5f;
     public Transform[] enemySpawnPoints = new Transform[3];
+    public bool[] alreadyExist = new bool[4];
 
-
-    void Start()
+    public void SpawnEnemy()
     {
-        
-    }
-
-    void Update()
-    {
-        curEnemySpawnTime += Time.deltaTime;
-        if (curEnemySpawnTime > maxEnemySpawnTime)
+        for (int num = 0; num < alreadyExist.Length; num++)
         {
-            curEnemySpawnTime = 0f;
-            int rand = Random.Range(0, 4);
-            enemySpec[rand] = Instantiate(enemy, enemySpawnPoints[Random.Range(0,3)]);
-            switch (rand)
+            if (enemySpec[num] == null)
             {
-                case 0:
-                    {
-                        enemySpec[rand].GetComponent<NewEnemyMovement>().target.position = new Vector3(-8, 1.1f, 0);
-                    }
-                    break;
-                case 1:
-                    {
-
-                    }
-                    break;
-                case 2:
-                    {
-
-                    }
-                    break;
-                case 3:
-                    {
-
-                    }
-                    break;
+                alreadyExist[num] = false;
+            }
+            if (!alreadyExist[num])
+            {
+                enemySpec[num] = Instantiate(enemy, enemySpawnPoints[Random.Range(0, 3)]);
+                if (alreadyExist[num])
+                {
+                    curEnemySpawnTime = 0f;
+                }
+                alreadyExist[num] = true;
+                curEnemySpawnTime = 0f;
+                switch (num)
+                {
+                    case 0:
+                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-8, 1.1f, 0);
+                        break;
+                    case 1:
+                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-7, 0.1f, 0);
+                        break;
+                    case 2:
+                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-3, 1.1f, 0);
+                        break;
+                    case 3:
+                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-4, -0.9f, 0);
+                        break;
+                }
+                break;
             }
         }
     }

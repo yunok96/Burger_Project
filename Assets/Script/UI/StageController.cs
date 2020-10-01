@@ -27,6 +27,14 @@ public class StageController : MonoBehaviour
     float maxCustomerTime = 5f;
     public NewOrder ord;
 
+    public NewEnemySpawner eneSpawn;//적 스폰 관리
+    float curEnemyTime = 0f;
+    float maxEnemyTime = 5f;
+
+    public NewItemSpawner itemSpawn;//아이템 스폰 관리
+    float curItemTime = 0f;
+    float maxItemTime = 15f;
+
     void Awake()
     {
         gm = GetComponent<GameManager>();
@@ -51,9 +59,25 @@ public class StageController : MonoBehaviour
             {
                 ord.CustomerSpawn();
                 curCustomerTime[i] = 0f;
-                maxCustomerTime = 3f;
+                maxCustomerTime = 3f;//이후 기본 손님 스폰시간
             }
         }
+
+        curEnemyTime += Time.deltaTime * gm.worldTime;
+        if (curEnemyTime > maxEnemyTime)
+        {
+            eneSpawn.SpawnEnemy();
+            curEnemyTime = 0f;
+            maxEnemyTime = 5f;//이후 기본 적 스폰시간
+        }
+
+        curItemTime += Time.deltaTime * gm.worldTime;
+        if (curItemTime > maxItemTime)
+        {
+            itemSpawn.ItemSpawn();
+            curItemTime = 0f;
+        }
+
         if (PlyHP.curHP == 0)
         {
             curUI.transform.parent.gameObject.SetActive(true);

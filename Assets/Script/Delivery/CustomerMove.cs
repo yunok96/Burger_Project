@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CustomerMove : MonoBehaviour
 {
@@ -10,6 +8,6 @@ public class CustomerMove : MonoBehaviour
 
     void Update()
     {
-        transform.position = (isGetFood) ? Vector3.MoveTowards(transform.position, new Vector3(-17, transform.position.y, 0), 0.02f) : Vector3.MoveTowards(transform.position, targetTable, 0.02f);
+        transform.position = (isGetFood) ? Vector3.MoveTowards(transform.position, new Vector3(-17, transform.position.y, 0), 3 * Time.deltaTime) : Vector3.MoveTowards(transform.position, targetTable, 3 * Time.deltaTime);
     }
 }
