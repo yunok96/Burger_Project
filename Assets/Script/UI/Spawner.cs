@@ -20,23 +20,12 @@ public class Spawner : MonoBehaviour
     float ItemCurSpawnDelay;
     public GameManager gm;
 
-    //public GameObject BroomPup;
-    //public Transform BSpawnPoint;
-    //public float WCurTime;
-    //public float WMaxTime;
-    //public bool BroomNotYet;
-
     void Awake()
     {
         maxSpawnDelay = 7;
         curSpawnDelay = 0f;
         ItemMaxSpawnDelay = 15f;
         ItemCurSpawnDelay = 0f;
-    }
-    void Start()
-    {
-        //SpawnItem();
-        //BroomNotYet = true;
     }
 
     void Update()
@@ -46,7 +35,7 @@ public class Spawner : MonoBehaviour
         if (curSpawnDelay > maxSpawnDelay)
         {
             SpawnEnemy();
-            curSpawnDelay = 0;//주정뱅이 죽이는거 구현하고 나서 0으로 만드는시점 조절해야됨. 지금은 중복소환 시에도 0됨.
+            curSpawnDelay = 0;
         }
 
         ItemCurSpawnDelay += Time.deltaTime * gm.worldTime;//아이템 소환
@@ -55,15 +44,6 @@ public class Spawner : MonoBehaviour
             SpawnItem();
         }
 
-        /*if (BroomNotYet == true)30초 후 빗자루 스폰 폐기
-        {
-            WCurTime += Time.deltaTime;//빗자루 스폰
-            if (WCurTime > WMaxTime)
-            {
-                Instantiate(BroomPup, BSpawnPoint);
-                BroomNotYet = false;
-            }
-        }*/
         if (enemyObj[0] == null)
         {
             EnemyIsAlive[0] = false;

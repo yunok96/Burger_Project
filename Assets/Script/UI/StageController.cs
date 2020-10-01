@@ -11,6 +11,7 @@ public class StageController : MonoBehaviour
     public Sprite[] announceUI = new Sprite[4];
     public float rdtime;
     public bool once = true;//여기까지 게임 스타트
+
     public GameObject broom;
     Inventory inv;
     BroomAttack ba;
@@ -21,6 +22,10 @@ public class StageController : MonoBehaviour
     bool pressEnter = false;
     float nextDayFade = 0f;
     public Image DTB;
+
+    float[] curCustomerTime = { 0f };//손님 스폰 관리
+    float maxCustomerTime = 5f;
+    public NewOrder ord;
 
     void Awake()
     {
@@ -39,6 +44,16 @@ public class StageController : MonoBehaviour
     }
     void Update()
     {
+        for(int i = 0; i < curCustomerTime.Length; i++) //curTime 개수 늘려서 손님 다중 소환 가능
+        {
+            curCustomerTime[i] += Time.deltaTime * gm.worldTime;
+            if (curCustomerTime[i] > maxCustomerTime)
+            {
+                ord.CustomerSpawn();
+                curCustomerTime[i] = 0f;
+                maxCustomerTime = 3f;
+            }
+        }
         if (PlyHP.curHP == 0)
         {
             curUI.transform.parent.gameObject.SetActive(true);
