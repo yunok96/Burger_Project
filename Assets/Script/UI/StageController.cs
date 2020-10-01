@@ -24,12 +24,12 @@ public class StageController : MonoBehaviour
     public Image DTB;
 
     float[] curCustomerTime = { 0f };//손님 스폰 관리
-    float maxCustomerTime = 5f;
+    float maxCustomerTime = 18f;
     public NewOrder ord;
 
     public NewEnemySpawner eneSpawn;//적 스폰 관리
     float curEnemyTime = 0f;
-    float maxEnemyTime = 5f;
+    float maxEnemyTime = 21f;
 
     public NewItemSpawner itemSpawn;//아이템 스폰 관리
     float curItemTime = 0f;
@@ -59,7 +59,7 @@ public class StageController : MonoBehaviour
             {
                 ord.CustomerSpawn();
                 curCustomerTime[i] = 0f;
-                maxCustomerTime = 3f;//이후 기본 손님 스폰시간
+                maxCustomerTime = 12f;//이후 기본 손님 스폰시간
             }
         }
 
@@ -68,7 +68,7 @@ public class StageController : MonoBehaviour
         {
             eneSpawn.SpawnEnemy();
             curEnemyTime = 0f;
-            maxEnemyTime = 5f;//이후 기본 적 스폰시간
+            maxEnemyTime = 8f;//이후 기본 적 스폰시간
         }
 
         curItemTime += Time.deltaTime * gm.worldTime;

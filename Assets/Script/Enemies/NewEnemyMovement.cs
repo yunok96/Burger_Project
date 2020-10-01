@@ -70,8 +70,8 @@ public class NewEnemyMovement : MonoBehaviour
                     }
                     else
                     {
+                        MoveUD();//위아래 curTime 순서 바꿔줘서 스택오버플로우 막음. 상하를 우선으로 해서 벽에 막힐때 상하 움직일 수 있게 함.
                         curTime = 0f;
-                        MoveUD();
                     }
                 }
             }
@@ -91,8 +91,8 @@ public class NewEnemyMovement : MonoBehaviour
                     }
                     else
                     {
-                        curTime = 0f;
                         MoveUD();
+                        curTime = 0f;
                     }
                 }
             }
