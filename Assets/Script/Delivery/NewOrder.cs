@@ -6,7 +6,6 @@ public class NewOrder : MonoBehaviour
     public GameObject[] customers = new GameObject[3];
     public bool[] isTableOnOrder = { false, false, false, false, false, false };
     public Transform[] customerSpawnPoints = new Transform[6];
-    public Transform[] targetTables;
     public GameObject[] customerSpec = new GameObject[6];
 
     public GameObject[] foodButton = new GameObject[4];
@@ -17,7 +16,7 @@ public class NewOrder : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && whereIsPlayer!=0 && gm.plyrMovable)
+        if (Input.GetKeyDown(KeyCode.Return) && whereIsPlayer!=0 && gm.plyrMovable && customerSpawnPoints[whereIsPlayer - 1].childCount != 0)
         {
             for (int i = 0; i < foodstack.dishes.Length; i++)
             {
