@@ -3,42 +3,32 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    float movespeed;//이동속도
+    float movespeed = 17f;//이동속도
     public Transform movePoint;
     public LayerMask WhatStopMove;
-    public bool isBoost;
-    public float boostTime;
-    public int hwalgiCount;
-    Text hwalgiValue;
+    public bool isBoost = false;
+    public float boostTime = 0f;
     public GameObject VisibleAtk;
     SpriteRenderer visA;
     public int ShootWhere;
     public AudioClip[] adc;
     AudioSource ad;
-    float hwalgiminustime;
-    GameObject vigor;
     Animator anim;
     public GameManager gm;
-    public int vigorCookTime = 1;
+    public Vigor vigor;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
         visA = VisibleAtk.GetComponent<SpriteRenderer>();
-        vigor = GameObject.FindWithTag("Vigor");
-        hwalgiValue = vigor.transform.GetChild(5).GetComponent<Text>();
         ad = GetComponent<AudioSource>();
     }
     void Start()
     {
         movePoint.parent = null;
-        movespeed = 17f;//기본 이동속도
-        boostTime = 0f;
-        isBoost = false;
         VisibleAtk.GetComponent<Transform>();
         VisibleAtk.transform.position = transform.position + new Vector3(0f, -1f, 0f);
         ShootWhere = 3;
-        hwalgiCount = 30;
     }
 
     void Update()
@@ -57,10 +47,7 @@ public class PlayerMovement : MonoBehaviour
                     ad.clip = adc[2];
                     ad.Play();
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-                    if (hwalgiCount < 99)
-                    {
-                        hwalgiCount++;
-                    }
+                    vigor.VigorPlus();
                 }
             }
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
@@ -74,10 +61,7 @@ public class PlayerMovement : MonoBehaviour
                     ad.clip = adc[2];
                     ad.Play();
                     movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
-                    if (hwalgiCount < 99)
-                    {
-                        hwalgiCount++;
-                    }
+                    vigor.VigorPlus();
                 }
             }
             switch (ShootWhere)
@@ -96,7 +80,6 @@ public class PlayerMovement : MonoBehaviour
                     break;
             }
         }
-        
 
         if (Vector3.Distance(transform.position, movePoint.position) <= 0.001f)
         {
@@ -113,37 +96,11 @@ public class PlayerMovement : MonoBehaviour
                 isBoost = false;
             }
         }
-        hwalgiminustime += Time.deltaTime * vigorCookTime * gm.worldTime;
-        if (hwalgiminustime > 1f)
-        {
-            hwalgiminustime = 0f;
-            hwalgiCount--;
-        }
-        hwalgiValue.text = hwalgiCount.ToString();
-        if (hwalgiCount > 99)
-            hwalgiCount = 99;
-        if (hwalgiCount > 19)
-        {
-            vigor.transform.GetChild(1).gameObject.SetActive(true);
-            if (hwalgiCount > 39)
-            {
-                vigor.transform.GetChild(2).gameObject.SetActive(true);
-                if (hwalgiCount > 59)
-                {
-                    vigor.transform.GetChild(3).gameObject.SetActive(true);
-                    if (hwalgiCount > 79)
-                        vigor.transform.GetChild(4).gameObject.SetActive(true);
-                    else
-                        vigor.transform.GetChild(4).gameObject.SetActive(false);
-                }
-                else
-                    vigor.transform.GetChild(3).gameObject.SetActive(false);
-            }
-            else
-                vigor.transform.GetChild(2).gameObject.SetActive(false);
-        }
+
+        if (vigor.vigorCount == 0)
+            anim.SetBool("Exhausted", true);
         else
-            vigor.transform.GetChild(1).gameObject.SetActive(false);
+            anim.SetBool("Exhausted", false);
     }
     
     void OnCollisionEnter2D(Collision2D collision)

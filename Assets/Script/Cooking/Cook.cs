@@ -6,9 +6,8 @@ using UnityEngine;
 
 public class Cook : MonoBehaviour
 {
-    public GameObject player;
-    FoodStack foodStack;
-    PlayerMovement playerMovement;
+    public FoodStack foodStack;
+    public Vigor vigor;
 
     public GameObject[] foodButton2; //손에 들려줄 스프라이트
     public GameObject[] foodInHerHand;//주인공 손에 들려줄 스프라이트 스택
@@ -18,29 +17,9 @@ public class Cook : MonoBehaviour
     public GameObject[] minigame = new GameObject[4];
     public GameManager gm;
 
-    void Awake()
+    void Update()
     {
-        foodStack = player.GetComponent<FoodStack>();
-        playerMovement = player.GetComponent<PlayerMovement>();
-    }
-
-    void maxFoodCount()
-    {
-        if (playerMovement.hwalgiCount < 20)
-            maxFood = 1;
-        else if (playerMovement.hwalgiCount >= 20 && playerMovement.hwalgiCount < 40)
-            maxFood = 2;
-        else if (playerMovement.hwalgiCount >= 40 && playerMovement.hwalgiCount < 60)
-            maxFood = 3;
-        else if (playerMovement.hwalgiCount >= 60 && playerMovement.hwalgiCount < 80)
-            maxFood = 4;
-        else if (playerMovement.hwalgiCount >= 80)
-            maxFood = 5;
-    }
-
-    void GenerateFood() //음식 만들기. int 1 감튀, 2 아이스, 3 음료, 4 햄버거
-    {
-        if (whichFood!=0 && Input.GetKeyDown(KeyCode.Return) && gm.plyrMovable)//음식 미니게임
+        if (whichFood != 0 && Input.GetKeyDown(KeyCode.Return) && gm.plyrMovable)//음식 미니게임
         {
             for (int i = 0; i < maxFood; i++)//손에 비어있는 자리가 있나 확인
             {
@@ -48,10 +27,10 @@ public class Cook : MonoBehaviour
                 {
                     gm.plyrMovable = false;
                     minigame[whichFood - 1].SetActive(true);
+                    vigor.vigorCookTime = 0;
                     break;
                 }
             }
-            playerMovement.vigorCookTime = 0;
         }
         if (resultFood != 0)
         {
@@ -74,13 +53,18 @@ public class Cook : MonoBehaviour
                     }
                 }
             }
-            playerMovement.vigorCookTime = 1;
+            vigor.vigorCookTime = 1;
         }
-    }
 
-    void Update()
-    {
-        maxFoodCount();
-        GenerateFood();
+        if (vigor.vigorCount < 20)
+            maxFood = 1;
+        else if (vigor.vigorCount >= 20 && vigor.vigorCount < 40)
+            maxFood = 2;
+        else if (vigor.vigorCount >= 40 && vigor.vigorCount < 60)
+            maxFood = 3;
+        else if (vigor.vigorCount >= 60 && vigor.vigorCount < 80)
+            maxFood = 4;
+        else if (vigor.vigorCount >= 80)
+            maxFood = 5;
     }
 }

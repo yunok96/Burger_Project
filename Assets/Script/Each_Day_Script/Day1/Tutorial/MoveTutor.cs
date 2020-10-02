@@ -11,6 +11,7 @@ public class MoveTutor : MonoBehaviour
     public GameObject black;
     public OrderTableTut ord;
     public CustomerSpawnTut cusp;
+    public Vigor vigor;
     Image bImg;
     float blinkTime;
 
@@ -32,7 +33,7 @@ public class MoveTutor : MonoBehaviour
             else
                 bImg.color = new Color(0, 0, 0, 0f);
         }
-        if (MoveTutPlayer.GetComponent<PlayerMovement>().hwalgiCount == 34)
+        if (vigor.vigorCount == 34)
         {
             cusp.Spawn();
             ord.orderCreate();

@@ -16,6 +16,7 @@ public class Inventory : MonoBehaviour
     public GameObject VisRan;
     public GameManager gm;
     public GameObject pl;
+    public Vigor vigor;
     public Timer tc;
     public Text txt;
 
@@ -114,7 +115,7 @@ public class Inventory : MonoBehaviour
                             break;
                         case "Choco":
                             {
-                                pl.GetComponent<PlayerMovement>().hwalgiCount += 10;
+                                vigor.vigorCount += 10;
                                 isFull[selectedItem] = false;
                                 Destroy(slots[selectedItem].transform.GetChild(0).gameObject);
                             }

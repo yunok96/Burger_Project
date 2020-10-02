@@ -1422,12 +1422,12 @@ GameObject:
   - component: {fileID: 272734178}
   - component: {fileID: 272734177}
   m_Layer: 5
-  m_Name: HOrange
+  m_Name: VOrange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &272734176
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2068,12 +2068,12 @@ GameObject:
   - component: {fileID: 318266045}
   - component: {fileID: 318266044}
   m_Layer: 5
-  m_Name: HYellow
+  m_Name: VYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &318266043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2322,7 +2322,6 @@ MonoBehaviour:
   - {fileID: 631871498}
   - {fileID: 290078032}
   - {fileID: 1502623898}
-  targetTables: []
   customerSpec:
   - {fileID: 0}
   - {fileID: 0}
@@ -4194,12 +4193,12 @@ GameObject:
   - component: {fileID: 723741134}
   - component: {fileID: 723741133}
   m_Layer: 5
-  m_Name: HRed
+  m_Name: VRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &723741132
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5730,12 +5729,12 @@ GameObject:
   - component: {fileID: 805532266}
   - component: {fileID: 805532265}
   m_Layer: 5
-  m_Name: HGreen
+  m_Name: VGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &805532264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6331,7 +6330,6 @@ MonoBehaviour:
     m_Bits: 13568
   isBoost: 0
   boostTime: 0
-  hwalgiCount: 0
   VisibleAtk: {fileID: 43484564}
   ShootWhere: 0
   adc:
@@ -6339,7 +6337,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
   gm: {fileID: 1008042520}
-  vigorCookTime: 1
+  vigor: {fileID: 1351112769}
 --- !u!114 &838330901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6737,7 +6735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1db03dd0d464747850ee12921f6fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 838330895}
+  foodStack: {fileID: 838330904}
+  vigor: {fileID: 1351112769}
   foodButton2:
   - {fileID: 2175986176444516380, guid: 678ccdeebcb66d745b185ee3aee6b5ef, type: 3}
   - {fileID: 2930199296378765826, guid: 66d2c06b38fc00d45a295b132ab9c525, type: 3}
@@ -9124,6 +9123,7 @@ MonoBehaviour:
   VisRan: {fileID: 43484564}
   gm: {fileID: 1008042520}
   pl: {fileID: 838330895}
+  vigor: {fileID: 1351112769}
   tc: {fileID: 919059235}
   txt: {fileID: 1668984004}
 --- !u!114 &1091248287
@@ -10382,8 +10382,9 @@ GameObject:
   - component: {fileID: 1351112766}
   - component: {fileID: 1351112768}
   - component: {fileID: 1351112767}
+  - component: {fileID: 1351112769}
   m_Layer: 5
-  m_Name: Hwalgi
+  m_Name: Vigor
   m_TagString: Vigor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10451,6 +10452,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351112765}
   m_CullTransparentMesh: 0
+--- !u!114 &1351112769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351112765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45da1316618c8f24b949dce4942c0e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vigorCount: 30
+  lights:
+  - {fileID: 1791050664}
+  - {fileID: 805532265}
+  - {fileID: 318266044}
+  - {fileID: 272734177}
+  - {fileID: 723741133}
+  vigorCookTime: 1
+  hwalgiValue: {fileID: 1718337334}
+  gm: {fileID: 1008042520}
 --- !u!1 &1354495791
 GameObject:
   m_ObjectHideFlags: 0
@@ -12377,7 +12400,7 @@ GameObject:
   - component: {fileID: 1718337335}
   - component: {fileID: 1718337334}
   m_Layer: 5
-  m_Name: HwalgiValue
+  m_Name: VigorText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12434,7 +12457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 30
 --- !u!222 &1718337335
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12642,7 +12665,7 @@ GameObject:
   - component: {fileID: 1791050665}
   - component: {fileID: 1791050664}
   m_Layer: 5
-  m_Name: HBlue
+  m_Name: VBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
