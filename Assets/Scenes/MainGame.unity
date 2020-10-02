@@ -2311,9 +2311,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 1008042520}
   customers:
-  - {fileID: 3993737070448737000, guid: 1e61587b69b6faf4ebbec445b8d67dc2, type: 3}
-  - {fileID: 287870738528126550, guid: 3b3be8b1190594e48840b8f0853ea484, type: 3}
-  - {fileID: 7901403502510892194, guid: 1a5938336a61c0245a957686ed8b5803, type: 3}
+  - {fileID: 3993737070448737000, guid: 5570f8f076539e240b45af93c8d7f238, type: 3}
+  - {fileID: 3993737070448737000, guid: d13ec4d0665b7204b857dff8a66fa267, type: 3}
+  - {fileID: 3993737070448737000, guid: 6604840823e174240813614598993c13, type: 3}
   isTableOnOrder: 000000000000
   customerSpawnPoints:
   - {fileID: 1648897325}
