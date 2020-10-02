@@ -11,9 +11,9 @@ public class PlayerHP : MonoBehaviour
     public GameObject[] Heart = new GameObject[3];//체력 UI
     public GameManager gm;//시간 정지 및 이동 불가
 
-    float BlinTime;//체력 떨어질때 깜빡임 효과
-    float Btime;
-    public bool isBlin;
+    float BlinTime = 0f;//체력 떨어질때 깜빡임 효과
+    float Btime = 0f;
+    public bool isBlin = false;
     SpriteRenderer spr;
 
     void Awake()
@@ -21,23 +21,8 @@ public class PlayerHP : MonoBehaviour
         spr = GetComponent<SpriteRenderer>();
     }
 
-    public void HPSet()
-    {
-        curHP--;
-        Heart[curHP].SetActive(false);
-    }
-
-    void Start()
-    {
-        curHP = 3;
-    }
-
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))//디버그 커맨드
-        {
-            HPSet();
-        }
         if (isBlin)//총알 피격시 깜빡이는 효과
         {
             BlinTime += Time.deltaTime;
@@ -62,5 +47,11 @@ public class PlayerHP : MonoBehaviour
                 spr.color = new Color(1, 1, 1, 1);
             }
         }
+    }
+
+    public void HPSet()//외부에서 체력 떨어질때 사용
+    {
+        curHP--;
+        Heart[curHP].SetActive(false);
     }
 }

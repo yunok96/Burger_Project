@@ -176,7 +176,7 @@ public class PlateMove : MonoBehaviour
                     DBtn.SetActive(false);
                     sr.sprite = BurSpr[7];
                     BurText.text = "성공!";
-                    Invoke("DelScene", 1f);
+                    Invoke("DelScene", 0.5f);
                 }
                 break;
         }

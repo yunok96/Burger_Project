@@ -89,7 +89,7 @@ public class Icecream : MonoBehaviour
             {
                 IceText.text = "늦었어...";
                 IceControl = false;
-                Invoke("DelScene", 1f);
+                Invoke("DelScene", 0.5f);
             }
 
             if(WhichBtn == 0)
@@ -110,7 +110,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -139,7 +139,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -168,7 +168,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -197,7 +197,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -221,7 +221,7 @@ public class Icecream : MonoBehaviour
                                 IceText.text = "성공!";
                                 IceControl = false;
                                 suc = true;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -229,7 +229,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -255,7 +255,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -285,7 +285,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -314,7 +314,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -343,7 +343,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
@@ -367,7 +367,7 @@ public class Icecream : MonoBehaviour
                                 IceControl = false;
                                 IceText.text = "성공!";
                                 suc = true;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
 
@@ -376,7 +376,7 @@ public class Icecream : MonoBehaviour
                             {
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
-                                Invoke("DelScene", 1f);
+                                Invoke("DelScene", 0.5f);
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }

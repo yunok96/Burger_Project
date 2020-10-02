@@ -23,7 +23,7 @@ public class FailBurger : MonoBehaviour
             D.SetActive(false);
             pm.BurText.text = "바닥에 떨어졌어...";
             Destroy(collision.gameObject);
-            Invoke("DelScene", 1f);
+            Invoke("DelScene", 0.5f);
         }
     }
     void DelScene()

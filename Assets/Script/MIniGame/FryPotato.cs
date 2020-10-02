@@ -32,6 +32,7 @@ public class FryPotato : MonoBehaviour
         EnterBtn.SetActive(true);
         suc = false;
         Btime = 0f;
+        anim.SetInteger("FryPower", 0);
     }
 
     void Update()
@@ -90,7 +91,7 @@ public class FryPotato : MonoBehaviour
             EnterBtn.SetActive(false);
             anim.SetInteger("FryPower", 0);
             FryPower = -1f;
-            Invoke("DelScene", 1f);
+            Invoke("DelScene", 0.5f);
         }
         else if (FryPower > 20f)
         {
@@ -100,7 +101,7 @@ public class FryPotato : MonoBehaviour
             EnterBtn.SetActive(false);
             suc = true;
             FryPower = 15f;
-            Invoke("DelScene", 1f);
+            Invoke("DelScene", 0.5f);
         }
     }
 

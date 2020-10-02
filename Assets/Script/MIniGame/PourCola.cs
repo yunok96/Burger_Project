@@ -65,7 +65,7 @@ public class PourCola : MonoBehaviour
                 anim.SetBool("ColaOver", true);
                 ColaText.text = "콜라가 넘쳤다...";
                 ColaControl = false;
-                Invoke("DelScene", 1f);
+                Invoke("DelScene", 0.5f);
             }
         }
         if (ColaControl == true && Input.GetKeyUp(KeyCode.Return))
@@ -75,7 +75,7 @@ public class PourCola : MonoBehaviour
                 EnterBtn.SetActive(false);
                 ColaControl = false;
                 ColaText.text = "콜라가 너무 적다...";
-                Invoke("DelScene", 1f);
+                Invoke("DelScene", 0.5f);
             }
             else if (ColaMinTime < CurColaTime && CurColaTime < ColaOverTime)
             {
@@ -83,7 +83,7 @@ public class PourCola : MonoBehaviour
                 ColaControl = false;
                 suc = true;
                 ColaText.text = "성공!";
-                Invoke("DelScene", 1f);
+                Invoke("DelScene", 0.5f);
             }
             CurColaTime = 0f;
         }
