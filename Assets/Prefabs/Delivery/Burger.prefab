@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8985982132957962313}
   - component: {fileID: 4906971673132610764}
   m_Layer: 0
-  m_Name: "\uD584\uBC84\uAC70"
+  m_Name: Burger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -6
-  m_Sprite: {fileID: 21300000, guid: 90b194ab79e33f1439a23d802794638e, type: 3}
+  m_Sprite: {fileID: 5362735838549604449, guid: 59f650a54c0942d4fb3f92da17778d89,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
