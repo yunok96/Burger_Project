@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: bcbe1d8cfef417f44aad9e1d1d9f5ace
+guid: 73d1747133e4cad4cae87d0910b9477b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8033092973025764044
-    second: Items_0
+      213: -2757128001550900393
+    second: "\uC544\uC774\uD15C_0"
   - first:
-      213: 4337684191699249041
-    second: Items_1
+      213: -348955801822287661
+    second: "\uC544\uC774\uD15C_1"
   - first:
-      213: -488721925442295091
-    second: Items_2
+      213: 4288400894635634347
+    second: "\uC544\uC774\uD15C_2"
   - first:
-      213: -7573354855677281409
-    second: Items_3
+      213: -2105475514727776350
+    second: "\uC544\uC774\uD15C_3"
   - first:
-      213: 1801263428120863714
-    second: Items_4
+      213: 7386897897365675869
+    second: "\uC544\uC774\uD15C_4"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Items_0
+      name: "\uC544\uC774\uD15C_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -116,14 +116,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc223e07f774b7f60800000000000000
-      internalID: 8033092973025764044
+      spriteID: 753a643c0b6bcb9d0800000000000000
+      internalID: -2757128001550900393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_1
+      name: "\uC544\uC774\uD15C_1"
       rect:
         serializedVersion: 2
         x: 50
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 197af025acc823c30800000000000000
-      internalID: 4337684191699249041
+      spriteID: 3d8221e0c82482bf0800000000000000
+      internalID: -348955801822287661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_2
+      name: "\uC544\uC774\uD15C_2"
       rect:
         serializedVersion: 2
         x: 100
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dca21188ff5b739f0800000000000000
-      internalID: -488721925442295091
+      spriteID: bae693b84e5738b30800000000000000
+      internalID: 4288400894635634347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_3
+      name: "\uC544\uC774\uD15C_3"
       rect:
         serializedVersion: 2
         x: 150
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7b306552e906e690800000000000000
-      internalID: -7573354855677281409
+      spriteID: 2af3e55bc29d7c2e0800000000000000
+      internalID: -2105475514727776350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_4
+      name: "\uC544\uC774\uD15C_4"
       rect:
         serializedVersion: 2
         x: 200
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e3eb0c5b8f5ff810800000000000000
-      internalID: 1801263428120863714
+      spriteID: d5f9f8c0088838660800000000000000
+      internalID: 7386897897365675869
       vertices: []
       indices: 
       edges: []

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 743922782475782076}
   - component: {fileID: 743922782475782079}
   - component: {fileID: 743922782475782074}
+  - component: {fileID: -6312132592590463856}
   m_Layer: 11
   m_Name: CoffeePickup
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -9
-  m_Sprite: {fileID: -488721925442295091, guid: bcbe1d8cfef417f44aad9e1d1d9f5ace,
+  m_Sprite: {fileID: 4288400894635634347, guid: 73d1747133e4cad4cae87d0910b9477b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -108,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &743922782475782074
 MonoBehaviour:
@@ -124,3 +125,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 4130545978184095691, guid: 9729bace679583b47b61aef0298d077c,
     type: 3}
+--- !u!95 &-6312132592590463856
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743922782475782078}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8ad5aa4bf9f5074996accda4127886c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

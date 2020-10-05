@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3448905751396958647}
   - component: {fileID: 3448905751396958648}
   - component: {fileID: 3448905751396958649}
+  - component: {fileID: 1993579661522014309}
   m_Layer: 11
   m_Name: CandyPickup
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -9
-  m_Sprite: {fileID: -7573354855677281409, guid: bcbe1d8cfef417f44aad9e1d1d9f5ace,
+  m_Sprite: {fileID: -2105475514727776350, guid: 73d1747133e4cad4cae87d0910b9477b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -108,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &3448905751396958649
 MonoBehaviour:
@@ -124,3 +125,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 7463285452825202463, guid: 4f2e95ef3fe8e6e47a2b75f8489c6957,
     type: 3}
+--- !u!95 &1993579661522014309
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3448905751396958650}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8ad5aa4bf9f5074996accda4127886c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
