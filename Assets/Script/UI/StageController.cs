@@ -24,16 +24,16 @@ public class StageController : MonoBehaviour
     public Image DTB;
 
     float[] curCustomerTime = { 0f };//손님 스폰 관리
-    float maxCustomerTime = 18f;
+    public float maxCustomerTime = 18f;
     public NewOrder ord;
 
     public NewEnemySpawner eneSpawn;//적 스폰 관리
     float curEnemyTime = 0f;
-    float maxEnemyTime = 21f;
+    public float maxEnemyTime = 21f;
 
     public NewItemSpawner itemSpawn;//아이템 스폰 관리
     float curItemTime = 0f;
-    float maxItemTime = 15f;
+    public float maxItemTime = 15f;
 
     void Awake()
     {

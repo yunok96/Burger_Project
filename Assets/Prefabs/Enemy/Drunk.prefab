@@ -58,8 +58,9 @@ GameObject:
   - component: {fileID: 6900690300353647509}
   - component: {fileID: 3956569837142235810}
   - component: {fileID: 1809061271568238205}
+  - component: {fileID: 3440308789050111552}
   m_Layer: 10
-  m_Name: Enemy 1
+  m_Name: Drunk
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,7 +186,8 @@ MonoBehaviour:
   WhatStopMove:
     serializedVersion: 2
     m_Bits: 1792
-  target: {fileID: 6769672663106253003, guid: df105c173a7ff3e499c0e9dfef02a4c2, type: 3}
+  target: {x: 0, y: 0, z: 0}
+  whereIsPistol: {fileID: 0}
 --- !u!114 &1809061271568238205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,3 +201,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EneHP: 0
+--- !u!50 &3440308789050111552
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3396781452166257258}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

@@ -10,6 +10,7 @@ public class NewEnemyMovement : MonoBehaviour
     float maxTime;
     public Vector3 target;
     GameManager gm;
+    public Transform whereIsPistol;
 
     void Awake()
     {
@@ -25,6 +26,13 @@ public class NewEnemyMovement : MonoBehaviour
     void OnEnable()
     {
         curTime = 0f;
+    }
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "ItemField")
+        {
+            whereIsPistol = collision.transform;
+        }
     }
 
     void Update()

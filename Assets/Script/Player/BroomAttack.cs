@@ -60,7 +60,7 @@ public class BroomAttack : MonoBehaviour
                             if (!FirstBlood)
                             {
                                 FirstBlood = true;
-                                Instantiate(PistolPup, PistolSpawnPointR, transform.rotation);
+                                Instantiate(PistolPup, HitEnemy.GetComponent<NewEnemyMovement>().whereIsPistol);
                             }
                         }
                     }
@@ -83,7 +83,7 @@ public class BroomAttack : MonoBehaviour
                             if (!FirstBlood)
                             {
                                 FirstBlood = true;
-                                Instantiate(PistolPup, PistolSpawnPointL, transform.rotation);
+                                Instantiate(PistolPup, HitEnemy.GetComponent<NewEnemyMovement>().whereIsPistol);
                             }
                         }
                     }
@@ -105,7 +105,7 @@ public class BroomAttack : MonoBehaviour
                             if (!FirstBlood)
                             {
                                 FirstBlood = true;
-                                Instantiate(PistolPup, PistolSpawnPointU, transform.rotation);
+                                Instantiate(PistolPup, HitEnemy.GetComponent<NewEnemyMovement>().whereIsPistol);
                             }
                         }
                     }
@@ -127,7 +127,7 @@ public class BroomAttack : MonoBehaviour
                             if (!FirstBlood)
                             {
                                 FirstBlood = true;
-                                Instantiate(PistolPup, PistolSpawnPointD, transform.rotation);
+                                Instantiate(PistolPup, HitEnemy.GetComponent<NewEnemyMovement>().whereIsPistol);
                             }
                         }
                     }

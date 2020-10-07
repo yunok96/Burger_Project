@@ -25,6 +25,7 @@ TagManager:
   - BurIng
   - GM
   - Table
+  - ItemField
   layers:
   - Default
   - TransparentFX
