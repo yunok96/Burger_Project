@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: f84b5a7651a6ab74396fc10aadeecf31
+guid: e445d7b9a8ca911498380e6a65470016
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8033092973025764044
-    second: Items_0
+      213: -6056449517887073965
+    second: Vigor_Sprite_0
   - first:
-      213: 4337684191699249041
-    second: Items_1
+      213: -5557416599853201101
+    second: Vigor_Sprite_1
   - first:
-      213: -488721925442295091
-    second: Items_2
+      213: 6861755463922500755
+    second: Vigor_Sprite_0
   - first:
-      213: -7573354855677281409
-    second: Items_3
-  - first:
-      213: 1801263428120863714
-    second: Items_4
+      213: -6944252353151453622
+    second: Vigor_Sprite_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -76,7 +73,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -88,7 +85,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -102,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Items_0
+      name: Vigor_Sprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 50
-        height: 50
+        width: 48
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc223e07f774b7f60800000000000000
-      internalID: 8033092973025764044
+      spriteID: 39442b24d3ad93f50800000000000000
+      internalID: 6861755463922500755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_1
+      name: Vigor_Sprite_1
       rect:
         serializedVersion: 2
         x: 50
         y: 0
-        width: 50
-        height: 50
+        width: 48
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,71 +134,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 197af025acc823c30800000000000000
-      internalID: 4337684191699249041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Items_2
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dca21188ff5b739f0800000000000000
-      internalID: -488721925442295091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Items_3
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7b306552e906e690800000000000000
-      internalID: -7573354855677281409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Items_4
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e3eb0c5b8f5ff810800000000000000
-      internalID: 1801263428120863714
+      spriteID: a46bcbbe64f01af90800000000000000
+      internalID: -6944252353151453622
       vertices: []
       indices: 
       edges: []

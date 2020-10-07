@@ -41,8 +41,6 @@ public class PlateMove : MonoBehaviour
         ABtn.SetActive(true);
         DBtn.SetActive(true);
         sr.sprite = BurSpr[0];
-        Col.offset = new Vector2(0, -4);
-        transform.position = new Vector3(20, -1.2f, 0);
     }
 
     void Update()
@@ -108,66 +106,66 @@ public class PlateMove : MonoBehaviour
 
         switch (collision.gameObject.name)
         {
-            case "BD 1(Clone)":
+            case "B1(Clone)":
                 {
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[1];
-                    Col.offset += new Vector2(0f, 0.5f);
+                    Col.offset += new Vector2(0f, 0.05f);
                     int Point = Random.Range(0, 9);
                     Instantiate(BurIng[1], SpawnPoint[Point]);
                 }
                 break;
-            case "M 2(Clone)":
+            case "B2(Clone)":
                 {
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[2];
-                    Col.offset += new Vector2(0f, 0.5f);
+                    Col.offset += new Vector2(0f, 0.05f);
 
                     int Point = Random.Range(0, 9);
                     Instantiate(BurIng[2], SpawnPoint[Point]);
                 }
                 break;
-            case "C 3(Clone)":
+            case "B3(Clone)":
                 {
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[3];
-                    Col.offset += new Vector2(0f, 0.2f);
+                    Col.offset += new Vector2(0f, 0.02f);
 
                     int Point = Random.Range(0, 9);
                     Instantiate(BurIng[3], SpawnPoint[Point]);
                 }
                 break;
-            case "M 4(Clone)":
+            case "B4(Clone)":
                 {
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[4];
-                    Col.offset += new Vector2(0f, 0.5f);
+                    Col.offset += new Vector2(0f, 0.05f);
 
                     int Point = Random.Range(0, 9);
                     Instantiate(BurIng[4], SpawnPoint[Point]);
                 }
                 break;
-            case "T 5(Clone)":
+            case "B5(Clone)":
                 {
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[5];
-                    Col.offset += new Vector2(0f, 0.3f);
+                    Col.offset += new Vector2(0f, 0.03f);
 
                     int Point = Random.Range(0, 9);
                     Instantiate(BurIng[5], SpawnPoint[Point]);
                 }
                 break;
-            case "L 6(Clone)":
+            case "B6(Clone)":
                 {
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[6];
-                    Col.offset += new Vector2(0f, 0.3f);
+                    Col.offset += new Vector2(0f, 0.03f);
 
                     int Point = Random.Range(0, 9);
                     Instantiate(BurIng[6], SpawnPoint[Point]);
                 }
                 break;
-            case "BU 7(Clone)":
+            case "B7(Clone)":
                 {
                     BurControl = false;
                     Textoff = false;

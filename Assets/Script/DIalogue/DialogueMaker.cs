@@ -414,18 +414,18 @@ public class DialogueMaker : MonoBehaviour
             "그럼, 오늘도 시작해볼까:0:11:0:0"
             //데이 시작
         });
-        talkData.Add(3005, new string[] {
+        talkData.Add(3006, new string[] {
             //데이49 클리어
             "오늘도 끝났다!:0:9:0:0",
             "창고로 가서 고기가 잘 있나 확인해 볼까?:0:9:0:0"
             //이벤트 삽입
         });
-        talkData.Add(3006, new string[] {
+        talkData.Add(3007, new string[] {
             //이벤트 후
             "어떤 버러지가 시간 분별 못하고 처들어온거지?:0:11:0:0"
             //이벤트 삽입
         });
-        talkData.Add(3007, new string[] {
+        talkData.Add(3008, new string[] {
             //이벤트 후
             "이 파리 새끼들은 어디서 기어 들어오는거지?:0:11:0:0",
             "까불었으면 벌을 받아야지?:0:11:0:0",
@@ -433,7 +433,7 @@ public class DialogueMaker : MonoBehaviour
             "만찬을 즐겨볼까?:0:11:0:0"
             //이벤트 삽입
         });
-        talkData.Add(3008, new string[] {
+        talkData.Add(3009, new string[] {
             //이벤트 후
             "…:0:0:0:0", //???가 말하는 중. CG출력 없다고 함.
             "아아…:0:0:0:0",
@@ -442,7 +442,7 @@ public class DialogueMaker : MonoBehaviour
             "시작의 끝이 다가온다.:0:0:0:0"//나레이션 대사.
             //데이 종료
         });
-        talkData.Add(3009, new string[] {
+        talkData.Add(3010, new string[] {
             //데이??? 맵 피범벅, 버거걸 피범벅_피폐
             //암전 -> 페이드인
             "…:0:20:0:0", // (cg: 갈구)
@@ -451,16 +451,16 @@ public class DialogueMaker : MonoBehaviour
             "…:0:20:0:0"
             //데이 시작
         });
-        talkData.Add(3010, new string[] {
+        talkData.Add(3011, new string[] {
             //데이??? 클리어
             //아무 대사 없이 이벤트로 시작
         });
-        talkData.Add(3011, new string[] {
+        talkData.Add(3012, new string[] {
             //이벤트 후
             "…?:0:20:0:0"
             //이벤트 시작
         });
-        talkData.Add(3012, new string[] {
+        talkData.Add(3013, new string[] {
             //이벤트 후
             "… 누구세요?:0:20:0:0",
             "도대체 어떻게 여기를?:0:20:0:0",
@@ -480,7 +480,7 @@ public class DialogueMaker : MonoBehaviour
             "평범한 사람인데…:0:0:0:0" //시나리오에 cg가 안들어가 잇음. 의도?
             //이벤트 시작
         });
-        talkData.Add(3013, new string[] {
+        talkData.Add(3014, new string[] {
             //이벤트 후
             "좋.은. 취.향.을.:28:34:1:0",
             "가졌을 뿐이야.:28:34:1:0",
@@ -491,13 +491,13 @@ public class DialogueMaker : MonoBehaviour
             "여자의 어머니에게는 미안하지만:29:34:2:0"
             //이벤트 시작
         });
-        talkData.Add(3014, new string[] {
+        talkData.Add(3015, new string[] {
             //이벤트 후
             "죽어줘야겠어:29:34:2:0",
             "너 같은 쓰레기를 살려둘 수는 없지:29:34:2:0"
             //이벤트 시작
         });
-        talkData.Add(3015, new string[] {
+        talkData.Add(3016, new string[] {
             //이벤트 후
             "여태까지 많은 사람들의 피를 마셔왔다면:0:0:0:0", //???대사. 시나리오에 cg없는 부분
             "이제 너가 그 피를 다 토해내야 하네:0:0:0:0",
@@ -527,7 +527,7 @@ public class DialogueMaker : MonoBehaviour
             "후후후:25:14:2:0"
             //선택지 이벤트
         });
-        talkData.Add(3016, new string[] {
+        talkData.Add(3017, new string[] {
             //이벤트 후
             "….:25:14:1:0",
             "나를…:25:14:1:0",
@@ -546,7 +546,7 @@ public class DialogueMaker : MonoBehaviour
             //"아아… (cg:광기_피범벅애니메이션)" //애니메이션 처리
             //이벤트 시작
         });
-        talkData.Add(3017, new string[] {
+        talkData.Add(3018, new string[] {
             //이벤트 후
             "뭣…?:30:0:0:0",
             "죽지 않았잖아…?:30:0:0:0",
@@ -559,7 +559,7 @@ public class DialogueMaker : MonoBehaviour
             "조금만 버텨줘…:30:21:0:0"
             //이벤트 시작
         });
-        talkData.Add(3018, new string[] {
+        talkData.Add(3019, new string[] {
             //이벤트 후
             "자기, 이제 우리 둘뿐이야…:0:21:0:0",
             "우리 둘이서 이 낙원을:0:21:0:0",
