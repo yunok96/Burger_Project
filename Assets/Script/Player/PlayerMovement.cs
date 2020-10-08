@@ -55,6 +55,10 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetTrigger("Neutral");
                 VisibleAtk.transform.position = transform.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                 ShootWhere = Input.GetAxisRaw("Vertical") == 1f ? 2 : 3;
+                if (ShootWhere == 3)
+                {
+                    anim.SetTrigger("MoveUD");
+                }
                 visA.color = new Color(1, 1, 1, 0);
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, WhatStopMove))
                 {

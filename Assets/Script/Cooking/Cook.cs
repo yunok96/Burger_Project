@@ -32,7 +32,7 @@ public class Cook : MonoBehaviour
                 }
                 else if (foodStack.dishes[i] != 0 && i == maxFood - 1)
                 {
-                    vigor.shakeVigor();
+                    vigor.shakeVigor();//쉐킷베베
                 }
             }
         }
