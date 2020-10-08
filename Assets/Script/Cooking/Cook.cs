@@ -30,6 +30,10 @@ public class Cook : MonoBehaviour
                     vigor.vigorCookTime = 0;
                     break;
                 }
+                else if (foodStack.dishes[i] != 0 && i == maxFood - 1)
+                {
+                    vigor.shakeVigor();
+                }
             }
         }
         if (resultFood != 0)

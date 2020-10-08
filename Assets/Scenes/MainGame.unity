@@ -11294,6 +11294,7 @@ MonoBehaviour:
   vigorCookTime: 1
   hwalgiValue: {fileID: 1718337334}
   gm: {fileID: 1008042520}
+  shaketime: 0
 --- !u!1 &1354495791
 GameObject:
   m_ObjectHideFlags: 0

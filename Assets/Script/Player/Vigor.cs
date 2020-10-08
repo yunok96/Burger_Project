@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using JetBrains.Annotations;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Vigor : MonoBehaviour
@@ -9,11 +10,15 @@ public class Vigor : MonoBehaviour
     public int vigorCookTime = 1;
     public Text hwalgiValue;
     public GameManager gm;
+    //흔들림 구현
+    Vector3 initial;
+    public float shaketime;
 
     void Start()
     {
         vigorCount = 30;
         lights[0].color = new Color(1, 1, 1, 1);
+        initial = transform.position;
     }
 
     void Update()
@@ -31,6 +36,26 @@ public class Vigor : MonoBehaviour
         lights[2].color = (vigorCount > 39) ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
         lights[3].color = (vigorCount > 59) ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
         lights[4].color = (vigorCount > 79) ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
+
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            shakeVigor();
+        }
+        if (shaketime > 0)
+        {
+            transform.position = Random.insideUnitSphere * 0.1f + initial;
+            shaketime -= Time.deltaTime;
+        }
+        else
+        {
+            shaketime = 0f;
+            transform.position = initial;
+        }
+    }
+    public void shakeVigor()
+    {
+        shaketime = 0.2f;
     }
 
     public void VigorPlus()
