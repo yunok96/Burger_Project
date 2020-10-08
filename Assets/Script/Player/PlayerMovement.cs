@@ -38,12 +38,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
-                anim.SetTrigger("Neutral");
                 VisibleAtk.transform.position = transform.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                 ShootWhere = Input.GetAxisRaw("Horizontal") == 1f ? 0 : 1;
                 visA.color = new Color(1, 1, 1, 0);
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, WhatStopMove))
                 {
+                    MoveAnim();
                     ad.clip = adc[2];
                     ad.Play();
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
@@ -52,16 +52,12 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
-                anim.SetTrigger("Neutral");
                 VisibleAtk.transform.position = transform.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                 ShootWhere = Input.GetAxisRaw("Vertical") == 1f ? 2 : 3;
-                if (ShootWhere == 3)
-                {
-                    anim.SetTrigger("MoveUD");
-                }
                 visA.color = new Color(1, 1, 1, 0);
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, WhatStopMove))
                 {
+                    MoveAnim();
                     ad.clip = adc[2];
                     ad.Play();
                     movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
@@ -119,5 +115,35 @@ public class PlayerMovement : MonoBehaviour
             movePoint.position += new Vector3(0f, 1f, 0f);
             transform.position += new Vector3(0f, 1f, 0f);
         }
+    }
+
+    void MoveAnim()//이동 함수. 나중에 피폐랑 피범벅 나오면 주석 해제하고 메소드 안에 변수 넣던지 해서 바꾸면 될듯
+    {
+        /*if (member_variable)
+        {
+            anim.SetTrigger("Neutral"); 노말 제외 이동할때 사용할 애니메이션
+        }*/
+        switch (ShootWhere)
+        {
+            case 0:
+                anim.SetTrigger("MoveRight");
+                break;
+            case 1:
+                anim.SetTrigger("MoveLeft");
+                break;
+            case 2:
+                anim.SetTrigger("MoveUp");
+                break;
+            case 3:
+                anim.SetTrigger("MoveDown");
+                break;
+        }
+    }
+    public void ResultSprite(bool isClear)
+    {
+        if (isClear)
+            anim.SetInteger("Clear", 1);
+        else
+            anim.SetInteger("Clear", -1);
     }
 }

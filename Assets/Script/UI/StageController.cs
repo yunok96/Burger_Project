@@ -16,6 +16,7 @@ public class StageController : MonoBehaviour
     Inventory inv;
     BroomAttack ba;
     public PlayerHP PlyHP;
+    public PlayerMovement PlyMov;
     public Text announce;
     public bool end = false;
     public Timer timer;
@@ -86,6 +87,7 @@ public class StageController : MonoBehaviour
             announce.text = "Press [Enter] To Retry";
             gm.plyrMovable = false;
             gm.worldTime = 0f;
+            PlyMov.ResultSprite(false);
             if (Input.GetKeyDown(KeyCode.Return))
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -97,6 +99,7 @@ public class StageController : MonoBehaviour
             announce.text = "Press [Enter] To Continue";
             gm.worldTime = 0f;
             gm.plyrMovable = false;
+            PlyMov.ResultSprite(true);
             if (Input.GetKeyDown(KeyCode.Return))
                 pressEnter = true;
             if (pressEnter)

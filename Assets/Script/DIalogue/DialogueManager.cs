@@ -15,10 +15,10 @@ public class DialogueManager : MonoBehaviour
     public Image portLB;
     public Image portR;
     public Image portRB;
-    public bool isAction;
     public int talkindex;
     public int id;
 
+    public Animator[] anim;
     CameraShake Vib;
     public GameManager gm;
 
@@ -73,6 +73,7 @@ public class DialogueManager : MonoBehaviour
             portRB.color = new Color(0, 0, 0, 0);
             talkindex = 0;
             id = 0;
+            DisappearUI(false);
             return;
         }
         else if (talkData.Split(':')[0] == "Event")//이벤트 보여줄때 대화창 일시적으로 숨기기, 움직임은 x
@@ -88,6 +89,7 @@ public class DialogueManager : MonoBehaviour
             portRB.color = new Color(0, 0, 0, 0);
             talkindex = 0;
             id = 0;
+            DisappearUI(false);
             return;
         }
 
@@ -144,9 +146,18 @@ public class DialogueManager : MonoBehaviour
             }
         }
         talkPanel.SetBool("isShow", true);
+        //UI들 bool값 바꾸기
+        DisappearUI(true);
+
         gm.plyrMovable = false;
         gm.worldTime = 0f;
         talkindex++;
+    }
+
+    void DisappearUI(bool on)//UI 안보이게 감추는 함수, true가 감춤.
+    {
+        for (int i = 0; i < anim.Length; i++)
+            anim[i].SetBool("OnDial", on);
     }
 
     void DelayMove()

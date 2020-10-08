@@ -7313,6 +7313,7 @@ GameObject:
   - component: {fileID: 919059231}
   - component: {fileID: 919059234}
   - component: {fileID: 919059235}
+  - component: {fileID: 919059236}
   m_Layer: 5
   m_Name: TimeTxt
   m_TagString: Untagged
@@ -7410,6 +7411,25 @@ MonoBehaviour:
   TimeC: 180
   stageClear: 0
   gm: {fileID: 1008042520}
+--- !u!95 &919059236
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919059230}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 284d7def163d6fa4088a727a97c346cf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &936427769
 GameObject:
   m_ObjectHideFlags: 0
@@ -9272,6 +9292,7 @@ MonoBehaviour:
   once: 1
   broom: {fileID: 2405459639148971924, guid: 9f68e296c5e256544922c87310c46bc3, type: 3}
   PlyHP: {fileID: 838330908}
+  PlyMov: {fileID: 838330900}
   announce: {fileID: 1843370307}
   end: 0
   timer: {fileID: 919059235}
@@ -9513,6 +9534,11 @@ MonoBehaviour:
   isAction: 0
   talkindex: 0
   id: 0
+  anim:
+  - {fileID: 1349769924}
+  - {fileID: 919059236}
+  - {fileID: 1091248289}
+  - {fileID: 1351112770}
   gm: {fileID: 1008042520}
 --- !u!4 &1067179433
 Transform:
@@ -9614,6 +9640,7 @@ GameObject:
   - component: {fileID: 1091248286}
   - component: {fileID: 1091248288}
   - component: {fileID: 1091248287}
+  - component: {fileID: 1091248289}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Inventory
@@ -9711,6 +9738,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091248284}
   m_CullTransparentMesh: 0
+--- !u!95 &1091248289
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091248284}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 522205380f792cc488b6f503b75d5510, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1093877993
 GameObject:
   m_ObjectHideFlags: 0
@@ -11161,6 +11207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1349769923}
+  - component: {fileID: 1349769924}
   m_Layer: 5
   m_Name: HpUI
   m_TagString: Untagged
@@ -11190,6 +11237,25 @@ RectTransform:
   m_AnchoredPosition: {x: -10, y: 0}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 1, y: 1}
+--- !u!95 &1349769924
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349769922}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9efa1e28cd5f3ee43ac0e1c8e80bfe14, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1351112765
 GameObject:
   m_ObjectHideFlags: 0
@@ -11202,6 +11268,7 @@ GameObject:
   - component: {fileID: 1351112768}
   - component: {fileID: 1351112767}
   - component: {fileID: 1351112769}
+  - component: {fileID: 1351112770}
   m_Layer: 5
   m_Name: Vigor
   m_TagString: Vigor
@@ -11295,6 +11362,25 @@ MonoBehaviour:
   hwalgiValue: {fileID: 1718337334}
   gm: {fileID: 1008042520}
   shaketime: 0
+--- !u!95 &1351112770
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351112765}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 875fbc7ec7ffe3d46af203db8e477ff3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1354495791
 GameObject:
   m_ObjectHideFlags: 0
