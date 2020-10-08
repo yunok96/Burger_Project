@@ -571,7 +571,7 @@ public class DialogueMaker : MonoBehaviour
         });
 
 
-        for (int i = 0; i < 43; i++)
+        for (int i = 0; i < 36; i++)
         {
             portData.Add(i, portArr[i]);
         }
