@@ -41,6 +41,10 @@ public class PlateMove : MonoBehaviour
         ABtn.SetActive(true);
         DBtn.SetActive(true);
         sr.sprite = BurSpr[0];
+        DBtn.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.75f);
+        ABtn.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.75f);
+        transform.position = new Vector3(20, -1.2f, 0);
+        Col.offset = new Vector2(0, -0.4f);
     }
 
     void Update()
