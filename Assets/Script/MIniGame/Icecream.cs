@@ -37,6 +37,8 @@ public class Icecream : MonoBehaviour
         sr.sprite = Cream[10];
         RightBtn.SetActive(true);
         LeftBtn.SetActive(true);
+        LeftB.color = new Color(0, 0, 0, 0);
+        RightB.color = new Color(0, 0, 0, 0);
         suc = false;
         Btime = 0f;
     }

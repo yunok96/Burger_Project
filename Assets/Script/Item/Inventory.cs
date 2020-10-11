@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour
     public GameObject VisRan;
     public GameManager gm;
     public GameObject pl;
-    public Vigor vigor;
+    public Cook cook;
     public Timer tc;
     public Text txt;
 
@@ -92,7 +92,7 @@ public class Inventory : MonoBehaviour
                     txt.text = "사용하면 안된다";
                     break;
                 case "Choco":
-                    txt.text = "먹으면 힘이 나서 활기 게이지가 조금 오른다";
+                    txt.text = "먹으면 힘이 나서 다음 음식을 2개 만들 수 있다";
                     break;
                 case "Coffee":
                     txt.text = "마시면 정신이 들어서 잠시 동안 이동이 빨라진다";
@@ -115,7 +115,7 @@ public class Inventory : MonoBehaviour
                             break;
                         case "Choco":
                             {
-                                vigor.vigorCount += 10;
+                                cook.chocoOn = true;
                                 isFull[selectedItem] = false;
                                 Destroy(slots[selectedItem].transform.GetChild(0).gameObject);
                             }

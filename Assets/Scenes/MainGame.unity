@@ -7226,6 +7226,7 @@ MonoBehaviour:
   - {fileID: 223329132}
   - {fileID: 437808350}
   gm: {fileID: 1008042520}
+  chocoOn: 0
 --- !u!1 &901580467
 GameObject:
   m_ObjectHideFlags: 0
@@ -9697,7 +9698,7 @@ MonoBehaviour:
   VisRan: {fileID: 43484564}
   gm: {fileID: 1008042520}
   pl: {fileID: 838330895}
-  vigor: {fileID: 1351112769}
+  cook: {fileID: 900877579}
   tc: {fileID: 919059235}
   txt: {fileID: 1668984004}
 --- !u!114 &1091248287
@@ -11369,7 +11370,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351112765}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 875fbc7ec7ffe3d46af203db8e477ff3, type: 2}
   m_CullingMode: 0

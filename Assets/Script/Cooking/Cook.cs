@@ -16,6 +16,7 @@ public class Cook : MonoBehaviour
     int maxFood;
     public GameObject[] minigame = new GameObject[4];
     public GameManager gm;
+    public bool chocoOn = false;
 
     void Update()
     {
@@ -42,6 +43,8 @@ public class Cook : MonoBehaviour
             {
                 gm.plyrMovable = true;
                 resultFood = 0;
+                if (chocoOn)//초코 아이템 효과 취소
+                    chocoOn = false;
             }
             else
             {
@@ -49,10 +52,21 @@ public class Cook : MonoBehaviour
                 {
                     if (foodStack.dishes[i] == 0)
                     {
+                        if (chocoOn && i < 4)//초코 효과로 요리 2배
+                        {
+                            foodStack.dishes[i] = resultFood;//요리 번호. 손에 들고있는 것의 실질적인 종류
+                            foodStack.dishes[i + 1] = resultFood;
+                            Instantiate(foodButton2[resultFood - 1], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
+                            Instantiate(foodButton2[resultFood - 1], foodInHerHand[i + 1].transform, false);//손에 요리 스프라이트 생성
+                        }
+                        else
+                        {
+                            foodStack.dishes[i] = resultFood;//요리 번호. 손에 들고있는 것의 실질적인 종류
+                            Instantiate(foodButton2[resultFood - 1], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
+                        }
                         gm.plyrMovable = true;
-                        foodStack.dishes[i] = resultFood;//요리 번호. 손에 들고있는 것의 실질적인 종류
-                        Instantiate(foodButton2[resultFood - 1], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
                         resultFood = 0;
+                        chocoOn = false;
                         break;
                     }
                 }
