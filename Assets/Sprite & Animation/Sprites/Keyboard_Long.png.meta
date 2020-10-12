@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 06aa22fd4d8bb04479d3a756ba71bdc0
+guid: fe182853bbd3c4342b727f1d6d1a7347
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -5876658105844163685
     second: "\uD0A4\uBCF4\uB4DC2\uCE78_\uC2A4\uD504\uB77C\uC774\uD2B8_1"
+  - first:
+      213: -279377824479157509
+    second: Keyboard_Long_0
+  - first:
+      213: 4813560026474109308
+    second: Keyboard_Long_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uD0A4\uBCF4\uB4DC2\uCE78_\uC2A4\uD504\uB77C\uC774\uD2B8_0"
+      name: Keyboard_Long_0
       rect:
         serializedVersion: 2
         x: 0
@@ -107,14 +113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e8ef9013fbb49e20800000000000000
-      internalID: 3356514274928224482
+      spriteID: bf26ccd49537f1cf0800000000000000
+      internalID: -279377824479157509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uD0A4\uBCF4\uB4DC2\uCE78_\uC2A4\uD504\uB77C\uC774\uD2B8_1"
+      name: Keyboard_Long_1
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +134,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9b1dbea69ae17ea0800000000000000
-      internalID: -5876658105844163685
+      spriteID: c79520b37533dc240800000000000000
+      internalID: 4813560026474109308
       vertices: []
       indices: 
       edges: []
