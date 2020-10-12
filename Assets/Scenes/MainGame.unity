@@ -9538,7 +9538,7 @@ MonoBehaviour:
   - {fileID: 1349769924}
   - {fileID: 919059236}
   - {fileID: 1091248289}
-  - {fileID: 1351112770}
+  vigor: {fileID: 1351112765}
   gm: {fileID: 1008042520}
 --- !u!4 &1067179433
 Transform:
@@ -11268,7 +11268,6 @@ GameObject:
   - component: {fileID: 1351112768}
   - component: {fileID: 1351112767}
   - component: {fileID: 1351112769}
-  - component: {fileID: 1351112770}
   m_Layer: 5
   m_Name: Vigor
   m_TagString: Vigor
@@ -11362,25 +11361,6 @@ MonoBehaviour:
   hwalgiValue: {fileID: 1718337334}
   gm: {fileID: 1008042520}
   shaketime: 0
---- !u!95 &1351112770
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351112765}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 875fbc7ec7ffe3d46af203db8e477ff3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1354495791
 GameObject:
   m_ObjectHideFlags: 0

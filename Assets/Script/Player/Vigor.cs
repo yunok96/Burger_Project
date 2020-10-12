@@ -1,4 +1,5 @@
 ﻿using JetBrains.Annotations;
+using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,11 +38,6 @@ public class Vigor : MonoBehaviour
         lights[3].color = (vigorCount > 59) ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
         lights[4].color = (vigorCount > 79) ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
 
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            shakeVigor();
-        }
         if (shaketime > 0)
         {
             transform.position = Random.insideUnitSphere * 0.1f + initial;

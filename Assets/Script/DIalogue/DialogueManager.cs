@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     public int id;
 
     public Animator[] anim;
+    public GameObject vigor;
     CameraShake Vib;
     public GameManager gm;
 
@@ -158,6 +159,7 @@ public class DialogueManager : MonoBehaviour
     {
         for (int i = 0; i < anim.Length; i++)
             anim[i].SetBool("OnDial", on);
+        vigor.SetActive(!on);
     }
 
     void DelayMove()
