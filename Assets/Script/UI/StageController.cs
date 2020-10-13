@@ -36,7 +36,8 @@ public class StageController : MonoBehaviour
     float curItemTime = 0f;
     public float maxItemTime = 15f;
 
-    public GameObject fail; //게임오버사운드
+    public GameObject fail; //여기서부터 사운드
+    public GameObject enemyEnter;
 
     void Awake()
     {
@@ -52,7 +53,21 @@ public class StageController : MonoBehaviour
         ba = GameObject.FindWithTag("Player").GetComponent<BroomAttack>();
         ba.FirstBlood = false;
         rdtime = 1.5f;
+
         fail.active = false;
+        enemyEnter.active = false;
+    }
+
+    void enemy_enter_switch()
+    {
+        if(enemyEnter.active == false)
+        {
+            enemyEnter.active = true;
+        }
+        else if(enemyEnter.active == true)
+        {
+            enemyEnter.active = false;
+        }
     }
     void Update()
     {
@@ -73,6 +88,8 @@ public class StageController : MonoBehaviour
             eneSpawn.SpawnEnemy();
             curEnemyTime = 0f;
             maxEnemyTime = 8f;//이후 기본 적 스폰시간
+            Invoke("enemy_enter_switch", 5f); //에너미가 스폰과 맵 등장이 차이가 나서 5f로 둠.
+            Invoke("enemy_enter_switch", 2f);
         }
 
         curItemTime += Time.deltaTime * gm.worldTime;
