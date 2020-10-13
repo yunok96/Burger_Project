@@ -46,6 +46,11 @@ public class PlayerHP : MonoBehaviour
                 BlinTime = 0f;
                 spr.color = new Color(1, 1, 1, 1);
             }
+
+            if (Input.GetKeyDown(KeyCode.X)) //체력감소 디버그
+            {
+                curHP--;
+            }
         }
     }
 

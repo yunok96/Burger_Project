@@ -36,6 +36,8 @@ public class StageController : MonoBehaviour
     float curItemTime = 0f;
     public float maxItemTime = 15f;
 
+    public GameObject fail; //게임오버사운드
+
     void Awake()
     {
         gm = GetComponent<GameManager>();
@@ -50,6 +52,7 @@ public class StageController : MonoBehaviour
         ba = GameObject.FindWithTag("Player").GetComponent<BroomAttack>();
         ba.FirstBlood = false;
         rdtime = 1.5f;
+        fail.active = false;
     }
     void Update()
     {
@@ -88,8 +91,13 @@ public class StageController : MonoBehaviour
             gm.plyrMovable = false;
             gm.worldTime = 0f;
             PlyMov.ResultSprite(false);
+            fail.active = true;
+
             if (Input.GetKeyDown(KeyCode.Return))
+            {
+                fail.active = false;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
         if (timer.stageClear)
         {

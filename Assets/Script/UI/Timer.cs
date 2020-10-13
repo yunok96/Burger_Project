@@ -10,12 +10,14 @@ public class Timer : MonoBehaviour
     float blinkT;
     Text Timetxt;
     public bool stageClear = false;
+    public GameObject under5sec;
 
     public GameManager gm;
 
     void Awake()
     {
         Timetxt = GetComponent<Text>();
+        under5sec.active = false;
     }
 
     void Update()
@@ -41,6 +43,20 @@ public class Timer : MonoBehaviour
                 Timetxt.color = new Color(1, 1, 1);
             else
                 Timetxt.color = new Color(1, 0, 0);
+        }
+
+        if(TimeC <= 5f)
+        {
+            under5sec.active = true;
+        }
+        if(TimeC <= 0.2f)
+        {
+            under5sec.active = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.J)) //10초 이하 디버그
+        {
+            TimeC = 10f;
         }
     }
 }
