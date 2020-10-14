@@ -18,6 +18,10 @@ public class PourCola : MonoBehaviour
     Cook ck;
     bool suc;
 
+    public GameObject get_food;
+    public GameObject fail_food;
+    public GameObject cokeSE;
+
     void Awake()
     {
         ck = GameObject.FindWithTag("CookPlace").GetComponent<Cook>();
@@ -55,12 +59,16 @@ public class PourCola : MonoBehaviour
         }
         if (ColaControl == true && Input.GetKey(KeyCode.Return))
         {
+            cokeSE.active = true;
             spr.color = new Color(1, 1, 1, 1);
             ColaText.text = null;
             CurColaTime += Time.deltaTime;
             anim.SetBool("ColaStart", true);
             if(CurColaTime > ColaOverTime)
             {
+                cokeSE.active = false;
+                fail_food.active = false;
+                fail_food.active = true;
                 EnterBtn.SetActive(false);
                 anim.SetBool("ColaOver", true);
                 ColaText.text = "콜라가 넘쳤다...";
@@ -72,6 +80,9 @@ public class PourCola : MonoBehaviour
         {
             if (CurColaTime < ColaMinTime)
             {
+                cokeSE.active = false;
+                fail_food.active = false;
+                fail_food.active = true;
                 EnterBtn.SetActive(false);
                 ColaControl = false;
                 ColaText.text = "콜라가 너무 적다...";
@@ -79,6 +90,9 @@ public class PourCola : MonoBehaviour
             }
             else if (ColaMinTime < CurColaTime && CurColaTime < ColaOverTime)
             {
+                cokeSE.active = false;
+                get_food.active = false;
+                get_food.active = true;
                 EnterBtn.SetActive(false);
                 ColaControl = false;
                 suc = true;

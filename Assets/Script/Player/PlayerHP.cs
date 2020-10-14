@@ -16,6 +16,8 @@ public class PlayerHP : MonoBehaviour
     public bool isBlin = false;
     SpriteRenderer spr;
 
+    public GameObject order_disappear;
+
     void Awake()
     {
         spr = GetComponent<SpriteRenderer>();
@@ -56,6 +58,8 @@ public class PlayerHP : MonoBehaviour
 
     public void HPSet()//외부에서 체력 떨어질때 사용
     {
+        order_disappear.active = false;
+        order_disappear.active = true;
         curHP--;
         Heart[curHP].SetActive(false);
     }

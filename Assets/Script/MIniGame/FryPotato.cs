@@ -15,6 +15,10 @@ public class FryPotato : MonoBehaviour
     bool Textoff;
     Cook ck;
     bool suc;
+    public GameObject get_food;
+    public GameObject fail_food;
+    public GameObject frySE1;
+    public GameObject frySE2;
 
     void Awake()
     {
@@ -59,6 +63,7 @@ public class FryPotato : MonoBehaviour
                 FryControl = true;
                 FryText.text = "시작!";
                 CountDone = false;
+                frySE1.active = true;
             }
         }
 
@@ -79,12 +84,20 @@ public class FryPotato : MonoBehaviour
                 Textoff = true;
             }
             if (FryPower > 10f)
+            {
                 anim.SetInteger("FryPower", 2);
+                frySE1.active = false;
+                frySE2.active = true;
+            }
             else if (FryPower > 0f || FryPower < 10f)
                 anim.SetInteger("FryPower", 1);
         }
         if (FryPower < 0f)
         {
+            frySE1.active = false;
+            frySE2.active = false;
+            fail_food.active = false;
+            fail_food.active = true;
             Textoff = false;
             FryControl = false;
             FryText.text = "제대로 안 튀겨졌어...";
@@ -95,6 +108,10 @@ public class FryPotato : MonoBehaviour
         }
         else if (FryPower > 20f)
         {
+            frySE1.active = false;
+            frySE2.active = false;
+            get_food.active = false;
+            get_food.active = true;
             FryControl = false;
             Textoff = false;
             FryText.text = "성공!";

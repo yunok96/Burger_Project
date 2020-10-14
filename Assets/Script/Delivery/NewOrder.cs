@@ -14,6 +14,9 @@ public class NewOrder : MonoBehaviour
     public FoodStack foodstack;
     public PlayerHP hp;
 
+    public GameObject cashCash;
+    public GameObject orderReceived;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) && whereIsPlayer!=0 && gm.plyrMovable && customerSpawnPoints[whereIsPlayer - 1].childCount != 0)
@@ -22,6 +25,8 @@ public class NewOrder : MonoBehaviour
             {
                 if (foodstack.dishes[i] == (dispOrder[whereIsPlayer - 1].findOrder.GetComponent<OrderSpec>().whatsThis) + 1)
                 {
+                    cashCash.active = false;
+                    cashCash.active = true;
                     customerSpec[whereIsPlayer - 1].GetComponent<CustomerMove>().isGetFood = true;
                     Instantiate(foodButton[foodstack.dishes[i] - 1], customerSpec[whereIsPlayer - 1].transform.GetChild(0), false);
                     Destroy(dispOrder[whereIsPlayer - 1].findOrder);
@@ -34,12 +39,19 @@ public class NewOrder : MonoBehaviour
         }
     }
 
+    void orderReceived_delay()
+    {
+        orderReceived.active = true;
+    }
+
     public void CustomerSpawn()
     {
         for (int i = 0; i < isTableOnOrder.Length; i++)
         {
             if (!isTableOnOrder[i])
             {
+                orderReceived.active = false;
+                Invoke("orderReceived_delay", 1f);
                 isTableOnOrder[i] = true;
                 int ranCus = Random.Range(0, 3);
                 customerSpec[i] = Instantiate(customers[ranCus], customerSpawnPoints[i]);

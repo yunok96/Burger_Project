@@ -8,6 +8,8 @@ public class FailBurger : MonoBehaviour
     public GameObject D;
     Cook ck;
 
+    public GameObject fail_food;
+
     void Awake()
     {
         ck = GameObject.FindWithTag("CookPlace").GetComponent<Cook>();
@@ -17,6 +19,8 @@ public class FailBurger : MonoBehaviour
     {
         if(collision.gameObject.tag == "BurIng")
         {
+            fail_food.active = false;
+            fail_food.active = true;
             pm.Textoff = false;
             pm.BurControl = false;
             A.SetActive(false);

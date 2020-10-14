@@ -11,6 +11,8 @@ public class PauseMenu : MonoBehaviour
     Animator anim;
     public bool pauseOn = false;
     public int whereCursor;
+
+    public GameObject pauseSE;
     
     void Awake()
     {
@@ -21,6 +23,8 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && gm.plyrMovable && !pauseOn && !sc.once)
         {
+            pauseSE.active = false;
+            pauseSE.active = true;
             Invoke("wait", 0.1f);
             anim.SetBool("PauseOn", true);
             gm.plyrMovable = false;
@@ -104,6 +108,7 @@ public class PauseMenu : MonoBehaviour
     }
     void resume()
     {
+        pauseSE.active = false;
         Invoke("wait", 0.1f);
         anim.SetBool("PauseOn", false);
         gm.plyrMovable = true;

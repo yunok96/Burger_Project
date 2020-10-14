@@ -20,6 +20,10 @@ public class Icecream : MonoBehaviour
     Cook ck;
     bool suc;
 
+    public GameObject icecreamSE;
+    public GameObject get_food;
+    public GameObject fail_food;
+
     void Awake()
     {
         ck = GameObject.FindWithTag("CookPlace").GetComponent<Cook>();
@@ -89,6 +93,8 @@ public class Icecream : MonoBehaviour
             HurryUp += Time.deltaTime;
             if(HurryUp > 1f)
             {
+                fail_food.active = false;
+                fail_food.active = true;
                 IceText.text = "늦었어...";
                 IceControl = false;
                 Invoke("DelScene", 0.5f);
@@ -102,6 +108,8 @@ public class Icecream : MonoBehaviour
                         {
                             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
                                 IceText.text = null;
                                 sr.sprite = Cream[0];
                                 HurryUp = 0f;
@@ -110,6 +118,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);
@@ -132,6 +144,8 @@ public class Icecream : MonoBehaviour
                             }
                             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
                                 sr.sprite = Cream[1];
                                 HurryUp = 0f;
                                 LeftB.color = new Color(0, 0, 0, 0f);
@@ -139,6 +153,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);
@@ -161,6 +179,8 @@ public class Icecream : MonoBehaviour
                             }
                             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
                                 sr.sprite = Cream[2];
                                 HurryUp = 0f;
                                 RightB.color = new Color(0, 0, 0, 0f);
@@ -168,6 +188,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);
@@ -190,6 +214,8 @@ public class Icecream : MonoBehaviour
                             }
                             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
                                 sr.sprite = Cream[3];
                                 HurryUp = 0f;
                                 LeftB.color = new Color(0, 0, 0, 0f);
@@ -197,6 +223,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);
@@ -219,6 +249,10 @@ public class Icecream : MonoBehaviour
                             }
                             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                get_food.active = false;
+                                get_food.active = true;
                                 sr.sprite = Cream[4];
                                 IceText.text = "성공!";
                                 IceControl = false;
@@ -229,6 +263,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);
@@ -247,6 +285,8 @@ public class Icecream : MonoBehaviour
                         {
                             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
                                 IceText.text = null;
                                 sr.sprite = Cream[5];
                                 HurryUp = 0f;
@@ -255,6 +295,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);
@@ -278,6 +322,8 @@ public class Icecream : MonoBehaviour
                             }
                             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
                                 sr.sprite = Cream[6];
                                 HurryUp = 0f;
                                 RightB.color = new Color(0, 0, 0, 0f);
@@ -285,6 +331,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);
@@ -307,6 +357,8 @@ public class Icecream : MonoBehaviour
                             }
                             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
                                 sr.sprite = Cream[7];
                                 HurryUp = 0f;
                                 LeftB.color = new Color(0, 0, 0, 0f);
@@ -314,6 +366,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);
@@ -336,6 +392,8 @@ public class Icecream : MonoBehaviour
                             }
                             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
                                 sr.sprite = Cream[8];
                                 HurryUp = 0f;
                                 RightB.color = new Color(0, 0, 0, 0f);
@@ -343,6 +401,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);
@@ -365,6 +427,10 @@ public class Icecream : MonoBehaviour
                             }
                             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                get_food.active = false;
+                                get_food.active = true;
                                 sr.sprite = Cream[9];
                                 IceControl = false;
                                 IceText.text = "성공!";
@@ -376,6 +442,10 @@ public class Icecream : MonoBehaviour
                             }
                             else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                             {
+                                icecreamSE.active = false;
+                                icecreamSE.active = true;
+                                fail_food.active = false;
+                                fail_food.active = true;
                                 IceText.text = "다른 맛이야...";
                                 IceControl = false;
                                 Invoke("DelScene", 0.5f);

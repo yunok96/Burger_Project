@@ -38,6 +38,21 @@ public class StageController : MonoBehaviour
 
     public GameObject fail; //여기서부터 사운드
     public GameObject enemyEnter;
+    public GameObject uiSelect; //데이 클리어 후 씬 바뀌면 false로 초기화하기
+    public GameObject icecreamSE;
+    public GameObject dayClear;
+    public GameObject pauseSE;
+    public GameObject unable_to_cook;
+    public GameObject get_food;
+    public GameObject fail_food;
+    public GameObject cashCash;
+    public GameObject orderReceived;
+    public GameObject order_disappear;
+    public GameObject cokeSE;
+    public GameObject frySE1;
+    public GameObject frySE2;
+    public GameObject hamburgerSE;
+
 
     void Awake()
     {
@@ -54,12 +69,29 @@ public class StageController : MonoBehaviour
         ba.FirstBlood = false;
         rdtime = 1.5f;
 
+        //SE소스들 데이 시작때 비활성화
         fail.active = false;
         enemyEnter.active = false;
+        uiSelect.active = false;
+        icecreamSE.active = false;
+        dayClear.active = false;
+        pauseSE.active = false;
+        unable_to_cook.active = false;
+        get_food.active = false;
+        fail_food.active = false;
+        cashCash.active = false;
+        orderReceived.active = false;
+        order_disappear.active = false;
+        cokeSE.active = false;
+        frySE1.active = false;
+        frySE2.active = false;
+        hamburgerSE.active = false;
+
     }
 
     void enemy_enter_switch()
     {
+        
         if(enemyEnter.active == false)
         {
             enemyEnter.active = true;
@@ -67,6 +99,18 @@ public class StageController : MonoBehaviour
         else if(enemyEnter.active == true)
         {
             enemyEnter.active = false;
+        }
+    }
+
+    void uiSelect_switch()
+    {
+        if (uiSelect.active == false)
+        {
+            uiSelect.active = true;
+        }
+        else if (uiSelect.active == true)
+        {
+            uiSelect.active = false;
         }
     }
     void Update()
@@ -112,12 +156,14 @@ public class StageController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Return))
             {
+                uiSelect.active = true;
                 fail.active = false;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
         if (timer.stageClear)
         {
+            dayClear.active = true;
             curUI.transform.parent.gameObject.SetActive(true);
             curUI.sprite = announceUI[3];
             announce.gameObject.SetActive(true);
@@ -129,6 +175,7 @@ public class StageController : MonoBehaviour
                 pressEnter = true;
             if (pressEnter)
             {
+                uiSelect.active = true;
                 nextDayFade += Time.deltaTime;
                 DTB.gameObject.SetActive(true);
                 DTB.color = new Color(0, 0, 0, nextDayFade);

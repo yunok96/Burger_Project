@@ -19,12 +19,15 @@ public class BroomAttack : MonoBehaviour
     public GameManager gm;
     public bool soundplay = false;
 
+    public GameObject broomHit;
+
     void Awake()
     {
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         pl = GetComponent<PlayerMovement>();
         ad = GetComponent<AudioSource>();
+        broomHit.active = false;
     }
 
     void Update()
@@ -34,6 +37,14 @@ public class BroomAttack : MonoBehaviour
             soundplay = false;
             ad.clip = audioB[0];
             ad.Play();
+        }
+    }
+
+    void broomHit_switch()
+    {
+        if(broomHit.active == true)
+        {
+            broomHit.active = false;
         }
     }
 
@@ -54,9 +65,17 @@ public class BroomAttack : MonoBehaviour
                             Vector3 PistolSpawnPointR = transform.position + new Vector3(1f, 0f, 0f);
                             Collider2D HitEnemy = Physics2D.OverlapCircle(PistolSpawnPointR, .2f, EnemyMask);
                             if (HitEnemy.tag == "Enemy")
+                            {
                                 HitEnemy.GetComponent<EnemyHP>().EneHP--;
+                                broomHit.active = true;
+                                Invoke("broomHit_switch", 1.0f);
+                            }
                             else if (HitEnemy.tag == "SWAT")
+                            {
                                 HitEnemy.GetComponent<SWATHP>().SWHP--;
+                                broomHit.active = true;
+                                Invoke("broomHit_switch", 1.0f);
+                            }
                             if (!FirstBlood)
                             {
                                 FirstBlood = true;

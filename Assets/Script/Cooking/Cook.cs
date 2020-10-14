@@ -18,6 +18,8 @@ public class Cook : MonoBehaviour
     public GameManager gm;
     public bool chocoOn = false;
 
+    public GameObject unable_to_cook;
+    //public GameObject get_food;
     void Update()
     {
         if (whichFood != 0 && Input.GetKeyDown(KeyCode.Return) && gm.plyrMovable)//음식 미니게임
@@ -26,6 +28,7 @@ public class Cook : MonoBehaviour
             {
                 if (foodStack.dishes[i] == 0)//비어있다면
                 {
+                    
                     gm.plyrMovable = false;
                     minigame[whichFood - 1].SetActive(true);
                     vigor.vigorCookTime = 0;
@@ -33,6 +36,8 @@ public class Cook : MonoBehaviour
                 }
                 else if (foodStack.dishes[i] != 0 && i == maxFood - 1)
                 {
+                    unable_to_cook.active = false;
+                    unable_to_cook.active = true;
                     vigor.shakeVigor();//쉐킷베베
                 }
             }
@@ -54,6 +59,7 @@ public class Cook : MonoBehaviour
                     {
                         if (chocoOn && i < 4)//초코 효과로 요리 2배
                         {
+                            
                             foodStack.dishes[i] = resultFood;//요리 번호. 손에 들고있는 것의 실질적인 종류
                             foodStack.dishes[i + 1] = resultFood;
                             Instantiate(foodButton2[resultFood - 1], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
@@ -64,6 +70,8 @@ public class Cook : MonoBehaviour
                             foodStack.dishes[i] = resultFood;//요리 번호. 손에 들고있는 것의 실질적인 종류
                             Instantiate(foodButton2[resultFood - 1], foodInHerHand[i].transform, false);//손에 요리 스프라이트 생성
                         }
+                        //get_food.active = false;
+                        //get_food.active = true;
                         gm.plyrMovable = true;
                         resultFood = 0;
                         chocoOn = false;

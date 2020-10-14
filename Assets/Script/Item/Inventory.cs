@@ -20,6 +20,8 @@ public class Inventory : MonoBehaviour
     public Timer tc;
     public Text txt;
 
+    public GameObject itemUse; //SE
+
     public void ItemCursor()//선택 효과
     {
         StopAllCoroutines();
@@ -42,11 +44,21 @@ public class Inventory : MonoBehaviour
             yield return waitTime;
         }
     }
-    
+
+    void itemUse_switch()
+    {
+        if(itemUse.active == true)
+        {
+            itemUse.active = false;
+        }
+    }
+
+
     void Start()
     {
         selectedItem = 0;//시작할때 아이템 1번+선택 효과
         ItemCursor();
+        itemUse.active = false;
     }
 
     public void VisibleRange()
@@ -115,6 +127,8 @@ public class Inventory : MonoBehaviour
                             break;
                         case "Choco":
                             {
+                                itemUse_switch();
+                                itemUse.active = true;
                                 cook.chocoOn = true;
                                 isFull[selectedItem] = false;
                                 Destroy(slots[selectedItem].transform.GetChild(0).gameObject);
@@ -122,6 +136,8 @@ public class Inventory : MonoBehaviour
                             break;
                         case "Coffee":
                             {
+                                itemUse_switch();
+                                itemUse.active = true;
                                 pl.GetComponent<PlayerMovement>().isBoost = true;
                                 pl.GetComponent<PlayerMovement>().boostTime = 0f;
                                 isFull[selectedItem] = false;
@@ -130,6 +146,8 @@ public class Inventory : MonoBehaviour
                             break;
                         case "Candy":
                             {
+                                itemUse_switch();
+                                itemUse.active = true;
                                 tc.TimeC -= 10f;
                                 isFull[selectedItem] = false;
                                 Destroy(slots[selectedItem].transform.GetChild(0).gameObject);

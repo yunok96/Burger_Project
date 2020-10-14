@@ -22,6 +22,9 @@ public class PlateMove : MonoBehaviour
     public bool Textoff;
     Cook ck;
 
+    public GameObject get_food;
+    public GameObject hamburgerSE;
+
     void Awake()
     {
         ck = GameObject.FindWithTag("CookPlace").GetComponent<Cook>();
@@ -112,6 +115,8 @@ public class PlateMove : MonoBehaviour
         {
             case "B1(Clone)":
                 {
+                    hamburgerSE.active = false;
+                    hamburgerSE.active = true;
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[1];
                     Col.offset += new Vector2(0f, 0.05f);
@@ -121,6 +126,8 @@ public class PlateMove : MonoBehaviour
                 break;
             case "B2(Clone)":
                 {
+                    hamburgerSE.active = false;
+                    hamburgerSE.active = true;
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[2];
                     Col.offset += new Vector2(0f, 0.05f);
@@ -131,6 +138,8 @@ public class PlateMove : MonoBehaviour
                 break;
             case "B3(Clone)":
                 {
+                    hamburgerSE.active = false;
+                    hamburgerSE.active = true;
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[3];
                     Col.offset += new Vector2(0f, 0.02f);
@@ -141,6 +150,8 @@ public class PlateMove : MonoBehaviour
                 break;
             case "B4(Clone)":
                 {
+                    hamburgerSE.active = false;
+                    hamburgerSE.active = true;
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[4];
                     Col.offset += new Vector2(0f, 0.05f);
@@ -151,6 +162,8 @@ public class PlateMove : MonoBehaviour
                 break;
             case "B5(Clone)":
                 {
+                    hamburgerSE.active = false;
+                    hamburgerSE.active = true;
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[5];
                     Col.offset += new Vector2(0f, 0.03f);
@@ -161,6 +174,8 @@ public class PlateMove : MonoBehaviour
                 break;
             case "B6(Clone)":
                 {
+                    hamburgerSE.active = false;
+                    hamburgerSE.active = true;
                     Destroy(collision.gameObject);
                     sr.sprite = BurSpr[6];
                     Col.offset += new Vector2(0f, 0.03f);
@@ -171,6 +186,10 @@ public class PlateMove : MonoBehaviour
                 break;
             case "B7(Clone)":
                 {
+                    hamburgerSE.active = false;
+                    hamburgerSE.active = true;
+                    get_food.active = false;
+                    get_food.active = true;
                     BurControl = false;
                     Textoff = false;
                     Destroy(collision.gameObject);
