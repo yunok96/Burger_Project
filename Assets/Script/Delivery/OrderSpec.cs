@@ -6,9 +6,9 @@ public class OrderSpec : MonoBehaviour
 {
     public SpriteRenderer spr;
     public Sprite[] sp = new Sprite[4];
-    float curTime = 30f;
-    public TextMesh tm;
+    public float curTime = 30f;
     public int whatsThis;
+    public Transform vec;
     GameManager gm;
 
     void Start()
@@ -23,7 +23,7 @@ public class OrderSpec : MonoBehaviour
     void Update()
     {
         curTime -= Time.deltaTime * gm.worldTime;
-        tm.text = ((int)curTime).ToString();
+        vec.position = new Vector3(transform.position.x - curTime / 30, transform.position.y, transform.position.z);
         if (curTime < 0)
         {
             transform.parent.GetComponent<DisplayOrder>().failed = true;

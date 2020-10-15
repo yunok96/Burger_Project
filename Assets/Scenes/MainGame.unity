@@ -9980,7 +9980,7 @@ MonoBehaviour:
   end: 0
   timer: {fileID: 919059235}
   DTB: {fileID: 1154606742}
-  maxCustomerTime: 18
+  maxCustomerTime: 5
   ord: {fileID: 383780249}
   eneSpawn: {fileID: 27138443}
   maxEnemyTime: 21
