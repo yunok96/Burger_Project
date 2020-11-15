@@ -106,7 +106,7 @@ public class Icecream : MonoBehaviour
                 {
                     case 0:
                         {
-                            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -116,7 +116,7 @@ public class Icecream : MonoBehaviour
                                 RightB.color = new Color(0, 0, 0, 0f);
                                 Progress = 1;
                             }
-                            else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            else if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -142,7 +142,7 @@ public class Icecream : MonoBehaviour
                                 else
                                     LeftB.color = new Color(0, 0, 0, 0f);
                             }
-                            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -151,7 +151,7 @@ public class Icecream : MonoBehaviour
                                 LeftB.color = new Color(0, 0, 0, 0f);
                                 Progress = 2;
                             }
-                            else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            else if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -177,7 +177,7 @@ public class Icecream : MonoBehaviour
                                 else
                                     RightB.color = new Color(0, 0, 0, 0f);
                             }
-                            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -186,7 +186,7 @@ public class Icecream : MonoBehaviour
                                 RightB.color = new Color(0, 0, 0, 0f);
                                 Progress = 3;
                             }
-                            else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            else if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -212,7 +212,7 @@ public class Icecream : MonoBehaviour
                                 else
                                     LeftB.color = new Color(0, 0, 0, 0f);
                             }
-                            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -221,7 +221,7 @@ public class Icecream : MonoBehaviour
                                 LeftB.color = new Color(0, 0, 0, 0f);
                                 Progress = 4;
                             }
-                            else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            else if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -247,7 +247,7 @@ public class Icecream : MonoBehaviour
                                 else
                                     RightB.color = new Color(0, 0, 0, 0f);
                             }
-                            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -261,7 +261,7 @@ public class Icecream : MonoBehaviour
                                 RightBtn.SetActive(false);
                                 LeftBtn.SetActive(false);
                             }
-                            else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            else if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -283,7 +283,7 @@ public class Icecream : MonoBehaviour
                 {
                     case 0:
                         {
-                            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -293,7 +293,7 @@ public class Icecream : MonoBehaviour
                                 LeftB.color = new Color(0, 0, 0, 0f);
                                 Progress = 1;
                             }
-                            else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            else if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -320,7 +320,7 @@ public class Icecream : MonoBehaviour
                                 else
                                     RightB.color = new Color(0, 0, 0, 0f);
                             }
-                            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -329,7 +329,7 @@ public class Icecream : MonoBehaviour
                                 RightB.color = new Color(0, 0, 0, 0f);
                                 Progress = 2;
                             }
-                            else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            else if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -355,7 +355,7 @@ public class Icecream : MonoBehaviour
                                 else
                                     LeftB.color = new Color(0, 0, 0, 0f);
                             }
-                            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -364,7 +364,7 @@ public class Icecream : MonoBehaviour
                                 LeftB.color = new Color(0, 0, 0, 0f);
                                 Progress = 3;
                             }
-                            else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            else if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -390,7 +390,7 @@ public class Icecream : MonoBehaviour
                                 else
                                     RightB.color = new Color(0, 0, 0, 0f);
                             }
-                            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -399,7 +399,7 @@ public class Icecream : MonoBehaviour
                                 RightB.color = new Color(0, 0, 0, 0f);
                                 Progress = 4;
                             }
-                            else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            else if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -425,7 +425,7 @@ public class Icecream : MonoBehaviour
                                 else
                                     LeftB.color = new Color(0, 0, 0, 0f);
                             }
-                            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                            if (Input.GetKeyDown(KeyCode.LeftArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;
@@ -440,7 +440,7 @@ public class Icecream : MonoBehaviour
                                 LeftBtn.SetActive(false);
 
                             }
-                            else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                            else if (Input.GetKeyDown(KeyCode.RightArrow))
                             {
                                 icecreamSE.active = false;
                                 icecreamSE.active = true;

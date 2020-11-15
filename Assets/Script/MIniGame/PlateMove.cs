@@ -73,7 +73,15 @@ public class PlateMove : MonoBehaviour
             BurText.text = null;
         if(BurControl == true)
         {
-            float h = Input.GetAxisRaw("Horizontal");
+            //float h = Input.GetAxisRaw("Horizontal");
+            float h = 0f;
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                h = -1f;
+            }else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                h = 1f;
+            }
             if (h == 1)
             {
                 DBtn.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.4f);
