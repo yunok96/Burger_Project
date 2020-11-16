@@ -29,16 +29,21 @@ public class NewEnemySpawner : MonoBehaviour
                 switch (num)
                 {
                     case 0:
-                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-8, 1.1f, 0);
+                        //주정뱅이 목표지 인게임 수정사항 1103 내용대로 변경
+                        //enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-8, 1.1f, 0);
+                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-10, 1.1f, 0);
                         break;
                     case 1:
-                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-7, 0.1f, 0);
+                        //enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-7, 0.1f, 0);
+                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-10, -0.9f, 0);
                         break;
                     case 2:
-                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-3, 1.1f, 0);
+                        //enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-3, 1.1f, 0);
+                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-9, 2.1f, 0);
                         break;
                     case 3:
-                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-4, -0.9f, 0);
+                        //enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-4, -0.9f, 0);
+                        enemySpec[num].GetComponent<NewEnemyMovement>().target = new Vector3(-9, -1.9f, 0);
                         break;
                 }
                 break;
