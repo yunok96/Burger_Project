@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, movePoint.position, movespeed * Time.deltaTime);
         if (Vector3.Distance(transform.position, movePoint.position) <= 0.03f && gm.plyrMovable)
         {
-            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
+            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
             {
                 VisibleAtk.transform.position = transform.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                 ShootWhere = Input.GetAxisRaw("Horizontal") == 1f ? 0 : 1;
@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
                     vigor.VigorPlus();
                 }
             }
-            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
             {
                 VisibleAtk.transform.position = transform.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                 ShootWhere = Input.GetAxisRaw("Vertical") == 1f ? 2 : 3;
