@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     float movespeed = 17f;//이동속도
     public Transform movePoint;
+    public Transform lateMovePoint;
     public LayerMask WhatStopMove;
     public bool isBoost = false;
     public float boostTime = 0f;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         movePoint.parent = null;
+        lateMovePoint.parent = null;
         VisibleAtk.GetComponent<Transform>();
         VisibleAtk.transform.position = transform.position + new Vector3(0f, -1f, 0f);
         ShootWhere = 3;
